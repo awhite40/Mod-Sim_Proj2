@@ -6,3 +6,8 @@ def car(env):
         print('Start driving at %d' % env.now)
         trip_duration = 2
         yield env.timeout(trip_duration)
+
+import simpy
+env = simpy.Environment()
+env.process(car(env))
+env.run(until=15)
