@@ -3,7 +3,9 @@ import random
 import simpy
 
 RANDOM_SEED = 42
-NUM_TRUCKS = 2  # Number of trucks in the servicehub
+NUM_TRUCKS1 = 2      # Number of trucks in the servicehub
+NUM_TRUCKS2 = 2
+NUM_TRUCKS3 = 2
 CLEANTIME = 10      # Minutes it takes to clean an aircraft
 WATERTIME = 10      # Minutes it takes to supply water to an aircraft
 POWERTIME = 10      # Minutes it takes to power up an aircraft
@@ -22,7 +24,9 @@ class ServiceHub(object):
     """
     def __init__(self, env, num_trucks, cleantime, watertime, powertime):
         self.env = env
-        self.truck = simpy.Resource(env, num_trucks)
+        self.truck1 = simpy.Resource(env, num_trucks1)
+        self.truck2 = simpy.Resource(env, num_trucks2)
+        self.truck3 = simpy.Resource(env, num_trucks3)
         self.cleantime = cleantime
         self.watertime = watertime
         self.powertime = powertime
@@ -67,7 +71,7 @@ def aircraft(env, name, sh):
         print('%s leaves the servicehub at %.2f.' % (name, env.now))
 
 
-def setup(env, num_trucks, cleantime, watertime, powertime):
+def setup(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
     """Create a servicehub, a number of initial aircrafts and keep creating aircrafts
     approx. every ``t_inter`` minutes."""
     # Create the servicehub
