@@ -11,7 +11,7 @@ from mpi4py import MPI
 from MPI import ANY_SOURCE
 import simpy
 
-def Generate_airplane(ID):
+def Generate_airplane(env, ID, arrive, ):
     Plane_ID = ID
     if Gate_1_free == True:
         Plane_Gate = 'Gate 1'
@@ -41,11 +41,12 @@ plane_queue = 0
 
 if rank == 0:
     env = simpy.Environment()
-    Gate_1_free = True
-    Gate_2_free = True
-    Gate_3_free = True
-    Gate_4_free = True
+    # Gate_1_free = True
+    # Gate_2_free = True
+    # Gate_3_free = True
+    # Gate_4_free = True
     ID = 1
+    gate = simpy.Resource(env, capacity = 4)
     Gate, Departure_time, Plane_ID = Generate_airplane(ID)
     comm.Recv(info, source=ANY_SOURCE)
 
