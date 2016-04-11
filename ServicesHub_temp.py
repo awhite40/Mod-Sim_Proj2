@@ -9,7 +9,6 @@ NUM_TRUCKS3 = 2
 CLEANTIME = 10      # Minutes it takes to clean an aircraft
 WATERTIME = 10      # Minutes it takes to supply water to an aircraft
 POWERTIME = 10      # Minutes it takes to power up an aircraft
-T_INTER = 30       # Create a aircraft every ~30 minutes
 SIM_TIME = 120     # Simulation time in minutes
 
 
@@ -72,8 +71,8 @@ def aircraft(env, name, sh):
 
 
 def setup(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
-    """Create a servicehub, a number of initial aircrafts and keep creating aircrafts
-    approx. every ``t_inter`` minutes."""
+    """Create a servicehub, a number of initial aircrafts."""
+
     # Create the servicehub
     servicehub = ServiceHub(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime)
 
@@ -81,13 +80,14 @@ def setup(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powe
     for i in range(4):
         env.process(aircraft(env, 'aircraft %d' % i, servicehub))
 
+
 # Setup and start the simulation
 print('Service Hub')
 random.seed(RANDOM_SEED)  # This helps reproducing the results
 
 # Create an environment and start the setup process
 env = simpy.Environment()
-env.process(setup(env, NUM_TRUCKS, CLEANTIME, WATERTIME, POWERTIME))
+env.process(setup(env, NUM_TRUCKS1, NUM_TRUCKS2, NUM_TRUCKS3, CLEANTIME, WATERTIME, POWERTIME))
 
 # Execute!
 env.run(until=SIM_TIME)
