@@ -22,7 +22,7 @@ class ServiceHub(object):
     takes ``XXXXTIME`` minutes).
 
     """
-    def __init__(self, env, num_trucks, cleantime, watertime, powertime):
+    def __init__(self, env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
         self.env = env
         self.truck1 = simpy.Resource(env, num_trucks1)
         self.truck2 = simpy.Resource(env, num_trucks2)
@@ -53,40 +53,33 @@ class ServiceHub(object):
               (random.randint(50, 99), aircraft))
 
 
-# def aircraft(env, name, sh):
-#     """The aircraft process (each aircraft has a ``name``) arrives at the servicehub
-#     (``sh``) and requests a service truck.
+def aircraft(env, name, sh):
+    """The aircraft process (each aircraft has a ``name``) arrives at the servicehub
+    (``sh``) and requests a service truck.
 
-#     It then starts the service process, waits for it to finish and
-#     leaves to never come back ...
+    It then starts the service process, waits for it to finish and
+    leaves to never come back ...
 
-#     """
-#     print('%s arrives at the servicehub at %.2f.' % (name, env.now))
-#     with sh.truck.request() as request:
-#         yield request
+    """
+    print('%s arrives at the servicehub at %.2f.' % (name, env.now))
+    with sh.truck.request() as request:
+        yield request
 
-#         print('%s enters the servicehub at %.2f.' % (name, env.now))
-#         yield env.process(sh.clean(name))
+        print('%s enters the servicehub at %.2f.' % (name, env.now))
+        yield env.process(sh.clean(name))
 
-#         print('%s leaves the servicehub at %.2f.' % (name, env.now))
+        print('%s leaves the servicehub at %.2f.' % (name, env.now))
 
 
 def setup(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
     """Create a servicehub, a number of initial aircrafts and keep creating aircrafts
     approx. every ``t_inter`` minutes."""
     # Create the servicehub
-    servicehub = ServiceHub(env, num_trucks, cleantime, watertime, powertime)
+    servicehub = ServiceHub(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime)
 
     # Create 4 initial aircrafts
     for i in range(4):
         env.process(aircraft(env, 'aircraft %d' % i, servicehub))
-
-    # Create more aircrafts while the simulation is running
-    while True:
-        yield env.timeout(random.randint(t_inter-2, t_inter+2))
-        i += 1
-        env.process(aircraft(env, 'aircraft %d' % i, servicehub))
-
 
 # Setup and start the simulation
 print('Service Hub')
