@@ -53,22 +53,22 @@ class ServiceHub(object):
               (random.randint(50, 99), aircraft))
 
 
-def aircraft(env, name, sh):
-    """The aircraft process (each aircraft has a ``name``) arrives at the servicehub
-    (``sh``) and requests a service truck.
+# def aircraft(env, name, sh):
+#     """The aircraft process (each aircraft has a ``name``) arrives at the servicehub
+#     (``sh``) and requests a service truck.
 
-    It then starts the service process, waits for it to finish and
-    leaves to never come back ...
+#     It then starts the service process, waits for it to finish and
+#     leaves to never come back ...
 
-    """
-    print('%s arrives at the servicehub at %.2f.' % (name, env.now))
-    with sh.truck.request() as request:
-        yield request
+#     """
+#     print('%s arrives at the servicehub at %.2f.' % (name, env.now))
+#     with sh.truck.request() as request:
+#         yield request
 
-        print('%s enters the servicehub at %.2f.' % (name, env.now))
-        yield env.process(sh.clean(name))
+#         print('%s enters the servicehub at %.2f.' % (name, env.now))
+#         yield env.process(sh.clean(name))
 
-        print('%s leaves the servicehub at %.2f.' % (name, env.now))
+#         print('%s leaves the servicehub at %.2f.' % (name, env.now))
 
 
 def setup(env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
