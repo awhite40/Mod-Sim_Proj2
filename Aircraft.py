@@ -2,11 +2,9 @@ import random
 import simpy
 from mpi4py import MPI
 
-import ServicesHub
-import Aircraft
 # ================Aircrafts================
 
-class Aircraft(Object):
+class Aircraft(object):
     """The aircraft process (each aircraft has a ``name``) arrives at the servicehub
     (``sh``) and requests a service truck.
 
@@ -19,13 +17,23 @@ class Aircraft(Object):
         self.name = name
         self.size = size
 
-    print('%s arrives at the servicehub at %.2f.' % (name, env.now))
+    def request_service(self):
+        arrivalTime = self.env.now
+        print('%s arrives at the servicehub at %.2f.' % (self.name, arrivalTime))
 
 
-    with sh.truck.request() as request:
-        yield request
 
-        print('%s enters the servicehub at %.2f.' % (name, env.now))
-        yield env.process(sh.clean(name))
+    # with sh.truck.request() as request:
+    #     yield request
+    #     enterTime = self.env.now
+    #     print('%s enters the servicehub at %.2f.' % (name, enterTime))
+    #     yield env.process(sh.clean(name))
 
-        print('%s leaves the servicehub at %.2f.' % (name, env.now))
+    #     departTime = self.env.now
+    #     print('%s departs the servicehub at %.2f.' % (name, departTime))
+
+env = simpy.Environment()
+A1 = Aircraft(env, "A1", 1)
+A1.request_service()
+
+env.run(until=500)
