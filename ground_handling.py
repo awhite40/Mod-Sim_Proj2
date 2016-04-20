@@ -1,76 +1,96 @@
+# -*- coding: utf-8 -*-
+# @Author: Jiahao
+# @Date:   2016-04-13 10:21:41
+# @Last Modified by:   Jiahao
+# @Last Modified time: 2016-04-20 19:05:39
+
+
 import simpy
 import random
+import itertools
 
-def refuel_aircraft(env, resource, name, aircraft_type):
-    # Requsting
-    # time_to_gate = 2
-    # env.timeout(time_to_gate)
-    request = resource.request()  # Generate a request event
-    start = env.now
-    print(name + "--> FUEL request a resource at %d" % start)
-    yield request                 # Wait for access
+SMALL_SIZE = 1
+LARGE_SIZE = 1.2
 
-    # Working
-    print(name + "--> FUEL working on at %d" % env.now)
+class aircraft(object):
+    def __init__(self, env, name, size, gate, res1, res2):
+        self.env = env
+        self.name = name
+        self.size = size
+        self.gate = gate
+        self.res1 = res1
+        self.res2 = res2
 
-    unit_time_consuming = 2
-    if aircraft_type == 20:
-        working_duration = aircraft_type * (unit_time_consuming)
-    else:
-        working_duration = unit_time_consuming
-    yield env.timeout(working_duration)          # Do something
-    print(name + "--> FUEL done at %d" % env.now)
-    # env.timeout(time_to_gate)
-    # Releasing
-    resource.release(request)     # Release the resource
-    print(name + "--> FUEL finished refueling in %.1f minutes." % (env.now - start))
+        env.process(self.check_available_gate(env, name, size, gate))
+
+    def check_available_gate(self, env, name, size, gate):
+        request = gate.request()
+        # Request one of the 11 gates
+        yield request
+
+        # Generate new aircrafts that arrive at the service hub. #
+        arrival_time = env.now
+        num_of_processes = 0
+        print("%s is landing at %.1f mins." % (self.name, arrival_time))
+        yield env.timeout(10)
+        env.process(self.refuel_aircraft(env, res1, name, size, arrival_time))
+        env.process(self.water_aircraft(env, res2, name, size, arrival_time))
+        # print("All process are done. " + name + " is departing now")
+        gate.release(request)
+
+    def refuel_aircraft(self, env, resource, name, size, arrival_time,):
+        # Requsting
+        request = resource.request()  # Generate a request event
+        start = env.now
+        print(name + "--> FUEL request a resource at %.1f mins." % start)
+        yield request                 # Wait for access
+
+        # Working
+        print(name + "--> FUEL working on at %.1f mins." % env.now)
+        unit_time_consuming = 2
+        if size == SMALL_SIZE:
+            working_duration = SMALL_SIZE * (unit_time_consuming)
+        else:
+            working_duration = LARGE_SIZE * unit_time_consuming
+        yield env.timeout(working_duration)          # Do something
+        print(name + "--> FUEL done at %.1f mins." % env.now)
+        # env.timeout(time_to_gate)
+        # Releasing
+        resource.release(request)     # Release the resource
+        print(name + "--> FUEL finished refueling in %.1f mins." % (env.now - start))
+        return 1
+
+    def water_aircraft(self, env, resource, name, size, arrival_time):
+        # Requsting
+        request = resource.request()  # Generate a request event
+        start = env.now
+        print(name + "--> WATER request a resource at %.1f mins." % start)
+        yield request                 # Wait for access
+
+        # Working
+        print(name + "--> WATER working on at %.1f mins." % env.now)
+
+        unit_time_consuming = 2
+        if size == SMALL_SIZE:
+            working_duration = SMALL_SIZE * (unit_time_consuming)
+        else:
+            working_duration = LARGE_SIZE * unit_time_consuming
+        yield env.timeout(working_duration)          # Do something
+        print(name + "--> WATER done at %.1f mins." % env.now)
+        return 1
+
+        # Releasing
+        resource.release(request)     # Release the resource
+        print(name + "--> WATER finished water supply in %.1f mins." % (env.now - start))
 
 
-def water_aircraft(env, resource, name, type):
-    # Requsting
-    request = resource.request()  # Generate a request event
-    start = env.now
-    print(name + "--> WATER request a resource at %d" % start)
-    yield request                 # Wait for access
-
-    # Working
-    print(name + "--> WATER working on at %d" % env.now)
-
-    unit_time_consuming = 2
-    if aircraft_type == 100:
-        working_duration = aircraft_type * (unit_time_consuming)
-    else:
-        working_duration = unit_time_consuming
-    yield env.timeout(working_duration)          # Do something
-    print(name + "--> WATER done at %d" % env.now)
-
-    # Releasing
-    resource.release(request)     # Release the resource
-    print(name + "--> WATER finished water supply in %.1f minutes." % (env.now - start))
 
 
-
-# small type = 1, large tpye = 2, heavey type = 3
-small_type = 2
-large_type = 20
 
 env = simpy.Environment()
-
+gate = simpy.Resource(env, capacity=1)
 res1 = simpy.PriorityResource(env, capacity=1)
 res2 = simpy.PriorityResource(env, capacity=2)
-# res3 = simpy.Resource(env, capacity=2)
-
-# Generate aircraft here
-
-
-aircraft1 = env.process(refuel_aircraft(env, res1, "A1", large_type))
-# aircraft1 = env.process(water_aircraft(env, res2, "A1", small_type))
-
-aircraft2 = env.process(refuel_aircraft(env, res1, "A2", small_type))
-# aircraft2 = env.process(water_aircraft(env, res2, "A2", large_type))
-
-# aircraft3 = env.process(refuel_aircraft(env, res1))
-# aircraft3 = env.process(water_aircraft(env, res2))
+A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
+A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
 env.run()
-
-
