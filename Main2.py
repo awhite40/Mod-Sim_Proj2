@@ -32,7 +32,7 @@ class Plane(object):
     def run(self):
         while True:
             print interarrival_time, env.now
-            yield self.env.timeout(interarrival_time)
+            yield self.env.timeout(arrival_time + interarrival_time)
             self.arrival_time = self.env.now
             print("Created Airplane")
             if Gate_1_A == True:
@@ -66,7 +66,7 @@ i = 100
 
 print env.now
 while i < 500 :
-    arrival_time = env.now
+    arrival_time = i
     interarrival_time = 35 + random.randint(0,60)
     Planes= Plane(env)
     i = i+ interarrival_time
