@@ -25,34 +25,32 @@ Gate_3_A = True
 #         self.env = env
 #         self.name = name
 #         self.size = size
-
-
-
-def aircraft_generator(env, service_hub, fuel_pump):
-    
-    if Gate_1_free == True:
-        Plane_Gate = 'Gate 1'
-        Gate_1_free = False
-        comm.Send(Plane_Gate, dest = 1)  # Schedule services
-    elif Gate_2_free == True:
-        Plane_Gate = 'Gate 2'
-        Gate_2_free = False
-        comm.Send(Plane_Gate, dest=1)  # Schedule first service
-    elif Gate_3_free == True:
-        Plane_Gate = 'Gate 3'
-        Gate_3_free = False
-        comm.Send(Plane_Gate, dest=1)  # Schedule first service
-    elif Gate_4_free == True:
-        Plane_Gate = 'Gate 4'
-        Gate_4_free = False
-        comm.Send(Plane_Gate, dest=1)  # Schedule first service
-    else:
-        plane_queue = plane_queue + 1
-        #Add plane to queue'''
-    """Generate new aircrafts that arrive at the service hub."""
-    for i in itertools.count():
-        yield env.timeout(random.randint(*T_INTER))
-        env.process(aircraft('Aircraft %d' % i, env, service_hub, fuel_pump))
+class Plane(object):
+    def __init__(self,env):
+        self.env = env
+        self.action = env.process(self.run())
+    def run(self):
+        while True:
+            print interarrival_time, env.now
+            yield self.env.timeout(interarrival_time)
+            self.arrival_time = self.env.now
+            print("Created Airplane")
+            if Gate_1_A == True:
+                self.Plane_Gate = 'Gate 1'
+                Gate_1_free = False
+        
+            elif Gate_2_A == True:
+                self.Plane_Gate = 'Gate 2'
+                Gate_2_free = False
+            #comm.Send(Plane_Gate, dest=1)  # Schedule first service
+            elif Gate_3_A == True:
+                self.Plane_Gate = 'Gate 3'
+                Gate_3_free = False
+            #comm.Send(Plane_Gate, dest=1)  # Schedule first service
+             # Schedule first service
+            else:
+                plane_queue = plane_queue + 1
+                self.Plane_Gate = 'Queue'
 
 # Setup and start the simulation
 print('Aircraft Service Ground Handling')
@@ -64,13 +62,19 @@ env = simpy.Environment()
 service_hub = sh(env, 2, 10)
 # Create one aircraft
 aircraft = ac(env, "A1", 1)
-while env.now < SIM_TIME - 60
+i = 100
+
+print env.now
+while i < 500 :
     arrival_time = env.now
-    Gate, Departure_time, Plane_ID = env.process(aircraft_generator(env, ID, arrival_time, gate))
-env.process(gas_station_control(env, fuel_pump))
-env.process(aircraft_generator(env, gas_station, fuel_pump))
+    interarrival_time = 35 + random.randint(0,60)
+    Planes= Plane(env)
+    i = i+ interarrival_time
+    print i
+#env.process(gas_station_control(env, fuel_pump))
+#env.process(aircraft_generator(env, gas_station, fuel_pump))
 
 env.run(until=500)
-
+print(Planes)
 
 # if __name__ == '__main__': Main()
