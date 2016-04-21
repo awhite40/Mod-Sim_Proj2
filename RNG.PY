@@ -39,5 +39,8 @@ class ClassRanGen(object):
         else:
             pass
         #print("updatedSeed=",self.seed)
-        #print("Rand_Number=",RanNo)
+        print("Rand_Number=",RanNo)
         return RanNo
+
+a = ClassRanGen()
+a.Rand()
