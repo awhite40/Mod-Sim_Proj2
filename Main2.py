@@ -19,37 +19,44 @@ T_INTER = [30, 300]         # Create an aircraft every [min, max] mins
 Gate_1_A = True
 Gate_2_A = True
 Gate_3_A = True
-
+plane_queue = 0
+Gates = {'Gate_1_A':True, 'Gate_2_A': True, 'Gate_3_A': True}
 # class Main(object):
 #     def __init__(self, env, num_trucks1, num_trucks2, num_trucks3, cleantime, watertime, powertime):
 #         self.env = env
 #         self.name = name
 #         self.size = size
 class Plane(object):
-    def __init__(self,env):
+
+
+    def __init__(self,env,arrival_time, Gates):
         self.env = env
+        self.Gates = Gates
         self.action = env.process(self.run())
+        self.arrival_time = arrival_time
     def run(self):
         while True:
+
+            yield self.env.timeout(arrival_time)
             print interarrival_time, env.now
-            yield self.env.timeout(arrival_time + interarrival_time)
             self.arrival_time = self.env.now
             print("Created Airplane")
-            if Gate_1_A == True:
+            if Gates['Gate_1_A'] == True:
                 self.Plane_Gate = 'Gate 1'
-                Gate_1_free = False
-        
-            elif Gate_2_A == True:
+                Gates['Gate_1_A'] = False
+                print("went to gate 1")
+
+            elif Gates['Gate_2_A'] == True:
                 self.Plane_Gate = 'Gate 2'
-                Gate_2_free = False
+                Gates['Gate_2_A'] = False
             #comm.Send(Plane_Gate, dest=1)  # Schedule first service
-            elif Gate_3_A == True:
+            elif Gates['Gate_3_A'] == True:
                 self.Plane_Gate = 'Gate 3'
-                Gate_3_free = False
+                Gates['Gate_3_A'] = False
             #comm.Send(Plane_Gate, dest=1)  # Schedule first service
              # Schedule first service
             else:
-                plane_queue = plane_queue + 1
+                #plane_queue = plane_queue + 1
                 self.Plane_Gate = 'Queue'
 
 # Setup and start the simulation
@@ -68,7 +75,7 @@ print env.now
 while i < 500 :
     arrival_time = i
     interarrival_time = 35 + random.randint(0,60)
-    Planes= Plane(env)
+    Planes= Plane(env, arrival_time,Gates)
     i = i+ interarrival_time
     print i
 #env.process(gas_station_control(env, fuel_pump))
