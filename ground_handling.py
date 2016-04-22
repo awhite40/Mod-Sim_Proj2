@@ -4,7 +4,7 @@
 # @Last Modified by:   Jiahao
 # @Last Modified time: 2016-04-22 09:33:32
 
-from RNG.PY import *
+from RNG import *
 import simpy
 from random import seed, randint
 import itertools
@@ -17,18 +17,18 @@ HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
-    def __init__(self, env, name, size, gate, res1, res2,arrival_air):
+    def __init__(self, env, name, size, gate, res1, res2, arrival_air):
         self.env = env
         self.name = name
         self.size = size
         self.gate = gate
         self.res1 = res1
         self.res2 = res2
-        env.timeout(arrival_air)
-        print ("%s arrived in air at %.1f mins" %(self.name, env.now))
-        env.process(self.check_available_gate(env, name, size, gate))
+        self.arrival_air = arrival_air
+        env.process(self.check_available_gate(env, name, size, gate, self.arrival_air))
 
-    def check_available_gate(self, env, name, size, gate):
+    def check_available_gate(self, env, name, size, gate, arrival_air):
+        yield env.timeout(arrival_air)
         print("%s requesting a gate at %.1f mins" %(self.name, env.now))
         request = gate.request()
         # Request one of the 11 gates
@@ -125,9 +125,9 @@ env = simpy.Environment()
 gate = simpy.Resource(env, capacity=2)
 res1 = simpy.PriorityResource(env, capacity=2)
 res2 = simpy.PriorityResource(env, capacity=2)
-A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
-A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
-A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
+#A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
+#A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
+#A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
 
 temp_schedule = []
 generator = ClassRanGen()
@@ -138,7 +138,7 @@ random_arrival_time = sorted(temp_schedule)
 print(random_arrival_time)
 k = 1
 for j in random_arrival_time:
-    ID = k
+    ID = 'Plane' + str(k)
     s = randint(0,2)
     if s==1:
         size = SMALL_SIZE
@@ -147,6 +147,7 @@ for j in random_arrival_time:
     else:
         size = HEAVY_SIZE
     arrival_air = j
+    print arrival_air
     craft = aircraft(env,ID,size,gate,res1,res2,arrival_air)
     k=k+1
 # # Gaussian distribution
