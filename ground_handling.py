@@ -25,7 +25,7 @@ class aircraft(object):
         self.res1 = res1
         self.res2 = res2
         self.arrival_air = arrival_air
-        # First Process Request gate
+        # First Process - Request gate
         env.process(self.check_available_gate(env, name, size, gate, self.arrival_air))
 
     def check_available_gate(self, env, name, size, gate, arrival_air):
@@ -39,7 +39,7 @@ class aircraft(object):
         # Landing #
         arrival_time = env.now
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
-        # Determine the expected departure time
+        # Determine the expected departure time a random time between 1 and 2 hours after the arrival at the gate
         departure_time = env.now + randint(60,120)
         num_of_processes = 0
         print("%s is landing at %.1f mins." % (self.name, arrival_time))
@@ -52,13 +52,15 @@ class aircraft(object):
         & env.process(self.power_aircraft(env, res5, name, size, arrival_time)) & env.process(self.baggage_aircraft(env, res6, name, size, arrival_time))
         # If the plane is on-time or late depart immediately
         if env.now >= departure_time:
-            if env.now > departure_time+15:
+            # Considered late if it leaves more than 15 mins after the planned departure
+            if env.now > departure_time + 15:
                 dif = env.now - deparure_time
-                print (name + "is late by %.1f" %dif)
+                print (name + "is late by %.1f mins" %dif)
             else:
-                print("Plane is on time")
+                print(name + "is on time")
             print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
             yield env.timeout(2)
+            # Release gate resource after 2 min changeover time
             gate.release(request)
         else: #Otherwise depart at scheduled departure time
             yield env.timeout(departure_time-env.now)
@@ -68,7 +70,7 @@ class aircraft(object):
             gate.release(request)
 
     def refuel_aircraft(self, env, resource, name, size, arrival_time):
-        # Requsting
+        # Requsting 
         #Define the disembark time
         disembark_time = 7
         #Introduce a prcess specific wait to account for disembarking for refuel process
@@ -264,7 +266,7 @@ k = 1
 for j in random_arrival_time:
     ID = 'Plane ' + str(k)
     s = randint(0,100)
-    if s <90:
+    if s < 90:
         size = LARGE_SIZE
     elif s < 94:
         size = SMALL_SIZE
