@@ -24,4 +24,13 @@ for line in open("Terminal output test run"):
             if (words[3] == 'departing'):
                 Planes[x]['Depart'] = words[6]
 #print Planes[x], x
+Arrival=[0]*40
+Departing = [0]*40
+Difference = [0]*40
 print Planes[1]
+for x in range(40):
+    print x
+    Arrival[x] = float(Planes[x]['Arrival'])
+    Departing[x] = float(Planes[x]['Depart'])
+    Difference[x] = Depart[x] - Arrival[x]
+print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
