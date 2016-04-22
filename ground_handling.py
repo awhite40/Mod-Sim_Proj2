@@ -5,7 +5,8 @@ import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 
-SMALL_SIZE_constant = 0.8
+SMALL_SIZE_constant = 0.7
+SMALL_SIZE_Power_constant = 0.9
 
 class aircraft(object):
     def __init__(self, env, name, size, gate, res1, res2, arrival_air_time, departure_time):
@@ -148,7 +149,7 @@ class aircraft(object):
         print(name + "--> POWER working on at %.1f mins." % env.now)
         unit_time_consuming = 2
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE * (unit_time_consuming)
+            working_duration = SMALL_SIZE_Power_constant * (unit_time_consuming)
         elif size == LARGE_SIZE:
             working_duration = LARGE_SIZE * (unit_time_consuming)
         else:
