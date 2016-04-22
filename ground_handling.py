@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 
 SMALL_SIZE = 1
 LARGE_SIZE = 1.2
+HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
@@ -52,8 +53,10 @@ class aircraft(object):
         unit_time_consuming = 2
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE * (unit_time_consuming)
-        else:
-            working_duration = LARGE_SIZE * unit_time_consuming
+        elif size == LARGE_SIZE:
+            working_duration = LARGE_SIZE * (unit_time_consuming)
+        else size == HEAVY_SIZE:
+            working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
         print(name + "--> FUEL done at %.1f mins." % env.now)
 
@@ -74,8 +77,10 @@ class aircraft(object):
         unit_time_consuming = 2
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE * (unit_time_consuming)
-        else:
-            working_duration = LARGE_SIZE * unit_time_consuming
+        elif size == LARGE_SIZE:
+            working_duration = LARGE_SIZE * (unit_time_consuming)
+        else size == HEAVY_SIZE:
+            working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
         print(name + "--> WATER done at %.1f mins." % env.now)
 
@@ -83,6 +88,29 @@ class aircraft(object):
         resource.release(request)     # Release the resource
         print(name + "--> WATER finished water supply in %.1f mins." % (env.now - start))
 
+
+    def clean_aircraft(self, env, resource, name, size, arrival_time):
+        # Requsting
+        request = resource.request()  # Generate a request event
+        start = env.now
+        print(name + "--> CLEAN request a resource at %.1f mins." % start)
+        yield request                 # Wait for access
+
+        # Working
+        print(name + "--> WATER working on at %.1f mins." % env.now)
+        unit_time_consuming = 2
+        if size == SMALL_SIZE:
+            working_duration = SMALL_SIZE * (unit_time_consuming)
+        elif size == LARGE_SIZE:
+            working_duration = LARGE_SIZE * (unit_time_consuming)
+        else size == HEAVY_SIZE:
+            working_duration = HEAVY_SIZE * (unit_time_consuming)
+        yield env.timeout(working_duration)          # Do something
+        print(name + "--> CLEAN done at %.1f mins." % env.now)
+        
+        # Releasing
+        resource.release(request)     # Release the resource
+        print(name + "--> CLEAN finished water supply in %.1f mins." % (env.now - start))
 
 
 
@@ -97,8 +125,7 @@ res1 = simpy.PriorityResource(env, capacity=2)
 res2 = simpy.PriorityResource(env, capacity=2)
 A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
 A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
-A3 = aircraft(env, '3', LARGE_SIZE, gate, res1, res2)
-
+A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
 
 temp_schedule = []
 generator = ClassRanGen()
