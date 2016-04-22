@@ -17,17 +17,19 @@ HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
-    def __init__(self, env, name, size, gate, res1, res2):
+    def __init__(self, env, name, size, gate, res1, res2,arrival_air):
         self.env = env
         self.name = name
         self.size = size
         self.gate = gate
         self.res1 = res1
         self.res2 = res2
-
+        env.timeout(arrival_air)
+        print ("arrived in air at %.1f mins" %(env.now))
         env.process(self.check_available_gate(env, name, size, gate))
 
     def check_available_gate(self, env, name, size, gate):
+        print("requesting a gate at %.1f mins" %(env.now))
         request = gate.request()
         # Request one of the 11 gates
         yield request
@@ -134,7 +136,19 @@ for i in range(50):
     temp_schedule.append(random_arrival_time)
 random_arrival_time = sorted(temp_schedule)
 print(random_arrival_time)
-
+k = 1
+for j in random_arrival_time:
+    ID =k
+    s = randint(0,2)
+    if s==1:
+        size = SMALL_SIZE
+    elif s==2:
+        size = LARGE_SIZE
+    else:
+        size = HEAVY_SIZE
+    arrival_air = j
+    craft = aircraft(env,ID,size,gate,res1,res2,arrival_air)
+    k=k+1
 # # Gaussian distribution
 # mu, sigma = 0, 0.1 # mean and standard deviation
 # s = np.random.normal(mu, sigma, 1000)
