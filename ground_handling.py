@@ -25,29 +25,40 @@ class aircraft(object):
         self.res1 = res1
         self.res2 = res2
         self.arrival_air = arrival_air
+        # First Process Request gate
         env.process(self.check_available_gate(env, name, size, gate, self.arrival_air))
 
     def check_available_gate(self, env, name, size, gate, arrival_air):
+        # Wait for the time the plane is supposed to arrive
         yield env.timeout(arrival_air)
         print("%s requesting a gate at %.1f mins" %(self.name, env.now))
         request = gate.request()
         # Request one of the 11 gates
         yield request
 
-        # Generate new aircrafts that arrive at the service hub. #
+        # Landing #
         arrival_time = env.now
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
+        # Determine the expected departure time
         departure_time = env.now + randint(60,120)
         num_of_processes = 0
         print("%s is landing at %.1f mins." % (self.name, arrival_time))
+        # Wait for the plane to call for services after post-flight checks by pilots
         yield env.timeout(wait_time)
+        
+        # Begin processes for the different services
         yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time)) & env.process(self.power_aircraft(env, res3, name, size, arrival_time)) & env.process(self.clean_aircraft(env, res4, name, size, arrival_time))
+        # If the plane is on-time or late depart immediately
         if env.now >= departure_time:
-            print("Plane is on time or late")
+            if env.now > departure_time+15:
+                dif = env.now - deparure_time
+                print (name + "is late by %.1f" %dif)
+            else:
+                print("Plane is on time")
             print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
             yield env.timeout(2)
             gate.release(request)
-        else:
+        else: #Otherwise depart at scheduled departure time
             yield env.timeout(departure_time-env.now)
             print("%s is early" %(name))
             print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
@@ -158,12 +169,10 @@ class aircraft(object):
 
 
 
-
+#Initializing the environment
 env = simpy.Environment()
 
-
-
-
+# initializing the resources
 gate = simpy.Resource(env, capacity=11)
 res1 = simpy.PriorityResource(env, capacity=2)
 res2 = simpy.PriorityResource(env, capacity=2)
@@ -173,6 +182,8 @@ res4 = simpy.PriorityResource(env, capacity=2)
 #A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
 #A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
 
+
+#Creating a schedule of airplane arrivals
 temp_schedule = []
 generator = ClassRanGen()
 for i in range(40):
@@ -181,13 +192,15 @@ for i in range(40):
 random_arrival_time = sorted(temp_schedule)
 print(random_arrival_time)
 k = 1
+
+# Loop for generating aircraft according the the schedule above
 for j in random_arrival_time:
     ID = 'Plane ' + str(k)
-    s = randint(0,2)
-    if s==0:
-        size = SMALL_SIZE
-    elif s==1:
+    s = randint(0,100)
+    if s <90:
         size = LARGE_SIZE
+    elif s < 94:
+        size = SMALL_SIZE
     else:
         size = HEAVY_SIZE
     arrival_air = j
