@@ -53,7 +53,8 @@ class aircraft(object):
         else:
             yield env.timeout(departure_time-env.now)
             print("%s is early" % (name))
-            print("All process are done. " + name + " is departing at %.1f mins" % (env.now))
+            print("All process are done. ")
+            print(name + " is departing at %.1f mins" % (env.now))
             yield env.timeout(2) # Aircraft is leaving the gate.
             gate.release(request)
 
