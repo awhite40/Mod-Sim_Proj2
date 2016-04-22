@@ -186,6 +186,8 @@ class aircraft(object):
         yield env.timeout(working_duration)          # Do something
         print(name + "--> POWER done at %.1f mins." % env.now)
         
+        
+    # PROCESS Baggage involves loading the baggage of future passengers (departure) only    
     def baggage_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
         # do not use the disembark time since process can start earlier
