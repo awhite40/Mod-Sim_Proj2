@@ -4,7 +4,7 @@
 # @Last Modified by:   Jiahao
 # @Last Modified time: 2016-04-22 09:33:32
 
-from RNG import *
+from RNG.PY import *
 import simpy
 from random import seed, randint
 import itertools
@@ -57,7 +57,7 @@ class aircraft(object):
             working_duration = SMALL_SIZE * (unit_time_consuming)
         elif size == LARGE_SIZE:
             working_duration = LARGE_SIZE * (unit_time_consuming)
-        else size == HEAVY_SIZE:
+        else:
             working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
         print(name + "--> FUEL done at %.1f mins." % env.now)
@@ -81,7 +81,7 @@ class aircraft(object):
             working_duration = SMALL_SIZE * (unit_time_consuming)
         elif size == LARGE_SIZE:
             working_duration = LARGE_SIZE * (unit_time_consuming)
-        else size == HEAVY_SIZE:
+        else:
             working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
         print(name + "--> WATER done at %.1f mins." % env.now)
@@ -105,7 +105,7 @@ class aircraft(object):
             working_duration = SMALL_SIZE * (unit_time_consuming)
         elif size == LARGE_SIZE:
             working_duration = LARGE_SIZE * (unit_time_consuming)
-        else size == HEAVY_SIZE:
+        else:
             working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
         print(name + "--> CLEAN done at %.1f mins." % env.now)
