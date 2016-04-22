@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Author: Jiahao
-# @Date:   2016-04-13 10:21:41
-# @Last Modified by:   Jiahao
-# @Last Modified time: 2016-04-22 12:39:55
-
 from RNG import *
 import simpy
 from random import seed, randint
@@ -11,10 +5,7 @@ import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 
-SMALL_SIZE = 1
-LARGE_SIZE = 1.2
-HEAVY_SIZE = 1.6
-
+SMALL_SIZE_constant = 0.8
 
 class aircraft(object):
     def __init__(self, env, name, size, gate, res1, res2, arrival_air_time, departure_time):
@@ -72,13 +63,12 @@ class aircraft(object):
 
         # Working
         print(name + "--> FUEL working on at %.1f mins." % env.now)
-        unit_time_consuming = 2
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE * (unit_time_consuming)
+            working_duration = SMALL_SIZE_constant* 17 #min
         elif size == LARGE_SIZE:
-            working_duration = LARGE_SIZE * (unit_time_consuming)
+            working_duration = 17 #min
         else:
-            working_duration = HEAVY_SIZE * (unit_time_consuming)
+            working_duration = 28 #min
         yield env.timeout(working_duration)          # Do something
         print(name + "--> FUEL done at %.1f mins." % env.now)
         end = env.now
@@ -89,50 +79,58 @@ class aircraft(object):
 
     def water_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
-        request = resource.request()  # Generate a request event
+        #Define the disembark time
+        disembark_time = 7
+        request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
         print(name + "--> WATER request a resource at %.1f mins." % start)
         yield request                 # Wait for access
 
+        #Introduce a prcess specific wait to account for disembarking for supplying water process
+        yield env.timeout(disembark_time)
+
         # Working
         print(name + "--> WATER working on at %.1f mins." % env.now)
-        unit_time_consuming = 2
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE * (unit_time_consuming)
+            working_duration = SMALL_SIZE_constant* 11 #min
         elif size == LARGE_SIZE:
-            working_duration = LARGE_SIZE * (unit_time_consuming)
+            working_duration = 11 #min
         else:
-            working_duration = HEAVY_SIZE * (unit_time_consuming)
+            working_duration = 14.5 #min
         yield env.timeout(working_duration)          # Do something
         print(name + "--> WATER done at %.1f mins." % env.now)
-
+        end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> WATER finished water supply in %.1f mins." % (env.now - start))
+        print(name + "--> WATER finished supplying water in %.1f mins." % (end - start))
 
 
     def clean_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
-        request = resource.request()  # Generate a request event
+        #Define the disembark time
+        disembark_time = 7
+        request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
         print(name + "--> CLEAN request a resource at %.1f mins." % start)
         yield request                 # Wait for access
 
+        #Introduce a prcess specific wait to account for disembarking for clening process
+        yield env.timeout(disembark_time)
+
         # Working
-        print(name + "--> WATER working on at %.1f mins." % env.now)
-        unit_time_consuming = 2
+        print(name + "--> CLEAN working on at %.1f mins." % env.now)
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE * (unit_time_consuming)
+            working_duration = SMALL_SIZE_constant* 11 #min
         elif size == LARGE_SIZE:
-            working_duration = LARGE_SIZE * (unit_time_consuming)
+            working_duration = 11 #min
         else:
-            working_duration = HEAVY_SIZE * (unit_time_consuming)
+            working_duration = 29 #min
         yield env.timeout(working_duration)          # Do something
         print(name + "--> CLEAN done at %.1f mins." % env.now)
-
+        end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> CLEAN finished water supply in %.1f mins." % (env.now - start))
+        print(name + "--> CLEAN finished cleaning in %.1f mins." % (end - start))
 
     def power_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
