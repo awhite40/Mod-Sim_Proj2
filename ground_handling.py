@@ -25,11 +25,11 @@ class aircraft(object):
         self.res1 = res1
         self.res2 = res2
         env.timeout(arrival_air)
-        print ("arrived in air at %.1f mins" %(env.now))
+        print ("%s arrived in air at %.1f mins" %(self.name, env.now))
         env.process(self.check_available_gate(env, name, size, gate))
 
     def check_available_gate(self, env, name, size, gate):
-        print("requesting a gate at %.1f mins" %(env.now))
+        print("%s requesting a gate at %.1f mins" %(self.name, env.now))
         request = gate.request()
         # Request one of the 11 gates
         yield request
@@ -138,7 +138,7 @@ random_arrival_time = sorted(temp_schedule)
 print(random_arrival_time)
 k = 1
 for j in random_arrival_time:
-    ID =k
+    ID = k
     s = randint(0,2)
     if s==1:
         size = SMALL_SIZE
