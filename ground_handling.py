@@ -36,12 +36,22 @@ class aircraft(object):
 
         # Generate new aircrafts that arrive at the service hub. #
         arrival_time = env.now
+        departure_time = env.now + randint(60,120)
         num_of_processes = 0
         print("%s is landing at %.1f mins." % (self.name, arrival_time))
         yield env.timeout(10)
         yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time))
-        print("All process are done. " + name + " is departing now")
-        gate.release(request)
+        if env.now >= departure_time:
+            print("Plane is on time or late")
+            print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
+            yield env.timeout(2)
+            gate.release(request)
+        else:
+            yield env.timeout(departure_time-env.now)
+            print("%s is early" %(name))
+            print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
+            yield env.timeout(2)
+            gate.release(request)
 
     def refuel_aircraft(self, env, resource, name, size, arrival_time):
         # Requsting
@@ -122,7 +132,7 @@ env = simpy.Environment()
 
 
 
-gate = simpy.Resource(env, capacity=2)
+gate = simpy.Resource(env, capacity=11)
 res1 = simpy.PriorityResource(env, capacity=2)
 res2 = simpy.PriorityResource(env, capacity=2)
 #A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
@@ -131,23 +141,23 @@ res2 = simpy.PriorityResource(env, capacity=2)
 
 temp_schedule = []
 generator = ClassRanGen()
-for i in range(50):
-    random_arrival_time = round(24 * generator.Rand(), 2)
+for i in range(40):
+    random_arrival_time = round(60*18 * generator.Rand(), 2)
     temp_schedule.append(random_arrival_time)
 random_arrival_time = sorted(temp_schedule)
 print(random_arrival_time)
 k = 1
 for j in random_arrival_time:
-    ID = 'Plane' + str(k)
+    ID = 'Plane ' + str(k)
     s = randint(0,2)
-    if s==1:
+    if s==0:
         size = SMALL_SIZE
-    elif s==2:
+    elif s==1:
         size = LARGE_SIZE
     else:
         size = HEAVY_SIZE
     arrival_air = j
-    print arrival_air
+    #print arrival_air
     craft = aircraft(env,ID,size,gate,res1,res2,arrival_air)
     k=k+1
 # # Gaussian distribution
