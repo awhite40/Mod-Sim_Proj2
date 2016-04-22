@@ -41,7 +41,7 @@ class aircraft(object):
         print("All process are done. " + name + " is departing now")
         gate.release(request)
 
-    def refuel_aircraft(self, env, resource, name, size, arrival_time,):
+    def refuel_aircraft(self, env, resource, name, size, arrival_time):
         # Requsting
         request = resource.request()  # Generate a request event
         start = env.now
