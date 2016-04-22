@@ -36,7 +36,7 @@ class aircraft(object):
 
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
         yield env.timeout(wait_time)
-        yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time, departure_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time, departure_time)) & env.process(self.power_aircraft(env, res1, name, size, arrival_time, departure_time))
+        yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time, departure_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time, departure_time)) & env.process(self.clean_aircraft(env, res3, name, size, arrival_time, departure_time))& env.process(self.cater_aircraft(env, res4, name, size, arrival_time, departure_time)) & env.process(self.power_aircraft(env, res5, name, size, arrival_time, departure_time)) & env.process(self.baggage_aircraft(env, res6, name, size, arrival_time, departure_time))
         if env.now > departure_time:
             print("Plane is late for %.1f" % (env.now - departure_time))
             print("All process are done. " + name + " is departing at %.1f mins" % (env.now))
