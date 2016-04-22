@@ -36,11 +36,13 @@ class aircraft(object):
 
         # Generate new aircrafts that arrive at the service hub. #
         arrival_time = env.now
+        wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
         departure_time = env.now + randint(60,120)
         num_of_processes = 0
         print("%s is landing at %.1f mins." % (self.name, arrival_time))
-        yield env.timeout(10)
+        yield env.timeout(wait_time)
         yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time))
+        & env.process(self.power_aircraft(env, res1, name, size, arrival_time))
         if env.now >= departure_time:
             print("Plane is on time or late")
             print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
@@ -55,10 +57,15 @@ class aircraft(object):
 
     def refuel_aircraft(self, env, resource, name, size, arrival_time):
         # Requsting
+        #Define the disembark time
+        disembark_time = 7
         request = resource.request()  # Generate a request event
         start = env.now
         print(name + "--> FUEL request a resource at %.1f mins." % start)
         yield request                 # Wait for access
+
+        #Introduce a prcess specific wait to account for disembarking for refuel process
+        yield env.timeout(disembark_time)
 
         # Working
         print(name + "--> FUEL working on at %.1f mins." % env.now)
@@ -123,6 +130,34 @@ class aircraft(object):
         # Releasing
         resource.release(request)     # Release the resource
         print(name + "--> CLEAN finished water supply in %.1f mins." % (env.now - start))
+        
+    def power_aircraft(self, env, resource, name, size, arrival_time):
+        # Requsting
+        # do not use the disembark time since process can start earlier
+        #disembark_time = 7
+        request = resource.request()  # Generate a request event
+        start = env.now
+        print(name + "--> POWER request a resource at %.1f mins." % start)
+        yield request                 # Wait for access
+
+        #DO NOT use disembarking for power process since it can coexist
+        #yield env.timeout(disembark_time)
+
+        # Working
+        print(name + "--> POWER working on at %.1f mins." % env.now)
+        unit_time_consuming = 2
+        if size == SMALL_SIZE:
+            working_duration = SMALL_SIZE * (unit_time_consuming)
+        elif size == LARGE_SIZE:
+            working_duration = LARGE_SIZE * (unit_time_consuming)
+        else:
+            working_duration = HEAVY_SIZE * (unit_time_consuming)
+        yield env.timeout(working_duration)          # Do something
+        print(name + "--> POWER done at %.1f mins." % env.now)
+
+        # Releasing
+        resource.release(request)     # Release the resource
+        print(name + "--> POWER finished charging in %.1f mins." % (env.now - start))   
 
 
 
