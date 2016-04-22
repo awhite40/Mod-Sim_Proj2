@@ -17,7 +17,7 @@ HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
-    def __init__(self, env, name, size, gate, res1, res2, res3 arrival_air):
+    def __init__(self, env, name, size, gate, res1, res2, res3, res4, arrival_air):
         self.env = env
         self.name = name
         self.size = size
@@ -192,7 +192,7 @@ for j in random_arrival_time:
         size = HEAVY_SIZE
     arrival_air = j
     #print arrival_air
-    craft = aircraft(env,ID,size,gate,res1,res2,res3,arrival_air)
+    craft = aircraft(env,ID,size,gate,res1,res2,res3, res4, arrival_air)
     k=k+1
 # # Gaussian distribution
 # mu, sigma = 0, 0.1 # mean and standard deviation
