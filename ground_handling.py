@@ -17,7 +17,7 @@ HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
-    def __init__(self, env, name, size, gate, res1, res2, arrival_air):
+    def __init__(self, env, name, size, gate, res1, res2, res3 arrival_air):
         self.env = env
         self.name = name
         self.size = size
@@ -41,8 +41,7 @@ class aircraft(object):
         num_of_processes = 0
         print("%s is landing at %.1f mins." % (self.name, arrival_time))
         yield env.timeout(wait_time)
-        yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time))
-        & env.process(self.power_aircraft(env, res1, name, size, arrival_time))
+        yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time)) & env.process(self.power_aircraft(env, res3, name, size, arrival_time)) & env.process(self.clean_aircraft(env, res4, name, size, arrival_time))
         if env.now >= departure_time:
             print("Plane is on time or late")
             print("All process are done. " + name + " is departing at %.1f mins" %(env.now))
@@ -59,14 +58,12 @@ class aircraft(object):
         # Requsting
         #Define the disembark time
         disembark_time = 7
+        #Introduce a prcess specific wait to account for disembarking for refuel process
+        yield env.timeout(disembark_time)
         request = resource.request()  # Generate a request event
         start = env.now
         print(name + "--> FUEL request a resource at %.1f mins." % start)
         yield request                 # Wait for access
-
-        #Introduce a prcess specific wait to account for disembarking for refuel process
-        yield env.timeout(disembark_time)
-
         # Working
         print(name + "--> FUEL working on at %.1f mins." % env.now)
         unit_time_consuming = 2
@@ -170,6 +167,8 @@ env = simpy.Environment()
 gate = simpy.Resource(env, capacity=11)
 res1 = simpy.PriorityResource(env, capacity=2)
 res2 = simpy.PriorityResource(env, capacity=2)
+res3 = simpy.PriorityResource(env, capacity=2)
+res4 = simpy.PriorityResource(env, capacity=2)
 #A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
 #A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
 #A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
@@ -193,7 +192,7 @@ for j in random_arrival_time:
         size = HEAVY_SIZE
     arrival_air = j
     #print arrival_air
-    craft = aircraft(env,ID,size,gate,res1,res2,arrival_air)
+    craft = aircraft(env,ID,size,gate,res1,res2,res3,arrival_air)
     k=k+1
 # # Gaussian distribution
 # mu, sigma = 0, 0.1 # mean and standard deviation
