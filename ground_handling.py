@@ -17,13 +17,17 @@ HEAVY_SIZE = 1.6
 
 
 class aircraft(object):
-    def __init__(self, env, name, size, gate, res1, res2, res3, res4, arrival_air):
+    def __init__(self, env, name, size, gate, res1, res2, res3, res4, res5, res6, arrival_air):
         self.env = env
         self.name = name
         self.size = size
         self.gate = gate
         self.res1 = res1
         self.res2 = res2
+        self.res3 = res3
+        self.res4 = res4
+        self.res5 = res5
+        self.res6 = res6
         self.arrival_air = arrival_air
         # First Process - Request gate
         env.process(self.check_available_gate(env, name, size, gate, self.arrival_air))
