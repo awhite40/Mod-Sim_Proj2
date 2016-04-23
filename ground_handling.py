@@ -5,6 +5,9 @@ import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 
+SMALL_SIZE=1
+LARGE_SIZE=1.5
+HEAVY_SIZE=2.5
 SMALL_SIZE_constant = 0.7
 SMALL_SIZE_Power_constant = 0.9
 
