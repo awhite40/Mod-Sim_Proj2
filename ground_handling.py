@@ -40,8 +40,11 @@ class aircraft(object):
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
         yield env.timeout(wait_time)
         yield env.process(self.refuel_aircraft(env, res1, name, size, arrival_time, departure_time)) & env.process(self.water_aircraft(env, res2, name, size, arrival_time, departure_time)) & env.process(self.clean_aircraft(env, res3, name, size, arrival_time, departure_time))& env.process(self.cater_aircraft(env, res4, name, size, arrival_time, departure_time)) & env.process(self.power_aircraft(env, res5, name, size, arrival_time, departure_time)) & env.process(self.baggage_aircraft(env, res6, name, size, arrival_time, departure_time))
-        if env.now > departure_time:
-            print(name + " is late by %.1f minutes" % (env.now - departure_time))
+        if env.now >= departure_time:
+            if env.now > departure_time +15:
+                print(name + " is late by %.1f minutes" % (env.now - departure_time))
+            else:
+                print(name + " is on time")
             print("All process are done. ")
             print(name + " is departing at %.1f minutes" % (env.now))
             yield env.timeout(2) # Aircraft is leaving the gate.
@@ -60,14 +63,14 @@ class aircraft(object):
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> FUEL request a resource at %.1f minutes." % start)
+        print(name + " --> FUEL request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
 
         # Working
-        print(name + "--> FUEL working on at %.1f minutes." % env.now)
+        print(name + " --> FUEL working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_constant* 17 #min
         elif size == LARGE_SIZE:
@@ -75,11 +78,11 @@ class aircraft(object):
         else:
             working_duration = 28 #min
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> FUEL done at %.1f minutes." % env.now)
+        print(name + " --> FUEL done at %.1f minutes." % env.now)
         end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> FUEL finished refueling in %.1f minutes." % (end - start))
+        print(name + " --> FUEL finished refueling in %.1f minutes." % (end - start))
 
 
     def water_aircraft(self, env, resource, name, size, arrival_time, departure_time):
@@ -88,14 +91,14 @@ class aircraft(object):
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> WATER request a resource at %.1f minutes." % start)
+        print(name + " --> WATER request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for supplying water process
         yield env.timeout(disembark_time)
 
         # Working
-        print(name + "--> WATER working on at %.1f minutes." % env.now)
+        print(name + " --> WATER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_constant* 11 #min
         elif size == LARGE_SIZE:
@@ -103,11 +106,11 @@ class aircraft(object):
         else:
             working_duration = 14.5 #min
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> WATER done at %.1f mins." % env.now)
+        print(name + " --> WATER done at %.1f mins." % env.now)
         end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> WATER finished supplying water in %.1f minutes." % (end - start))
+        print(name + " --> WATER finished supplying water in %.1f minutes." % (end - start))
 
 
     def clean_aircraft(self, env, resource, name, size, arrival_time, departure_time):
@@ -116,7 +119,7 @@ class aircraft(object):
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> CLEAN request a resource at %.1f minutes." % start)
+        print(name + " --> CLEAN request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for clening process
@@ -124,7 +127,7 @@ class aircraft(object):
         resource.release(request)
 
         # Working
-        print(name + "--> CLEAN working on at %.1f minutes." % env.now)
+        print(name + " --> CLEAN working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_constant* 11 #min
         elif size == LARGE_SIZE:
@@ -132,11 +135,11 @@ class aircraft(object):
         else:
             working_duration = 29 #min
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> CLEAN done at %.1f mins." % env.now)
+        print(name + " --> CLEAN done at %.1f mins." % env.now)
         end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> CLEAN finished cleaning in %.1f minutes." % (end - start))
+        print(name + " --> CLEAN finished cleaning in %.1f minutes." % (end - start))
         
     def cater_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
@@ -144,14 +147,14 @@ class aircraft(object):
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> CATER request a resource at %.1f minutes." % start)
+        print(name + " --> CATER request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #Introduce a process specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
 
         # Working
-        print(name + "--> CATER working on at %.1f minutes." % env.now)
+        print(name + " --> CATER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_constant* 11 #min
         elif size == LARGE_SIZE:
@@ -159,11 +162,11 @@ class aircraft(object):
         else:
             working_duration = 15 #min
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> CATER done at %.1f minutes." % env.now)
+        print(name + " --> CATER done at %.1f minutes." % env.now)
         end = env.now
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> CATER finished catering in %.1f minutes." % (end - start))
+        print(name + " --> CATER finished catering in %.1f minutes." % (end - start))
 
     
 
@@ -173,14 +176,14 @@ class aircraft(object):
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> POWER request a resource at %.1f minutes." % start)
+        print(name + " --> POWER request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
 
         # Working
-        print(name + "--> POWER working on at %.1f minutes." % env.now)
+        print(name + " --> POWER working on at %.1f minutes." % env.now)
         unit_time_consuming = 44
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_Power_constant * (unit_time_consuming)
@@ -189,7 +192,7 @@ class aircraft(object):
         else:
             working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> POWER done at %.1f minutes." % env.now)
+        print(name + " --> POWER done at %.1f minutes." % env.now)
         resource.release(request)
         
     # PROCESS Baggage involves loading the baggage of future passengers (departure) only    
@@ -199,14 +202,14 @@ class aircraft(object):
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
         start = env.now
-        print(name + "--> BAGGAGE request a resource at %.1f minutes." % start)
+        print(name + " --> BAGGAGE request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
 
         # Working
-        print(name + "--> BAGGAGE working on at %.1f minutes." % env.now)
+        print(name + " --> BAGGAGE working on at %.1f minutes." % env.now)
         unit_time_consuming = 16
         if size == SMALL_SIZE:
             working_duration = SMALL_SIZE_constant * (unit_time_consuming)
@@ -215,11 +218,11 @@ class aircraft(object):
         else:
             working_duration = HEAVY_SIZE * (unit_time_consuming)
         yield env.timeout(working_duration)          # Do something
-        print(name + "--> BAGGAGE done at %.1f minutes." % env.now)
-
+        print(name + " --> BAGGAGE done at %.1f minutes." % env.now)
+ 
         # Releasing
         resource.release(request)     # Release the resource
-        print(name + "--> BAGGAGE finished loading in %.1f minutes." % (env.now - start))
+        print(name + " --> BAGGAGE finished loading in %.1f minutes." % (env.now - start))
 
 
 
@@ -257,10 +260,10 @@ for j in range(len(arrive_depart_schedule)):
     ID = 'Plane ' + str(k)
 
     # size distribution
-    s = randint(0,2)
-    if s == 0:
+    s = randint(0,100)
+    if s < 90:
         size = SMALL_SIZE
-    elif s == 1:
+    elif s <94:
         size = LARGE_SIZE
     else:
         size = HEAVY_SIZE
