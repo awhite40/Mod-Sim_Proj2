@@ -31,19 +31,31 @@ for num in range(num_runs):
                     Planes[x]['Depart'] = words[5]
                 if (words[3] =='WATER' and words[4]):
                     Planes[x]['WATER'] = words[6]
-            if words[
+                if words[3] =='late':
+                    Planes[x]['Late'] = words[5]
+                    #print 'Plane ' + str(x+1) + ' is late by ', Planes[x]['Late']
+                    #print ' '
+                if words[3] == 'early' or words[3] == 'on':
+                    Planes[x]['Late'] = 0
     #print Planes[x], x
     Arrival=[0]*Num_planes
     Depart = [0]*Num_planes
     Difference = [0]*Num_planes
+    Late = [0]*Num_planes
 #print Planes[1]
     for x in range(Num_planes):
         #print x
         Arrival[x] = float(Planes[x]['Arrival'])
         Depart[x] = float(Planes[x]['Depart'])
         Difference[x] = Depart[x] - Arrival[x]
+        Late[x] = float(Planes[x]['Late'])
     avg_time = sum(Difference)/Num_planes
-    print avg_time
+    Late = [x for x in Late if x != 0]
+#print 'Late', Late
+    avg_delay = sum(Late)/len(Late)
+    num_late = len(Late)
+#print avg_time, avg_delay
+#print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
-#pickle.dump((Planes,Arrival,Depart,Difference), open('Run'+str(num+1) + '.pkl', 'wb'))
+    pickle.dump((Planes,avg_delay,avg_time,num_late), open('Data Outputs/Run'+str(num+1) + '.pkl', 'wb'))
