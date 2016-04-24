@@ -58,4 +58,4 @@ for num in range(num_runs):
 #print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
-    pickle.dump((Planes,avg_delay,avg_time,num_late), open('Data Outputs/Run'+str(num+1) + '.pkl', 'wb'))
+    pickle.dump((Planes,avg_time,avg_delay,num_late), open('Data Outputs/Run'+str(num+1) + '.pkl', 'wb'))
