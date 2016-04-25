@@ -2,13 +2,13 @@
 import cPickle as pickle
 #for x in rang
 Num_planes = 40
-num_runs = 14
+num_runs = 5
 
 for num in range(num_runs):
     Planes = [dict() for x in range(Num_planes)]
     #print Planes2
     #Plane1 = dict([('Arrival', 0)])
-    for line in open('Data Outputs/3each_Run' + str(num+1)):
+    for line in open('Data Outputs/All1_Run' + str(num+1)):
         words = line.split()
         for x in range(Num_planes):
             if (words[0] == 'Plane' and words[1] == str(x+1)):
@@ -17,6 +17,8 @@ for num in range(num_runs):
                     Planes[x]['POWER'] = words[6]
                 if (words[3] == 'BAGGAGE' and words[4] == 'done'):
                     Planes[x]['BAGGAGE'] = words[6]
+                if (words[3] == 'BAGGAGE' and words[4] == 'finished'):
+                    Planes[x]['Bag_time'] = words[7]
                 if (words[3] == 'FUEL' and words[4] == 'done'):
                     Planes[x]['FUEL'] = words[6]
                 if (words[3] == 'CLEAN' and words[4] == 'done'):
@@ -42,6 +44,7 @@ for num in range(num_runs):
     Depart = [0]*Num_planes
     Difference = [0]*Num_planes
     Late = [0]*Num_planes
+    Bag_times = [0]*Num_planes
 #print Planes[1]
     for x in range(Num_planes):
         #print x
@@ -49,7 +52,9 @@ for num in range(num_runs):
         Depart[x] = float(Planes[x]['Depart'])
         Difference[x] = Depart[x] - Arrival[x]
         Late[x] = float(Planes[x]['Late'])
+        Bag_times[x] = float(Planes[x]['Bag_time'])
     avg_time = sum(Difference)/Num_planes
+    total_bag_time = sum(Bag_times)
     Late = [x for x in Late if x != 0]
 #print 'Late', Late
     if len(Late) == 0:
@@ -58,9 +63,10 @@ for num in range(num_runs):
         avg_delay = sum(Late)/len(Late)
     num_late = len(Late)
     print 'Run number', (num +1)
-    print 'Average time', avg_time
-    print 'Average delay', avg_delay
-    print 'Late_planes', num_late
+#print 'Average time', avg_time
+#print 'Average delay', avg_delay
+#print 'Late_planes', num_late
+    print 'Total Baggage usage time', total_bag_time
 #print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference

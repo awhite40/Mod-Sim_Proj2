@@ -1,58 +1,58 @@
 lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
 Run number 1
-Average time 455.0025
-Average delay 362.3525
-Late_planes 40
+Average time 467.3875
+Average delay 307.336111111
+Late_planes 36
 Run number 2
-Average time 376.735
-Average delay 318.969444444
+Average time 360.305
+Average delay 244.458333333
 Late_planes 36
 Run number 3
-Average time 499.675
-Average delay 443.032432432
-Late_planes 37
+Average time 475.125
+Average delay 304.336842105
+Late_planes 38
 Run number 4
-Average time 506.2375
-Average delay 460.505555556
-Late_planes 36
+Average time 388.9425
+Average delay 265.839473684
+Late_planes 38
 Run number 5
-Average time 482.815
-Average delay 422.402702703
+Average time 462.1175
+Average delay 327.445945946
 Late_planes 37
 Run number 6
-Average time 470.18
-Average delay 422.136111111
-Late_planes 36
-Run number 7
-Average time 528.09
-Average delay 473.567567568
-Late_planes 37
-Run number 8
-Average time 405.96
-Average delay 349.094444444
-Late_planes 36
-Run number 9
-Average time 605.6525
-Average delay 595.768571429
-Late_planes 35
-Run number 10
-Average time 534.6275
-Average delay 461.238461538
+Average time 409.2975
+Average delay 280.397435897
 Late_planes 39
+Run number 7
+Average time 445.44
+Average delay 304.65
+Late_planes 36
+Run number 8
+Average time 434.1175
+Average delay 310.971428571
+Late_planes 35
+Run number 9
+Average time 471.435
+Average delay 319.702631579
+Late_planes 38
+Run number 10
+Average time 440.94
+Average delay 300.411764706
+Late_planes 34
 Run number 11
-Average time 587.9025
-Average delay 529.85
+Average time 420.48
+Average delay 280.252631579
 Late_planes 38
 Run number 12
-Average time 597.0225
-Average delay 544.956756757
-Late_planes 37
+Average time 455.8125
+Average delay 317.047058824
+Late_planes 34
 Run number 13
-Average time 307.5975
-Average delay 242.930555556
-Late_planes 36
+Average time 473.3675
+Average delay 304.632432432
+Late_planes 37
 Run number 14
-Average time 358.31
-Average delay 296.266666667
+Average time 415.37
+Average delay 271.763888889
 Late_planes 36
 lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 
