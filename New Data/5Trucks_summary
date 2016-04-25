@@ -1,0 +1,47 @@
+lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
+Heavy -  2 Small -  0
+Number of trucks 5
+Run number 1
+Average time 93.5225
+Average delay 0
+Late_planes 0
+Bag idle time 4136.0
+Power idle time 3020.0
+ 
+Heavy -  1 Small -  1
+Number of trucks 5
+Run number 2
+Average time 94.9775
+Average delay 0
+Late_planes 0
+Bag idle time 4152.8
+Power idle time 3034.4
+ 
+Heavy -  2 Small -  3
+Number of trucks 5
+Run number 3
+Average time 97.1
+Average delay 0
+Late_planes 0
+Bag idle time 4150.4
+Power idle time 3033.2
+ 
+Heavy -  7 Small -  2
+Number of trucks 5
+Run number 4
+Average time 98.625
+Average delay 0
+Late_planes 0
+Bag idle time 4085.6
+Power idle time 2978.8
+ 
+Heavy -  1 Small -  2
+Number of trucks 5
+Run number 5
+Average time 99.625
+Average delay 0
+Late_planes 0
+Bag idle time 4157.6
+Power idle time 3038.8
+ 
+lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 

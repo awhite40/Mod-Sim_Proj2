@@ -1,57 +1,48 @@
 lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
-  File "Data_extraction.py", line 72
-    print 'Number of trucks' num_trucks
-                                      ^
-SyntaxError: invalid syntax
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
-Traceback (most recent call last):
-  File "Data_extraction.py", line 11, in <module>
-    for line in open('New Data/' + num_trucks + 'Trucks_Run' + str(num+1)):
-TypeError: cannot concatenate 'str' and 'int' objects
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
-Heavy -  6 Small -  3
+Heavy -  1 Small -  1
 Number of trucks 2
 Run number 1
-Average time 97.085
-Average delay 26.45
-Late_planes 4
-Bag idle time 1222.4
-Total Power idle time 113.2
+Average time 96.765
+Average delay 20.8333333333
+Late_planes 3
+Bag idle time 1272.8
+Power idle time 154.4
  
-Heavy -  9 Small -  2
+Heavy -  1 Small -  4
 Number of trucks 2
 Run number 2
-Average time 144.3375
-Average delay 90.4090909091
-Late_planes 22
-Bag idle time 1181.6
-Total Power idle time 78.8
+Average time 97.65
+Average delay 22.2
+Late_planes 1
+Bag idle time 1287.2
+Power idle time 167.6
  
-Heavy -  4 Small -  1
+Heavy -  1 Small -  4
+Heavy -  1 Small -  2
 Number of trucks 2
 Run number 3
-Average time 99.36
-Average delay 26.7
-Late_planes 1
-Bag idle time 1236.8
-Total Power idle time 124.4
+Average time 101.17
+Average delay 19.75
+Late_planes 2
+Bag idle time 1277.6
+Power idle time 158.8
  
-Heavy -  3 Small -  2
+Heavy -  0 Small -  1
 Number of trucks 2
 Run number 4
-Average time 101.1475
-Average delay 23.3
-Late_planes 5
-Bag idle time 1253.6
-Total Power idle time 138.8
+Average time 112.7525
+Average delay 42.8133333333
+Late_planes 15
+Bag idle time 1284.8
+Power idle time 164.4
  
-Heavy -  6 Small -  3
+Heavy -  3 Small -  1
 Number of trucks 2
 Run number 5
-Average time 100.66
-Average delay 28.4666666667
-Late_planes 3
-Bag idle time 1222.4
-Total Power idle time 113.2
+Average time 108.8325
+Average delay 47.91
+Late_planes 10
+Bag idle time 1248.8
+Power idle time 134.4
  
 lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 

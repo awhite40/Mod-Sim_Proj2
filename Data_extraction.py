@@ -3,7 +3,7 @@ import cPickle as pickle
 #for x in rang
 Num_planes = 40
 num_runs = 5
-num_trucks = 2
+num_trucks = 5
 for num in range(num_runs):
     Planes = [dict() for x in range(Num_planes)]
     #print Planes2
@@ -61,6 +61,7 @@ for num in range(num_runs):
         Power_times[x] = float(Planes[x]['Power_time'])
     avg_time = sum(Difference)/Num_planes
     total_bag_time = sum(Bag_times)
+    average_bag_time = sum(Bag_times)/len(Bag_times)
     total_power_time = sum(Power_times)
     Late = [x for x in Late if x != 0]
 #print 'Late', Late
@@ -75,7 +76,7 @@ for num in range(num_runs):
     print 'Average delay', avg_delay
     print 'Late_planes', num_late
     print 'Bag idle time', num_trucks*16*60 - total_bag_time
-    print 'Total Power idle time', num_trucks*16*60 - total_power_time
+    print 'Power idle time', num_trucks*16*60 - total_power_time
     print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
