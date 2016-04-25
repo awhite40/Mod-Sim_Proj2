@@ -32,9 +32,11 @@ class aircraft(object):
         # Request one of the 11 gates
         yield request
         landing_time = 5
+        
         yield env.timeout(landing_time)
         # Generate new aircrafts that arrive at the service hub. #
         arrival_time = env.now
+        departure_time = env.now + float(randint(60, 120))
         print("%s is landing at %.1f minutes." % (self.name, arrival_time))
 
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
@@ -124,7 +126,7 @@ class aircraft(object):
 
         #Introduce a prcess specific wait to account for disembarking for clening process
         yield env.timeout(disembark_time)
-        resource.release(request)
+        #resource.release(request)
 
         # Working
         print(name + " --> CLEAN working on at %.1f minutes." % env.now)
@@ -260,9 +262,9 @@ for j in range(len(arrive_depart_schedule)):
     # size distribution
     s = randint(0,100)
     if s < 90:
-        size = SMALL_SIZE
-    elif s <94:
         size = LARGE_SIZE
+    elif s <94:
+        size = SMALL_SIZE
     else:
         size = HEAVY_SIZE
     arrival_air_time = arrive_depart_schedule[j][0]
