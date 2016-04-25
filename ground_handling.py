@@ -8,7 +8,7 @@ LARGE_SIZE=1.5
 HEAVY_SIZE=2.5
 SMALL_SIZE_constant = 0.7
 SMALL_SIZE_Power_constant = 0.9
-num_trucks = 2
+num_trucks = 4
 class aircraft(object):
     def __init__(self, env, name, size, gate, res1, res2, res3, res4, res5, res6, arrival_air_time, departure_time):
         self.env = env
@@ -330,22 +330,26 @@ arrive_depart_schedule = sorted(arrive_depart_schedule)
 
 # ====================Aircraft Generator====================
 k = 1
+heavy_count = 0
+small_count = 0
 for j in range(len(arrive_depart_schedule)):
     ID = 'Plane ' + str(k)
 
     # Size distribution based on the occurence of different size of aircraft
     s = randint(0,100)
     if s < 90:
-        size = SMALL_SIZE
-    elif s <94:
         size = LARGE_SIZE
+    elif s <94:
+        size = SMALL_SIZE
+        small_count = small_count+1
     else:
         size = HEAVY_SIZE
+        heavy_count = heavy_count+1
     arrival_air_time = arrive_depart_schedule[j][0]
     departure_time = arrive_depart_schedule[j][1]
     #print arrival_air
     craft = aircraft(env, ID, size, gate, res1, res2, res3, res4, res5, res6, arrival_air_time, departure_time)
     k = k + 1
-# print(k)
+print 'Heavy', heavy_count, 'Small', small_count
 
 env.run()

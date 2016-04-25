@@ -1,1163 +1,1163 @@
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python ground_handling.py
-Heavy Planes 4 Small Planes 2
-Plane 1 requesting a gate at 13.1 minutes
-Plane 2 requesting a gate at 17.4 minutes
-Plane 1 is landing at 18.1 minutes.
-Plane 2 is landing at 22.4 minutes.
-Plane 1 --> FUEL request a resource at 25.1 minutes.
-Plane 1 --> WATER request a resource at 25.1 minutes.
-Plane 1 --> CLEAN request a resource at 25.1 minutes.
-Plane 1 --> CATER request a resource at 25.1 minutes.
-Plane 1 --> POWER request a resource at 25.1 minutes.
-Plane 1 --> BAGGAGE request a resource at 25.1 minutes.
-Plane 1 --> POWER working on at 25.1 minutes.
-Plane 1 --> BAGGAGE working on at 25.1 minutes.
-Plane 2 --> FUEL request a resource at 29.4 minutes.
-Plane 2 --> WATER request a resource at 29.4 minutes.
-Plane 2 --> CLEAN request a resource at 29.4 minutes.
-Plane 2 --> CATER request a resource at 29.4 minutes.
-Plane 2 --> POWER request a resource at 29.4 minutes.
-Plane 2 --> BAGGAGE request a resource at 29.4 minutes.
-Plane 2 --> POWER working on at 29.4 minutes.
-Plane 2 --> BAGGAGE working on at 29.4 minutes.
-Plane 1 --> FUEL working on at 32.1 minutes.
-Plane 1 --> WATER working on at 32.1 minutes.
-Plane 1 --> CLEAN working on at 32.1 minutes.
-Plane 1 --> CATER working on at 32.1 minutes.
-Plane 2 --> FUEL working on at 36.4 minutes.
-Plane 2 --> WATER working on at 36.4 minutes.
-Plane 2 --> CLEAN working on at 36.4 minutes.
-Plane 2 --> CATER working on at 36.4 minutes.
-Plane 3 requesting a gate at 37.3 minutes
-Plane 1 --> BAGGAGE done at 41.1 minutes.
+Alicias-MacBook-Pro:Mod-Sim_Proj2 awhite40$ python ground_handling.py
+Heavy 3 Small 2
+Plane 1 requesting a gate at 389.4 minutes
+Plane 1 is landing at 394.4 minutes.
+Plane 1 --> FUEL request a resource at 401.4 minutes.
+Plane 1 --> WATER request a resource at 401.4 minutes.
+Plane 1 --> CLEAN request a resource at 401.4 minutes.
+Plane 1 --> CATER request a resource at 401.4 minutes.
+Plane 1 --> POWER request a resource at 401.4 minutes.
+Plane 1 --> BAGGAGE request a resource at 401.4 minutes.
+Plane 1 --> POWER working on at 401.4 minutes.
+Plane 1 --> BAGGAGE working on at 401.4 minutes.
+Plane 1 --> FUEL working on at 408.4 minutes.
+Plane 1 --> WATER working on at 408.4 minutes.
+Plane 1 --> CLEAN working on at 408.4 minutes.
+Plane 1 --> CATER working on at 408.4 minutes.
+Plane 2 requesting a gate at 417.0 minutes
+Plane 1 --> BAGGAGE done at 417.4 minutes.
 Plane 1 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 3 is landing at 42.3 minutes.
-Plane 1 --> WATER done at 43.1 mins.
-Plane 1 --> WATER finished supplying water in 18.0 minutes.
-Plane 1 --> CLEAN done at 43.1 mins.
-Plane 1 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 2 --> BAGGAGE done at 45.4 minutes.
+Plane 1 --> WATER done at 419.4 mins.
+Plane 1 --> WATER finished supplying water in 11.0 minutes.
+Plane 1 --> CLEAN done at 419.4 mins.
+Plane 1 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 2 is landing at 422.0 minutes.
+Plane 1 --> CATER done at 423.4 minutes.
+Plane 1 --> CATER finished catering in 15.0 minutes.
+Plane 1 --> FUEL done at 425.4 minutes.
+Plane 1 --> FUEL finished refueling in 17.0 minutes.
+Plane 2 --> FUEL request a resource at 429.0 minutes.
+Plane 2 --> WATER request a resource at 429.0 minutes.
+Plane 2 --> CLEAN request a resource at 429.0 minutes.
+Plane 2 --> CATER request a resource at 429.0 minutes.
+Plane 2 --> POWER request a resource at 429.0 minutes.
+Plane 2 --> BAGGAGE request a resource at 429.0 minutes.
+Plane 2 --> POWER working on at 429.0 minutes.
+Plane 2 --> BAGGAGE working on at 429.0 minutes.
+Plane 3 requesting a gate at 430.8 minutes
+Plane 3 is landing at 435.8 minutes.
+Plane 2 --> FUEL working on at 436.0 minutes.
+Plane 2 --> WATER working on at 436.0 minutes.
+Plane 2 --> CLEAN working on at 436.0 minutes.
+Plane 2 --> CATER working on at 436.0 minutes.
+Plane 4 requesting a gate at 438.6 minutes
+Plane 3 --> FUEL request a resource at 442.8 minutes.
+Plane 3 --> WATER request a resource at 442.8 minutes.
+Plane 3 --> CLEAN request a resource at 442.8 minutes.
+Plane 3 --> CATER request a resource at 442.8 minutes.
+Plane 3 --> POWER request a resource at 442.8 minutes.
+Plane 3 --> BAGGAGE request a resource at 442.8 minutes.
+Plane 3 --> POWER working on at 442.8 minutes.
+Plane 3 --> BAGGAGE working on at 442.8 minutes.
+Plane 4 is landing at 443.6 minutes.
+Plane 2 --> BAGGAGE done at 445.0 minutes.
 Plane 2 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 1 --> CATER done at 47.1 minutes.
-Plane 1 --> CATER finished catering in 22.0 minutes.
-Plane 2 --> WATER done at 47.4 mins.
-Plane 2 --> WATER finished supplying water in 18.0 minutes.
-Plane 2 --> CLEAN done at 47.4 mins.
-Plane 2 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 1 --> FUEL done at 49.1 minutes.
-Plane 1 --> FUEL finished refueling in 24.0 minutes.
-Plane 3 --> FUEL request a resource at 49.3 minutes.
-Plane 3 --> WATER request a resource at 49.3 minutes.
-Plane 3 --> CLEAN request a resource at 49.3 minutes.
-Plane 3 --> CATER request a resource at 49.3 minutes.
-Plane 3 --> POWER request a resource at 49.3 minutes.
-Plane 3 --> BAGGAGE request a resource at 49.3 minutes.
-Plane 3 --> POWER working on at 49.3 minutes.
-Plane 3 --> BAGGAGE working on at 49.3 minutes.
-Plane 2 --> CATER done at 51.4 minutes.
-Plane 2 --> CATER finished catering in 22.0 minutes.
-Plane 2 --> FUEL done at 53.4 minutes.
-Plane 2 --> FUEL finished refueling in 24.0 minutes.
-Plane 3 --> FUEL working on at 56.3 minutes.
-Plane 3 --> WATER working on at 56.3 minutes.
-Plane 3 --> CLEAN working on at 56.3 minutes.
-Plane 3 --> CATER working on at 56.3 minutes.
-Plane 3 --> BAGGAGE done at 65.3 minutes.
+Plane 1 --> POWER done at 445.4 minutes.
+Plane 1 --> POWER finished catering in 44.0 minutes.
+Plane 2 --> WATER done at 447.0 mins.
+Plane 2 --> WATER finished supplying water in 11.0 minutes.
+Plane 2 --> CLEAN done at 447.0 mins.
+Plane 2 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 3 --> FUEL working on at 449.8 minutes.
+Plane 3 --> WATER working on at 449.8 minutes.
+Plane 3 --> CLEAN working on at 449.8 minutes.
+Plane 3 --> CATER working on at 449.8 minutes.
+Plane 4 --> FUEL request a resource at 450.6 minutes.
+Plane 4 --> WATER request a resource at 450.6 minutes.
+Plane 4 --> CLEAN request a resource at 450.6 minutes.
+Plane 4 --> CATER request a resource at 450.6 minutes.
+Plane 4 --> POWER request a resource at 450.6 minutes.
+Plane 4 --> BAGGAGE request a resource at 450.6 minutes.
+Plane 4 --> POWER working on at 450.6 minutes.
+Plane 4 --> BAGGAGE working on at 450.6 minutes.
+Plane 2 --> CATER done at 451.0 minutes.
+Plane 2 --> CATER finished catering in 15.0 minutes.
+Plane 2 --> FUEL done at 453.0 minutes.
+Plane 2 --> FUEL finished refueling in 17.0 minutes.
+Plane 4 --> FUEL working on at 457.6 minutes.
+Plane 4 --> WATER working on at 457.6 minutes.
+Plane 4 --> CLEAN working on at 457.6 minutes.
+Plane 4 --> CATER working on at 457.6 minutes.
+Plane 3 --> BAGGAGE done at 458.8 minutes.
 Plane 3 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 3 --> WATER done at 67.3 mins.
-Plane 3 --> WATER finished supplying water in 18.0 minutes.
-Plane 3 --> CLEAN done at 67.3 mins.
-Plane 3 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 1 --> POWER done at 69.1 minutes.
-Plane 1 --> POWER finished charging in 44.0 minutes.
-Plane 3 --> CATER done at 71.3 minutes.
-Plane 3 --> CATER finished catering in 22.0 minutes.
-Plane 3 --> FUEL done at 73.3 minutes.
-Plane 3 --> FUEL finished refueling in 24.0 minutes.
-Plane 2 --> POWER done at 73.4 minutes.
-Plane 2 --> POWER finished charging in 44.0 minutes.
-Plane 3 --> POWER done at 93.3 minutes.
-Plane 3 --> POWER finished charging in 44.0 minutes.
-Plane 4 requesting a gate at 95.9 minutes
-Plane 2 is early
-All process are done. 
-Plane 2 is departing at 96.4 minutes
-Plane 4 is landing at 100.9 minutes.
-Plane 5 requesting a gate at 107.6 minutes
-Plane 4 --> FUEL request a resource at 107.9 minutes.
-Plane 4 --> WATER request a resource at 107.9 minutes.
-Plane 4 --> CLEAN request a resource at 107.9 minutes.
-Plane 4 --> CATER request a resource at 107.9 minutes.
-Plane 4 --> POWER request a resource at 107.9 minutes.
-Plane 4 --> BAGGAGE request a resource at 107.9 minutes.
-Plane 4 --> POWER working on at 107.9 minutes.
-Plane 4 --> BAGGAGE working on at 107.9 minutes.
-Plane 5 is landing at 112.6 minutes.
-Plane 4 --> FUEL working on at 114.9 minutes.
-Plane 4 --> WATER working on at 114.9 minutes.
-Plane 4 --> CLEAN working on at 114.9 minutes.
-Plane 4 --> CATER working on at 114.9 minutes.
-Plane 4 --> BAGGAGE done at 119.1 minutes.
-Plane 4 --> BAGGAGE finished loading in 11.2 minutes.
-Plane 5 --> FUEL request a resource at 119.6 minutes.
-Plane 5 --> WATER request a resource at 119.6 minutes.
-Plane 5 --> CLEAN request a resource at 119.6 minutes.
-Plane 5 --> CATER request a resource at 119.6 minutes.
-Plane 5 --> POWER request a resource at 119.6 minutes.
-Plane 5 --> BAGGAGE request a resource at 119.6 minutes.
-Plane 5 --> POWER working on at 119.6 minutes.
-Plane 5 --> BAGGAGE working on at 119.6 minutes.
-Plane 4 --> WATER done at 122.6 mins.
-Plane 4 --> WATER finished supplying water in 14.7 minutes.
-Plane 4 --> CLEAN done at 122.6 mins.
-Plane 4 --> CLEAN finished cleaning in 14.7 minutes.
-Plane 4 --> CATER done at 125.4 minutes.
-Plane 4 --> CATER finished catering in 17.5 minutes.
-Plane 5 --> FUEL working on at 126.6 minutes.
-Plane 5 --> WATER working on at 126.6 minutes.
-Plane 5 --> CLEAN working on at 126.6 minutes.
-Plane 5 --> CATER working on at 126.6 minutes.
-Plane 4 --> FUEL done at 126.8 minutes.
-Plane 4 --> FUEL finished refueling in 18.9 minutes.
-Plane 3 is early
-All process are done. 
-Plane 3 is departing at 133.3 minutes
 Plane 1 is early
-All process are done. 
-Plane 1 is departing at 138.1 minutes
-Plane 5 --> WATER done at 141.1 mins.
-Plane 5 --> WATER finished supplying water in 21.5 minutes.
-Plane 6 requesting a gate at 145.6 minutes
-Plane 4 --> POWER done at 147.5 minutes.
-Plane 4 --> POWER finished charging in 39.6 minutes.
-Plane 5 --> BAGGAGE done at 147.6 minutes.
-Plane 5 --> BAGGAGE finished loading in 28.0 minutes.
-Plane 6 is landing at 150.6 minutes.
-Plane 5 --> FUEL done at 154.6 minutes.
-Plane 5 --> FUEL finished refueling in 35.0 minutes.
-Plane 5 --> CLEAN done at 155.6 mins.
-Plane 5 --> CLEAN finished cleaning in 36.0 minutes.
-Plane 5 --> CATER done at 156.6 minutes.
-Plane 5 --> CATER finished catering in 37.0 minutes.
-Plane 6 --> FUEL request a resource at 157.6 minutes.
-Plane 6 --> WATER request a resource at 157.6 minutes.
-Plane 6 --> CLEAN request a resource at 157.6 minutes.
-Plane 6 --> CATER request a resource at 157.6 minutes.
-Plane 6 --> POWER request a resource at 157.6 minutes.
-Plane 6 --> BAGGAGE request a resource at 157.6 minutes.
-Plane 6 --> POWER working on at 157.6 minutes.
-Plane 6 --> BAGGAGE working on at 157.6 minutes.
-Plane 7 requesting a gate at 158.1 minutes
-Plane 7 is landing at 163.1 minutes.
-Plane 6 --> FUEL working on at 164.6 minutes.
-Plane 6 --> WATER working on at 164.6 minutes.
-Plane 6 --> CLEAN working on at 164.6 minutes.
-Plane 6 --> CATER working on at 164.6 minutes.
-Plane 4 is early
-All process are done. 
-Plane 4 is departing at 168.9 minutes
-Plane 7 --> FUEL request a resource at 170.1 minutes.
-Plane 7 --> WATER request a resource at 170.1 minutes.
-Plane 7 --> CLEAN request a resource at 170.1 minutes.
-Plane 7 --> CATER request a resource at 170.1 minutes.
-Plane 7 --> POWER request a resource at 170.1 minutes.
-Plane 7 --> BAGGAGE request a resource at 170.1 minutes.
-Plane 7 --> POWER working on at 170.1 minutes.
-Plane 7 --> BAGGAGE working on at 170.1 minutes.
-Plane 5 --> POWER done at 173.6 minutes.
-Plane 5 --> POWER finished charging in 54.0 minutes.
-Plane 6 --> BAGGAGE done at 173.6 minutes.
+All process are done.
+Plane 1 is departing at 459.4 minutes
+Plane 3 --> WATER done at 460.8 mins.
+Plane 3 --> WATER finished supplying water in 11.0 minutes.
+Plane 3 --> CLEAN done at 460.8 mins.
+Plane 3 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 3 --> CATER done at 464.8 minutes.
+Plane 3 --> CATER finished catering in 15.0 minutes.
+Plane 4 --> BAGGAGE done at 466.6 minutes.
+Plane 4 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 3 --> FUEL done at 466.8 minutes.
+Plane 3 --> FUEL finished refueling in 17.0 minutes.
+Plane 4 --> WATER done at 468.6 mins.
+Plane 4 --> WATER finished supplying water in 11.0 minutes.
+Plane 4 --> CLEAN done at 468.6 mins.
+Plane 4 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 4 --> CATER done at 472.6 minutes.
+Plane 4 --> CATER finished catering in 15.0 minutes.
+Plane 2 --> POWER done at 473.0 minutes.
+Plane 2 --> POWER finished catering in 44.0 minutes.
+Plane 5 requesting a gate at 474.0 minutes
+Plane 4 --> FUEL done at 474.6 minutes.
+Plane 4 --> FUEL finished refueling in 17.0 minutes.
+Plane 6 requesting a gate at 476.4 minutes
+Plane 5 is landing at 479.0 minutes.
+Plane 6 is landing at 481.4 minutes.
+Plane 5 --> FUEL request a resource at 486.0 minutes.
+Plane 5 --> WATER request a resource at 486.0 minutes.
+Plane 5 --> CLEAN request a resource at 486.0 minutes.
+Plane 5 --> CATER request a resource at 486.0 minutes.
+Plane 5 --> POWER request a resource at 486.0 minutes.
+Plane 5 --> BAGGAGE request a resource at 486.0 minutes.
+Plane 5 --> POWER working on at 486.0 minutes.
+Plane 5 --> BAGGAGE working on at 486.0 minutes.
+Plane 3 --> POWER done at 486.8 minutes.
+Plane 3 --> POWER finished catering in 44.0 minutes.
+Plane 6 --> FUEL request a resource at 488.4 minutes.
+Plane 6 --> WATER request a resource at 488.4 minutes.
+Plane 6 --> CLEAN request a resource at 488.4 minutes.
+Plane 6 --> CATER request a resource at 488.4 minutes.
+Plane 6 --> POWER request a resource at 488.4 minutes.
+Plane 6 --> BAGGAGE request a resource at 488.4 minutes.
+Plane 6 --> POWER working on at 488.4 minutes.
+Plane 6 --> BAGGAGE working on at 488.4 minutes.
+Plane 2 is early
+All process are done.
+Plane 2 is departing at 489.0 minutes
+Plane 5 --> FUEL working on at 493.0 minutes.
+Plane 5 --> WATER working on at 493.0 minutes.
+Plane 5 --> CLEAN working on at 493.0 minutes.
+Plane 5 --> CATER working on at 493.0 minutes.
+Plane 4 --> POWER done at 494.6 minutes.
+Plane 4 --> POWER finished catering in 44.0 minutes.
+Plane 6 --> FUEL working on at 495.4 minutes.
+Plane 6 --> WATER working on at 495.4 minutes.
+Plane 6 --> CLEAN working on at 495.4 minutes.
+Plane 6 --> CATER working on at 495.4 minutes.
+Plane 7 requesting a gate at 499.2 minutes
+Plane 5 --> BAGGAGE done at 502.0 minutes.
+Plane 5 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 5 --> WATER done at 504.0 mins.
+Plane 5 --> WATER finished supplying water in 11.0 minutes.
+Plane 5 --> CLEAN done at 504.0 mins.
+Plane 5 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 7 is landing at 504.2 minutes.
+Plane 6 --> BAGGAGE done at 504.4 minutes.
 Plane 6 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 6 --> WATER done at 175.6 mins.
-Plane 6 --> WATER finished supplying water in 18.0 minutes.
-Plane 6 --> CLEAN done at 175.6 mins.
-Plane 6 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 7 --> FUEL working on at 177.1 minutes.
-Plane 7 --> WATER working on at 177.1 minutes.
-Plane 7 --> CLEAN working on at 177.1 minutes.
-Plane 7 --> CATER working on at 177.1 minutes.
-Plane 6 --> CATER done at 179.6 minutes.
-Plane 6 --> CATER finished catering in 22.0 minutes.
-Plane 8 requesting a gate at 180.7 minutes
-Plane 6 --> FUEL done at 181.6 minutes.
-Plane 6 --> FUEL finished refueling in 24.0 minutes.
-Plane 9 requesting a gate at 184.1 minutes
-Plane 8 is landing at 185.7 minutes.
-Plane 7 --> BAGGAGE done at 186.1 minutes.
+Plane 6 --> WATER done at 506.4 mins.
+Plane 6 --> WATER finished supplying water in 11.0 minutes.
+Plane 6 --> CLEAN done at 506.4 mins.
+Plane 6 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 5 --> CATER done at 508.0 minutes.
+Plane 5 --> CATER finished catering in 15.0 minutes.
+Plane 5 --> FUEL done at 510.0 minutes.
+Plane 5 --> FUEL finished refueling in 17.0 minutes.
+Plane 6 --> CATER done at 510.4 minutes.
+Plane 6 --> CATER finished catering in 15.0 minutes.
+Plane 8 requesting a gate at 511.2 minutes
+Plane 7 --> FUEL request a resource at 511.2 minutes.
+Plane 7 --> WATER request a resource at 511.2 minutes.
+Plane 7 --> CLEAN request a resource at 511.2 minutes.
+Plane 7 --> CATER request a resource at 511.2 minutes.
+Plane 7 --> POWER request a resource at 511.2 minutes.
+Plane 7 --> BAGGAGE request a resource at 511.2 minutes.
+Plane 7 --> POWER working on at 511.2 minutes.
+Plane 7 --> BAGGAGE working on at 511.2 minutes.
+Plane 6 --> FUEL done at 512.4 minutes.
+Plane 6 --> FUEL finished refueling in 17.0 minutes.
+Plane 8 is landing at 516.2 minutes.
+Plane 7 --> FUEL working on at 518.2 minutes.
+Plane 7 --> WATER working on at 518.2 minutes.
+Plane 7 --> CLEAN working on at 518.2 minutes.
+Plane 7 --> CATER working on at 518.2 minutes.
+Plane 8 --> FUEL request a resource at 523.2 minutes.
+Plane 8 --> WATER request a resource at 523.2 minutes.
+Plane 8 --> CLEAN request a resource at 523.2 minutes.
+Plane 8 --> CATER request a resource at 523.2 minutes.
+Plane 8 --> POWER request a resource at 523.2 minutes.
+Plane 8 --> BAGGAGE request a resource at 523.2 minutes.
+Plane 8 --> BAGGAGE working on at 523.2 minutes.
+Plane 7 --> BAGGAGE done at 527.2 minutes.
 Plane 7 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 7 --> WATER done at 188.1 mins.
-Plane 7 --> WATER finished supplying water in 18.0 minutes.
-Plane 7 --> CLEAN done at 188.1 mins.
-Plane 7 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 9 is landing at 189.1 minutes.
-Plane 7 --> CATER done at 192.1 minutes.
-Plane 7 --> CATER finished catering in 22.0 minutes.
-Plane 8 --> FUEL request a resource at 192.7 minutes.
-Plane 8 --> WATER request a resource at 192.7 minutes.
-Plane 8 --> CLEAN request a resource at 192.7 minutes.
-Plane 8 --> CATER request a resource at 192.7 minutes.
-Plane 8 --> POWER request a resource at 192.7 minutes.
-Plane 8 --> BAGGAGE request a resource at 192.7 minutes.
-Plane 8 --> POWER working on at 192.7 minutes.
-Plane 8 --> BAGGAGE working on at 192.7 minutes.
-Plane 7 --> FUEL done at 194.1 minutes.
-Plane 7 --> FUEL finished refueling in 24.0 minutes.
-Plane 9 --> FUEL request a resource at 196.1 minutes.
-Plane 9 --> WATER request a resource at 196.1 minutes.
-Plane 9 --> CLEAN request a resource at 196.1 minutes.
-Plane 9 --> CATER request a resource at 196.1 minutes.
-Plane 9 --> POWER request a resource at 196.1 minutes.
-Plane 9 --> BAGGAGE request a resource at 196.1 minutes.
-Plane 9 --> BAGGAGE working on at 196.1 minutes.
-Plane 10 requesting a gate at 199.4 minutes
-Plane 8 --> FUEL working on at 199.7 minutes.
-Plane 8 --> WATER working on at 199.7 minutes.
-Plane 8 --> CLEAN working on at 199.7 minutes.
-Plane 8 --> CATER working on at 199.7 minutes.
-Plane 6 --> POWER done at 201.6 minutes.
-Plane 6 --> POWER finished charging in 44.0 minutes.
-Plane 9 --> POWER working on at 201.6 minutes.
-Plane 9 --> FUEL working on at 203.1 minutes.
-Plane 9 --> WATER working on at 203.1 minutes.
-Plane 9 --> CLEAN working on at 203.1 minutes.
-Plane 9 --> CATER working on at 203.1 minutes.
-Plane 5 is early
-All process are done. 
-Plane 5 is departing at 203.6 minutes
-Plane 10 is landing at 204.4 minutes.
-Plane 8 --> BAGGAGE done at 208.7 minutes.
-Plane 8 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 8 --> WATER done at 210.7 mins.
-Plane 8 --> WATER finished supplying water in 18.0 minutes.
-Plane 8 --> CLEAN done at 210.7 mins.
-Plane 8 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 10 --> FUEL request a resource at 211.4 minutes.
-Plane 10 --> WATER request a resource at 211.4 minutes.
-Plane 10 --> CLEAN request a resource at 211.4 minutes.
-Plane 10 --> CATER request a resource at 211.4 minutes.
-Plane 10 --> POWER request a resource at 211.4 minutes.
-Plane 10 --> BAGGAGE request a resource at 211.4 minutes.
-Plane 10 --> BAGGAGE working on at 211.4 minutes.
-Plane 7 --> POWER done at 214.1 minutes.
-Plane 7 --> POWER finished charging in 44.0 minutes.
-Plane 10 --> POWER working on at 214.1 minutes.
-Plane 8 --> CATER done at 214.7 minutes.
-Plane 8 --> CATER finished catering in 22.0 minutes.
-Plane 8 --> FUEL done at 216.7 minutes.
-Plane 8 --> FUEL finished refueling in 24.0 minutes.
-Plane 9 --> WATER done at 217.6 mins.
-Plane 9 --> WATER finished supplying water in 21.5 minutes.
-Plane 10 --> FUEL working on at 218.4 minutes.
-Plane 10 --> WATER working on at 218.4 minutes.
-Plane 10 --> CLEAN working on at 218.4 minutes.
-Plane 10 --> CATER working on at 218.4 minutes.
-Plane 9 --> BAGGAGE done at 224.1 minutes.
-Plane 9 --> BAGGAGE finished loading in 28.0 minutes.
-Plane 11 requesting a gate at 227.2 minutes
-Plane 10 --> BAGGAGE done at 227.4 minutes.
-Plane 10 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 10 --> WATER done at 229.4 mins.
-Plane 10 --> WATER finished supplying water in 18.0 minutes.
-Plane 10 --> CLEAN done at 229.4 mins.
-Plane 10 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 9 --> FUEL done at 231.1 minutes.
-Plane 9 --> FUEL finished refueling in 35.0 minutes.
-Plane 9 --> CLEAN done at 232.1 mins.
-Plane 9 --> CLEAN finished cleaning in 36.0 minutes.
-Plane 11 is landing at 232.2 minutes.
-Plane 9 --> CATER done at 233.1 minutes.
-Plane 9 --> CATER finished catering in 37.0 minutes.
-Plane 10 --> CATER done at 233.4 minutes.
-Plane 10 --> CATER finished catering in 22.0 minutes.
-Plane 10 --> FUEL done at 235.4 minutes.
-Plane 10 --> FUEL finished refueling in 24.0 minutes.
-Plane 8 --> POWER done at 236.7 minutes.
-Plane 8 --> POWER finished charging in 44.0 minutes.
-Plane 12 requesting a gate at 238.1 minutes
-Plane 11 --> FUEL request a resource at 239.2 minutes.
-Plane 11 --> WATER request a resource at 239.2 minutes.
-Plane 11 --> CLEAN request a resource at 239.2 minutes.
-Plane 11 --> CATER request a resource at 239.2 minutes.
-Plane 11 --> POWER request a resource at 239.2 minutes.
-Plane 11 --> BAGGAGE request a resource at 239.2 minutes.
-Plane 11 --> POWER working on at 239.2 minutes.
-Plane 11 --> BAGGAGE working on at 239.2 minutes.
-Plane 12 is landing at 243.1 minutes.
-Plane 7 is early
-All process are done. 
-Plane 7 is departing at 244.1 minutes
-Plane 11 --> FUEL working on at 246.2 minutes.
-Plane 11 --> WATER working on at 246.2 minutes.
-Plane 11 --> CLEAN working on at 246.2 minutes.
-Plane 11 --> CATER working on at 246.2 minutes.
-Plane 12 --> FUEL request a resource at 250.1 minutes.
-Plane 12 --> WATER request a resource at 250.1 minutes.
-Plane 12 --> CLEAN request a resource at 250.1 minutes.
-Plane 12 --> CATER request a resource at 250.1 minutes.
-Plane 12 --> POWER request a resource at 250.1 minutes.
-Plane 12 --> BAGGAGE request a resource at 250.1 minutes.
-Plane 12 --> BAGGAGE working on at 250.1 minutes.
-Plane 8 is early
-All process are done. 
-Plane 8 is departing at 252.7 minutes
-Plane 13 requesting a gate at 254.4 minutes
-Plane 11 --> BAGGAGE done at 255.2 minutes.
-Plane 11 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 9 --> POWER done at 255.6 minutes.
-Plane 9 --> POWER finished charging in 54.0 minutes.
-Plane 12 --> POWER working on at 255.6 minutes.
-Plane 12 --> FUEL working on at 257.1 minutes.
-Plane 12 --> WATER working on at 257.1 minutes.
-Plane 12 --> CLEAN working on at 257.1 minutes.
-Plane 12 --> CATER working on at 257.1 minutes.
-Plane 11 --> WATER done at 257.2 mins.
-Plane 11 --> WATER finished supplying water in 18.0 minutes.
-Plane 11 --> CLEAN done at 257.2 mins.
-Plane 11 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 10 --> POWER done at 258.1 minutes.
-Plane 10 --> POWER finished charging in 44.0 minutes.
-Plane 13 is landing at 259.4 minutes.
-Plane 11 --> CATER done at 261.2 minutes.
-Plane 11 --> CATER finished catering in 22.0 minutes.
-Plane 11 --> FUEL done at 263.2 minutes.
-Plane 11 --> FUEL finished refueling in 24.0 minutes.
+Plane 7 --> WATER done at 529.2 mins.
+Plane 7 --> WATER finished supplying water in 11.0 minutes.
+Plane 7 --> CLEAN done at 529.2 mins.
+Plane 7 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 5 --> POWER done at 530.0 minutes.
+Plane 5 --> POWER finished catering in 44.0 minutes.
+Plane 8 --> POWER working on at 530.0 minutes.
+Plane 8 --> FUEL working on at 530.2 minutes.
+Plane 8 --> WATER working on at 530.2 minutes.
+Plane 8 --> CLEAN working on at 530.2 minutes.
+Plane 8 --> CATER working on at 530.2 minutes.
+Plane 6 --> POWER done at 532.4 minutes.
+Plane 6 --> POWER finished catering in 44.0 minutes.
+Plane 4 is early
+All process are done.
+Plane 4 is departing at 532.6 minutes
+Plane 7 --> CATER done at 533.2 minutes.
+Plane 7 --> CATER finished catering in 15.0 minutes.
+Plane 7 --> FUEL done at 535.2 minutes.
+Plane 7 --> FUEL finished refueling in 17.0 minutes.
 Plane 6 is early
-All process are done. 
-Plane 6 is departing at 263.6 minutes
-Plane 10 is early
-All process are done. 
-Plane 10 is departing at 265.4 minutes
-Plane 12 --> BAGGAGE done at 266.1 minutes.
+All process are done.
+Plane 6 is departing at 536.4 minutes
+Plane 3 is early
+All process are done.
+Plane 3 is departing at 538.8 minutes
+Plane 5 is early
+All process are done.
+Plane 5 is departing at 543.0 minutes
+Plane 8 --> WATER done at 544.7 mins.
+Plane 8 --> WATER finished supplying water in 14.5 minutes.
+Plane 8 --> BAGGAGE done at 551.2 minutes.
+Plane 8 --> BAGGAGE finished loading in 28.0 minutes.
+Plane 7 --> POWER done at 555.2 minutes.
+Plane 7 --> POWER finished catering in 44.0 minutes.
+Plane 8 --> FUEL done at 558.2 minutes.
+Plane 8 --> FUEL finished refueling in 28.0 minutes.
+Plane 8 --> CLEAN done at 559.2 mins.
+Plane 8 --> CLEAN finished cleaning in 29.0 minutes.
+Plane 8 --> CATER done at 560.2 minutes.
+Plane 8 --> CATER finished catering in 30.0 minutes.
+Plane 9 requesting a gate at 569.4 minutes
+Plane 9 is landing at 574.4 minutes.
+Plane 10 requesting a gate at 580.8 minutes
+Plane 9 --> FUEL request a resource at 581.4 minutes.
+Plane 9 --> WATER request a resource at 581.4 minutes.
+Plane 9 --> CLEAN request a resource at 581.4 minutes.
+Plane 9 --> CATER request a resource at 581.4 minutes.
+Plane 9 --> POWER request a resource at 581.4 minutes.
+Plane 9 --> BAGGAGE request a resource at 581.4 minutes.
+Plane 9 --> POWER working on at 581.4 minutes.
+Plane 9 --> BAGGAGE working on at 581.4 minutes.
+Plane 8 --> POWER done at 584.0 minutes.
+Plane 8 --> POWER finished catering in 54.0 minutes.
+Plane 8 is on time
+All process are done.
+Plane 8 is departing at 584.0 minutes
+Plane 10 is landing at 585.8 minutes.
+Plane 9 --> FUEL working on at 588.4 minutes.
+Plane 9 --> WATER working on at 588.4 minutes.
+Plane 9 --> CLEAN working on at 588.4 minutes.
+Plane 9 --> CATER working on at 588.4 minutes.
+Plane 10 --> FUEL request a resource at 592.8 minutes.
+Plane 10 --> WATER request a resource at 592.8 minutes.
+Plane 10 --> CLEAN request a resource at 592.8 minutes.
+Plane 10 --> CATER request a resource at 592.8 minutes.
+Plane 10 --> POWER request a resource at 592.8 minutes.
+Plane 10 --> BAGGAGE request a resource at 592.8 minutes.
+Plane 10 --> POWER working on at 592.8 minutes.
+Plane 10 --> BAGGAGE working on at 592.8 minutes.
+Plane 9 --> BAGGAGE done at 597.4 minutes.
+Plane 9 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 11 requesting a gate at 597.6 minutes
+Plane 12 requesting a gate at 598.8 minutes
+Plane 9 --> WATER done at 599.4 mins.
+Plane 9 --> WATER finished supplying water in 11.0 minutes.
+Plane 9 --> CLEAN done at 599.4 mins.
+Plane 9 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 10 --> FUEL working on at 599.8 minutes.
+Plane 10 --> WATER working on at 599.8 minutes.
+Plane 10 --> CLEAN working on at 599.8 minutes.
+Plane 10 --> CATER working on at 599.8 minutes.
+Plane 11 is landing at 602.6 minutes.
+Plane 9 --> CATER done at 603.4 minutes.
+Plane 9 --> CATER finished catering in 15.0 minutes.
+Plane 12 is landing at 603.8 minutes.
+Plane 9 --> FUEL done at 605.4 minutes.
+Plane 9 --> FUEL finished refueling in 17.0 minutes.
+Plane 10 --> BAGGAGE done at 608.8 minutes.
+Plane 10 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 11 --> FUEL request a resource at 609.6 minutes.
+Plane 11 --> WATER request a resource at 609.6 minutes.
+Plane 11 --> CLEAN request a resource at 609.6 minutes.
+Plane 11 --> CATER request a resource at 609.6 minutes.
+Plane 11 --> POWER request a resource at 609.6 minutes.
+Plane 11 --> BAGGAGE request a resource at 609.6 minutes.
+Plane 11 --> POWER working on at 609.6 minutes.
+Plane 11 --> BAGGAGE working on at 609.6 minutes.
+Plane 10 --> WATER done at 610.8 mins.
+Plane 10 --> WATER finished supplying water in 11.0 minutes.
+Plane 10 --> CLEAN done at 610.8 mins.
+Plane 10 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 12 --> FUEL request a resource at 610.8 minutes.
+Plane 12 --> WATER request a resource at 610.8 minutes.
+Plane 12 --> CLEAN request a resource at 610.8 minutes.
+Plane 12 --> CATER request a resource at 610.8 minutes.
+Plane 12 --> POWER request a resource at 610.8 minutes.
+Plane 12 --> BAGGAGE request a resource at 610.8 minutes.
+Plane 12 --> BAGGAGE working on at 610.8 minutes.
+Plane 10 --> CATER done at 614.8 minutes.
+Plane 10 --> CATER finished catering in 15.0 minutes.
+Plane 7 is early
+All process are done.
+Plane 7 is departing at 616.2 minutes
+Plane 11 --> FUEL working on at 616.6 minutes.
+Plane 11 --> WATER working on at 616.6 minutes.
+Plane 11 --> CLEAN working on at 616.6 minutes.
+Plane 11 --> CATER working on at 616.6 minutes.
+Plane 10 --> FUEL done at 616.8 minutes.
+Plane 10 --> FUEL finished refueling in 17.0 minutes.
+Plane 12 --> FUEL working on at 617.8 minutes.
+Plane 12 --> WATER working on at 617.8 minutes.
+Plane 12 --> CLEAN working on at 617.8 minutes.
+Plane 12 --> CATER working on at 617.8 minutes.
+Plane 9 --> POWER done at 625.4 minutes.
+Plane 9 --> POWER finished catering in 44.0 minutes.
+Plane 12 --> POWER working on at 625.4 minutes.
+Plane 11 --> BAGGAGE done at 625.6 minutes.
+Plane 11 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 12 --> BAGGAGE done at 626.8 minutes.
 Plane 12 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 13 --> FUEL request a resource at 266.4 minutes.
-Plane 13 --> WATER request a resource at 266.4 minutes.
-Plane 13 --> CLEAN request a resource at 266.4 minutes.
-Plane 13 --> CATER request a resource at 266.4 minutes.
-Plane 13 --> POWER request a resource at 266.4 minutes.
-Plane 13 --> BAGGAGE request a resource at 266.4 minutes.
-Plane 13 --> POWER working on at 266.4 minutes.
-Plane 13 --> BAGGAGE working on at 266.4 minutes.
-Plane 14 requesting a gate at 267.2 minutes
-Plane 12 --> WATER done at 268.1 mins.
-Plane 12 --> WATER finished supplying water in 18.0 minutes.
-Plane 12 --> CLEAN done at 268.1 mins.
-Plane 12 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 9 is early
-All process are done. 
-Plane 9 is departing at 270.1 minutes
-Plane 12 --> CATER done at 272.1 minutes.
-Plane 12 --> CATER finished catering in 22.0 minutes.
-Plane 14 is landing at 272.2 minutes.
-Plane 13 --> FUEL working on at 273.4 minutes.
-Plane 13 --> WATER working on at 273.4 minutes.
-Plane 13 --> CLEAN working on at 273.4 minutes.
-Plane 13 --> CATER working on at 273.4 minutes.
-Plane 12 --> FUEL done at 274.1 minutes.
-Plane 12 --> FUEL finished refueling in 24.0 minutes.
-Plane 14 --> FUEL request a resource at 279.2 minutes.
-Plane 14 --> WATER request a resource at 279.2 minutes.
-Plane 14 --> CLEAN request a resource at 279.2 minutes.
-Plane 14 --> CATER request a resource at 279.2 minutes.
-Plane 14 --> POWER request a resource at 279.2 minutes.
-Plane 14 --> BAGGAGE request a resource at 279.2 minutes.
-Plane 14 --> BAGGAGE working on at 279.2 minutes.
-Plane 13 --> BAGGAGE done at 282.4 minutes.
+Plane 11 --> WATER done at 627.6 mins.
+Plane 11 --> WATER finished supplying water in 11.0 minutes.
+Plane 11 --> CLEAN done at 627.6 mins.
+Plane 11 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 12 --> WATER done at 628.8 mins.
+Plane 12 --> WATER finished supplying water in 11.0 minutes.
+Plane 12 --> CLEAN done at 628.8 mins.
+Plane 12 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 11 --> CATER done at 631.6 minutes.
+Plane 11 --> CATER finished catering in 15.0 minutes.
+Plane 12 --> CATER done at 632.8 minutes.
+Plane 12 --> CATER finished catering in 15.0 minutes.
+Plane 11 --> FUEL done at 633.6 minutes.
+Plane 11 --> FUEL finished refueling in 17.0 minutes.
+Plane 12 --> FUEL done at 634.8 minutes.
+Plane 12 --> FUEL finished refueling in 17.0 minutes.
+Plane 10 --> POWER done at 636.8 minutes.
+Plane 10 --> POWER finished catering in 44.0 minutes.
+Plane 13 requesting a gate at 639.0 minutes
+Plane 13 is landing at 644.0 minutes.
+Plane 13 --> FUEL request a resource at 651.0 minutes.
+Plane 13 --> WATER request a resource at 651.0 minutes.
+Plane 13 --> CLEAN request a resource at 651.0 minutes.
+Plane 13 --> CATER request a resource at 651.0 minutes.
+Plane 13 --> POWER request a resource at 651.0 minutes.
+Plane 13 --> BAGGAGE request a resource at 651.0 minutes.
+Plane 13 --> POWER working on at 651.0 minutes.
+Plane 13 --> BAGGAGE working on at 651.0 minutes.
+Plane 11 --> POWER done at 653.6 minutes.
+Plane 11 --> POWER finished catering in 44.0 minutes.
+Plane 13 --> FUEL working on at 658.0 minutes.
+Plane 13 --> WATER working on at 658.0 minutes.
+Plane 13 --> CLEAN working on at 658.0 minutes.
+Plane 13 --> CATER working on at 658.0 minutes.
+Plane 13 --> BAGGAGE done at 667.0 minutes.
 Plane 13 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 11 --> POWER done at 283.2 minutes.
-Plane 11 --> POWER finished charging in 44.0 minutes.
-Plane 14 --> POWER working on at 283.2 minutes.
-Plane 13 --> WATER done at 284.4 mins.
-Plane 13 --> WATER finished supplying water in 18.0 minutes.
-Plane 13 --> CLEAN done at 284.4 mins.
-Plane 13 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 14 --> FUEL working on at 286.2 minutes.
-Plane 14 --> WATER working on at 286.2 minutes.
-Plane 14 --> CLEAN working on at 286.2 minutes.
-Plane 14 --> CATER working on at 286.2 minutes.
-Plane 13 --> CATER done at 288.4 minutes.
-Plane 13 --> CATER finished catering in 22.0 minutes.
-Plane 13 --> FUEL done at 290.4 minutes.
-Plane 13 --> FUEL finished refueling in 24.0 minutes.
-Plane 14 --> BAGGAGE done at 295.2 minutes.
-Plane 14 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 14 --> WATER done at 297.2 mins.
-Plane 14 --> WATER finished supplying water in 18.0 minutes.
-Plane 14 --> CLEAN done at 297.2 mins.
-Plane 14 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 12 --> POWER done at 299.6 minutes.
-Plane 12 --> POWER finished charging in 44.0 minutes.
-Plane 14 --> CATER done at 301.2 minutes.
-Plane 14 --> CATER finished catering in 22.0 minutes.
-Plane 14 --> FUEL done at 303.2 minutes.
-Plane 14 --> FUEL finished refueling in 24.0 minutes.
-Plane 15 requesting a gate at 309.9 minutes
-Plane 13 --> POWER done at 310.4 minutes.
-Plane 13 --> POWER finished charging in 44.0 minutes.
+Plane 13 --> WATER done at 669.0 mins.
+Plane 13 --> WATER finished supplying water in 11.0 minutes.
+Plane 13 --> CLEAN done at 669.0 mins.
+Plane 13 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 12 --> POWER done at 669.4 minutes.
+Plane 12 --> POWER finished catering in 44.0 minutes.
+Plane 13 --> CATER done at 673.0 minutes.
+Plane 13 --> CATER finished catering in 15.0 minutes.
+Plane 13 --> FUEL done at 675.0 minutes.
+Plane 13 --> FUEL finished refueling in 17.0 minutes.
+Plane 9 is early
+All process are done.
+Plane 9 is departing at 678.4 minutes
+Plane 14 requesting a gate at 679.2 minutes
+Plane 15 requesting a gate at 681.0 minutes
+Plane 14 is landing at 684.2 minutes.
+Plane 15 is landing at 686.0 minutes.
+Plane 14 --> FUEL request a resource at 691.2 minutes.
+Plane 14 --> WATER request a resource at 691.2 minutes.
+Plane 14 --> CLEAN request a resource at 691.2 minutes.
+Plane 14 --> CATER request a resource at 691.2 minutes.
+Plane 14 --> POWER request a resource at 691.2 minutes.
+Plane 14 --> BAGGAGE request a resource at 691.2 minutes.
+Plane 14 --> POWER working on at 691.2 minutes.
+Plane 14 --> BAGGAGE working on at 691.2 minutes.
+Plane 10 is early
+All process are done.
+Plane 10 is departing at 692.8 minutes
+Plane 15 --> FUEL request a resource at 693.0 minutes.
+Plane 15 --> WATER request a resource at 693.0 minutes.
+Plane 15 --> CLEAN request a resource at 693.0 minutes.
+Plane 15 --> CATER request a resource at 693.0 minutes.
+Plane 15 --> POWER request a resource at 693.0 minutes.
+Plane 15 --> BAGGAGE request a resource at 693.0 minutes.
+Plane 15 --> POWER working on at 693.0 minutes.
+Plane 15 --> BAGGAGE working on at 693.0 minutes.
+Plane 13 --> POWER done at 695.0 minutes.
+Plane 13 --> POWER finished catering in 44.0 minutes.
+Plane 14 --> FUEL working on at 698.2 minutes.
+Plane 14 --> WATER working on at 698.2 minutes.
+Plane 14 --> CLEAN working on at 698.2 minutes.
+Plane 14 --> CATER working on at 698.2 minutes.
 Plane 12 is early
-All process are done. 
-Plane 12 is departing at 313.1 minutes
+All process are done.
+Plane 12 is departing at 698.8 minutes
+Plane 15 --> FUEL working on at 700.0 minutes.
+Plane 15 --> WATER working on at 700.0 minutes.
+Plane 15 --> CLEAN working on at 700.0 minutes.
+Plane 15 --> CATER working on at 700.0 minutes.
+Plane 16 requesting a gate at 700.8 minutes
+Plane 14 --> BAGGAGE done at 702.4 minutes.
+Plane 14 --> BAGGAGE finished loading in 11.2 minutes.
+Plane 16 is landing at 705.8 minutes.
+Plane 14 --> WATER done at 705.9 mins.
+Plane 14 --> WATER finished supplying water in 7.7 minutes.
+Plane 14 --> CLEAN done at 705.9 mins.
+Plane 14 --> CLEAN finished cleaning in 7.7 minutes.
+Plane 14 --> CATER done at 708.7 minutes.
+Plane 14 --> CATER finished catering in 10.5 minutes.
+Plane 15 --> BAGGAGE done at 709.0 minutes.
+Plane 15 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 14 --> FUEL done at 710.1 minutes.
+Plane 14 --> FUEL finished refueling in 11.9 minutes.
+Plane 15 --> WATER done at 711.0 mins.
+Plane 15 --> WATER finished supplying water in 11.0 minutes.
+Plane 15 --> CLEAN done at 711.0 mins.
+Plane 15 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 16 --> FUEL request a resource at 712.8 minutes.
+Plane 16 --> WATER request a resource at 712.8 minutes.
+Plane 16 --> CLEAN request a resource at 712.8 minutes.
+Plane 16 --> CATER request a resource at 712.8 minutes.
+Plane 16 --> POWER request a resource at 712.8 minutes.
+Plane 16 --> BAGGAGE request a resource at 712.8 minutes.
+Plane 16 --> POWER working on at 712.8 minutes.
+Plane 16 --> BAGGAGE working on at 712.8 minutes.
+Plane 15 --> CATER done at 715.0 minutes.
+Plane 15 --> CATER finished catering in 15.0 minutes.
 Plane 11 is early
-All process are done. 
-Plane 11 is departing at 314.2 minutes
-Plane 15 is landing at 314.9 minutes.
-Plane 15 --> FUEL request a resource at 321.9 minutes.
-Plane 15 --> WATER request a resource at 321.9 minutes.
-Plane 15 --> CLEAN request a resource at 321.9 minutes.
-Plane 15 --> CATER request a resource at 321.9 minutes.
-Plane 15 --> POWER request a resource at 321.9 minutes.
-Plane 15 --> BAGGAGE request a resource at 321.9 minutes.
-Plane 15 --> POWER working on at 321.9 minutes.
-Plane 15 --> BAGGAGE working on at 321.9 minutes.
-Plane 16 requesting a gate at 324.4 minutes
-Plane 14 --> POWER done at 327.2 minutes.
-Plane 14 --> POWER finished charging in 44.0 minutes.
-Plane 15 --> FUEL working on at 328.9 minutes.
-Plane 15 --> WATER working on at 328.9 minutes.
-Plane 15 --> CLEAN working on at 328.9 minutes.
-Plane 15 --> CATER working on at 328.9 minutes.
-Plane 16 is landing at 329.4 minutes.
-Plane 15 --> BAGGAGE done at 333.1 minutes.
-Plane 15 --> BAGGAGE finished loading in 11.2 minutes.
-Plane 16 --> FUEL request a resource at 336.4 minutes.
-Plane 16 --> WATER request a resource at 336.4 minutes.
-Plane 16 --> CLEAN request a resource at 336.4 minutes.
-Plane 16 --> CATER request a resource at 336.4 minutes.
-Plane 16 --> POWER request a resource at 336.4 minutes.
-Plane 16 --> BAGGAGE request a resource at 336.4 minutes.
-Plane 16 --> POWER working on at 336.4 minutes.
-Plane 16 --> BAGGAGE working on at 336.4 minutes.
-Plane 15 --> WATER done at 336.6 mins.
-Plane 15 --> WATER finished supplying water in 14.7 minutes.
-Plane 15 --> CLEAN done at 336.6 mins.
-Plane 15 --> CLEAN finished cleaning in 14.7 minutes.
-Plane 15 --> CATER done at 339.4 minutes.
-Plane 15 --> CATER finished catering in 17.5 minutes.
-Plane 15 --> FUEL done at 340.8 minutes.
-Plane 15 --> FUEL finished refueling in 18.9 minutes.
-Plane 16 --> FUEL working on at 343.4 minutes.
-Plane 16 --> WATER working on at 343.4 minutes.
-Plane 16 --> CLEAN working on at 343.4 minutes.
-Plane 16 --> CATER working on at 343.4 minutes.
-Plane 14 is early
-All process are done. 
-Plane 14 is departing at 351.2 minutes
-Plane 16 --> BAGGAGE done at 352.4 minutes.
+All process are done.
+Plane 11 is departing at 715.6 minutes
+Plane 15 --> FUEL done at 717.0 minutes.
+Plane 15 --> FUEL finished refueling in 17.0 minutes.
+Plane 16 --> FUEL working on at 719.8 minutes.
+Plane 16 --> WATER working on at 719.8 minutes.
+Plane 16 --> CLEAN working on at 719.8 minutes.
+Plane 16 --> CATER working on at 719.8 minutes.
+Plane 17 requesting a gate at 720.6 minutes
+Plane 17 is landing at 725.6 minutes.
+Plane 16 --> BAGGAGE done at 728.8 minutes.
 Plane 16 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 16 --> WATER done at 354.4 mins.
-Plane 16 --> WATER finished supplying water in 18.0 minutes.
-Plane 16 --> CLEAN done at 354.4 mins.
-Plane 16 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 16 --> CATER done at 358.4 minutes.
-Plane 16 --> CATER finished catering in 22.0 minutes.
-Plane 17 requesting a gate at 359.1 minutes
-Plane 16 --> FUEL done at 360.4 minutes.
-Plane 16 --> FUEL finished refueling in 24.0 minutes.
-Plane 15 --> POWER done at 361.6 minutes.
-Plane 15 --> POWER finished charging in 39.6 minutes.
-Plane 17 is landing at 364.1 minutes.
-Plane 17 --> FUEL request a resource at 371.1 minutes.
-Plane 17 --> WATER request a resource at 371.1 minutes.
-Plane 17 --> CLEAN request a resource at 371.1 minutes.
-Plane 17 --> CATER request a resource at 371.1 minutes.
-Plane 17 --> POWER request a resource at 371.1 minutes.
-Plane 17 --> BAGGAGE request a resource at 371.1 minutes.
-Plane 17 --> POWER working on at 371.1 minutes.
-Plane 17 --> BAGGAGE working on at 371.1 minutes.
+Plane 16 --> WATER done at 730.8 mins.
+Plane 16 --> WATER finished supplying water in 11.0 minutes.
+Plane 16 --> CLEAN done at 730.8 mins.
+Plane 16 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 14 --> POWER done at 730.8 minutes.
+Plane 14 --> POWER finished catering in 39.6 minutes.
+Plane 17 --> FUEL request a resource at 732.6 minutes.
+Plane 17 --> WATER request a resource at 732.6 minutes.
+Plane 17 --> CLEAN request a resource at 732.6 minutes.
+Plane 17 --> CATER request a resource at 732.6 minutes.
+Plane 17 --> POWER request a resource at 732.6 minutes.
+Plane 17 --> BAGGAGE request a resource at 732.6 minutes.
+Plane 17 --> POWER working on at 732.6 minutes.
+Plane 17 --> BAGGAGE working on at 732.6 minutes.
+Plane 16 --> CATER done at 734.8 minutes.
+Plane 16 --> CATER finished catering in 15.0 minutes.
+Plane 16 --> FUEL done at 736.8 minutes.
+Plane 16 --> FUEL finished refueling in 17.0 minutes.
+Plane 15 --> POWER done at 737.0 minutes.
+Plane 15 --> POWER finished catering in 44.0 minutes.
 Plane 13 is early
-All process are done. 
-Plane 13 is departing at 371.4 minutes
-Plane 18 requesting a gate at 373.6 minutes
-Plane 17 --> FUEL working on at 378.1 minutes.
-Plane 17 --> WATER working on at 378.1 minutes.
-Plane 17 --> CLEAN working on at 378.1 minutes.
-Plane 17 --> CATER working on at 378.1 minutes.
-Plane 18 is landing at 378.6 minutes.
-Plane 16 --> POWER done at 380.4 minutes.
-Plane 16 --> POWER finished charging in 44.0 minutes.
+All process are done.
+Plane 13 is departing at 738.0 minutes
+Plane 18 requesting a gate at 739.2 minutes
+Plane 17 --> FUEL working on at 739.6 minutes.
+Plane 17 --> WATER working on at 739.6 minutes.
+Plane 17 --> CLEAN working on at 739.6 minutes.
+Plane 17 --> CATER working on at 739.6 minutes.
+Plane 19 requesting a gate at 742.2 minutes
+Plane 18 is landing at 744.2 minutes.
+Plane 19 is landing at 747.2 minutes.
+Plane 17 --> BAGGAGE done at 748.6 minutes.
+Plane 17 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 17 --> WATER done at 750.6 mins.
+Plane 17 --> WATER finished supplying water in 11.0 minutes.
+Plane 17 --> CLEAN done at 750.6 mins.
+Plane 17 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 18 --> FUEL request a resource at 751.2 minutes.
+Plane 18 --> WATER request a resource at 751.2 minutes.
+Plane 18 --> CLEAN request a resource at 751.2 minutes.
+Plane 18 --> CATER request a resource at 751.2 minutes.
+Plane 18 --> POWER request a resource at 751.2 minutes.
+Plane 18 --> BAGGAGE request a resource at 751.2 minutes.
+Plane 18 --> POWER working on at 751.2 minutes.
+Plane 18 --> BAGGAGE working on at 751.2 minutes.
+Plane 19 --> FUEL request a resource at 754.2 minutes.
+Plane 19 --> WATER request a resource at 754.2 minutes.
+Plane 19 --> CLEAN request a resource at 754.2 minutes.
+Plane 19 --> CATER request a resource at 754.2 minutes.
+Plane 19 --> POWER request a resource at 754.2 minutes.
+Plane 19 --> BAGGAGE request a resource at 754.2 minutes.
+Plane 19 --> BAGGAGE working on at 754.2 minutes.
+Plane 17 --> CATER done at 754.6 minutes.
+Plane 17 --> CATER finished catering in 15.0 minutes.
+Plane 17 --> FUEL done at 756.6 minutes.
+Plane 17 --> FUEL finished refueling in 17.0 minutes.
+Plane 16 --> POWER done at 756.8 minutes.
+Plane 16 --> POWER finished catering in 44.0 minutes.
+Plane 19 --> POWER working on at 756.8 minutes.
+Plane 18 --> FUEL working on at 758.2 minutes.
+Plane 18 --> WATER working on at 758.2 minutes.
+Plane 18 --> CLEAN working on at 758.2 minutes.
+Plane 18 --> CATER working on at 758.2 minutes.
+Plane 19 --> FUEL working on at 761.2 minutes.
+Plane 19 --> WATER working on at 761.2 minutes.
+Plane 19 --> CLEAN working on at 761.2 minutes.
+Plane 19 --> CATER working on at 761.2 minutes.
 Plane 15 is early
-All process are done. 
-Plane 15 is departing at 382.9 minutes
-Plane 18 --> FUEL request a resource at 385.6 minutes.
-Plane 18 --> WATER request a resource at 385.6 minutes.
-Plane 18 --> CLEAN request a resource at 385.6 minutes.
-Plane 18 --> CATER request a resource at 385.6 minutes.
-Plane 18 --> POWER request a resource at 385.6 minutes.
-Plane 18 --> BAGGAGE request a resource at 385.6 minutes.
-Plane 18 --> POWER working on at 385.6 minutes.
-Plane 18 --> BAGGAGE working on at 385.6 minutes.
-Plane 18 --> FUEL working on at 392.6 minutes.
-Plane 18 --> WATER working on at 392.6 minutes.
-Plane 18 --> CLEAN working on at 392.6 minutes.
-Plane 18 --> CATER working on at 392.6 minutes.
-Plane 17 --> WATER done at 392.6 mins.
-Plane 17 --> WATER finished supplying water in 21.5 minutes.
-Plane 17 --> BAGGAGE done at 399.1 minutes.
-Plane 17 --> BAGGAGE finished loading in 28.0 minutes.
-Plane 18 --> BAGGAGE done at 401.6 minutes.
-Plane 18 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 18 --> WATER done at 403.6 mins.
-Plane 18 --> WATER finished supplying water in 18.0 minutes.
-Plane 18 --> CLEAN done at 403.6 mins.
-Plane 18 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 19 requesting a gate at 404.8 minutes
-Plane 17 --> FUEL done at 406.1 minutes.
-Plane 17 --> FUEL finished refueling in 35.0 minutes.
-Plane 17 --> CLEAN done at 407.1 mins.
-Plane 17 --> CLEAN finished cleaning in 36.0 minutes.
-Plane 18 --> CATER done at 407.6 minutes.
-Plane 18 --> CATER finished catering in 22.0 minutes.
-Plane 17 --> CATER done at 408.1 minutes.
-Plane 17 --> CATER finished catering in 37.0 minutes.
-Plane 18 --> FUEL done at 409.6 minutes.
-Plane 18 --> FUEL finished refueling in 24.0 minutes.
-Plane 19 is landing at 409.8 minutes.
-Plane 19 --> FUEL request a resource at 416.8 minutes.
-Plane 19 --> WATER request a resource at 416.8 minutes.
-Plane 19 --> CLEAN request a resource at 416.8 minutes.
-Plane 19 --> CATER request a resource at 416.8 minutes.
-Plane 19 --> POWER request a resource at 416.8 minutes.
-Plane 19 --> BAGGAGE request a resource at 416.8 minutes.
-Plane 19 --> POWER working on at 416.8 minutes.
-Plane 19 --> BAGGAGE working on at 416.8 minutes.
-Plane 19 --> FUEL working on at 423.8 minutes.
-Plane 19 --> WATER working on at 423.8 minutes.
-Plane 19 --> CLEAN working on at 423.8 minutes.
-Plane 19 --> CATER working on at 423.8 minutes.
-Plane 16 is early
-All process are done. 
-Plane 16 is departing at 424.4 minutes
-Plane 17 --> POWER done at 425.1 minutes.
-Plane 17 --> POWER finished charging in 54.0 minutes.
-Plane 18 --> POWER done at 429.6 minutes.
-Plane 18 --> POWER finished charging in 44.0 minutes.
-Plane 19 --> BAGGAGE done at 432.8 minutes.
+All process are done.
+Plane 15 is departing at 764.0 minutes
+Plane 19 --> BAGGAGE done at 770.2 minutes.
 Plane 19 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 19 --> WATER done at 434.8 mins.
-Plane 19 --> WATER finished supplying water in 18.0 minutes.
-Plane 19 --> CLEAN done at 434.8 mins.
-Plane 19 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 19 --> CATER done at 438.8 minutes.
-Plane 19 --> CATER finished catering in 22.0 minutes.
-Plane 19 --> FUEL done at 440.8 minutes.
-Plane 19 --> FUEL finished refueling in 24.0 minutes.
-Plane 20 requesting a gate at 443.7 minutes
-Plane 20 is landing at 448.7 minutes.
-Plane 18 is early
-All process are done. 
-Plane 18 is departing at 449.6 minutes
-Plane 20 --> FUEL request a resource at 455.7 minutes.
-Plane 20 --> WATER request a resource at 455.7 minutes.
-Plane 20 --> CLEAN request a resource at 455.7 minutes.
-Plane 20 --> CATER request a resource at 455.7 minutes.
-Plane 20 --> POWER request a resource at 455.7 minutes.
-Plane 20 --> BAGGAGE request a resource at 455.7 minutes.
-Plane 20 --> POWER working on at 455.7 minutes.
-Plane 20 --> BAGGAGE working on at 455.7 minutes.
-Plane 21 requesting a gate at 460.4 minutes
-Plane 19 --> POWER done at 460.8 minutes.
-Plane 19 --> POWER finished charging in 44.0 minutes.
-Plane 20 --> FUEL working on at 462.7 minutes.
-Plane 20 --> WATER working on at 462.7 minutes.
-Plane 20 --> CLEAN working on at 462.7 minutes.
-Plane 20 --> CATER working on at 462.7 minutes.
-Plane 17 is early
-All process are done. 
-Plane 17 is departing at 465.1 minutes
-Plane 21 is landing at 465.4 minutes.
-Plane 20 --> BAGGAGE done at 471.7 minutes.
+Plane 14 is early
+All process are done.
+Plane 14 is departing at 772.2 minutes
+Plane 19 --> WATER done at 772.2 mins.
+Plane 19 --> WATER finished supplying water in 11.0 minutes.
+Plane 19 --> CLEAN done at 772.2 mins.
+Plane 19 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 18 --> WATER done at 772.7 mins.
+Plane 18 --> WATER finished supplying water in 14.5 minutes.
+Plane 19 --> CATER done at 776.2 minutes.
+Plane 19 --> CATER finished catering in 15.0 minutes.
+Plane 20 requesting a gate at 776.4 minutes
+Plane 17 --> POWER done at 776.6 minutes.
+Plane 17 --> POWER finished catering in 44.0 minutes.
+Plane 19 --> FUEL done at 778.2 minutes.
+Plane 19 --> FUEL finished refueling in 17.0 minutes.
+Plane 18 --> BAGGAGE done at 779.2 minutes.
+Plane 18 --> BAGGAGE finished loading in 28.0 minutes.
+Plane 20 is landing at 781.4 minutes.
+Plane 18 --> FUEL done at 786.2 minutes.
+Plane 18 --> FUEL finished refueling in 28.0 minutes.
+Plane 18 --> CLEAN done at 787.2 mins.
+Plane 18 --> CLEAN finished cleaning in 29.0 minutes.
+Plane 18 --> CATER done at 788.2 minutes.
+Plane 18 --> CATER finished catering in 30.0 minutes.
+Plane 20 --> FUEL request a resource at 788.4 minutes.
+Plane 20 --> WATER request a resource at 788.4 minutes.
+Plane 20 --> CLEAN request a resource at 788.4 minutes.
+Plane 20 --> CATER request a resource at 788.4 minutes.
+Plane 20 --> POWER request a resource at 788.4 minutes.
+Plane 20 --> BAGGAGE request a resource at 788.4 minutes.
+Plane 20 --> POWER working on at 788.4 minutes.
+Plane 20 --> BAGGAGE working on at 788.4 minutes.
+Plane 16 is early
+All process are done.
+Plane 16 is departing at 788.8 minutes
+Plane 20 --> FUEL working on at 795.4 minutes.
+Plane 20 --> WATER working on at 795.4 minutes.
+Plane 20 --> CLEAN working on at 795.4 minutes.
+Plane 20 --> CATER working on at 795.4 minutes.
+Plane 19 --> POWER done at 800.8 minutes.
+Plane 19 --> POWER finished catering in 44.0 minutes.
+Plane 20 --> BAGGAGE done at 804.4 minutes.
 Plane 20 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 21 --> FUEL request a resource at 472.4 minutes.
-Plane 21 --> WATER request a resource at 472.4 minutes.
-Plane 21 --> CLEAN request a resource at 472.4 minutes.
-Plane 21 --> CATER request a resource at 472.4 minutes.
-Plane 21 --> POWER request a resource at 472.4 minutes.
-Plane 21 --> BAGGAGE request a resource at 472.4 minutes.
-Plane 21 --> POWER working on at 472.4 minutes.
-Plane 21 --> BAGGAGE working on at 472.4 minutes.
-Plane 22 requesting a gate at 472.5 minutes
-Plane 20 --> WATER done at 473.7 mins.
-Plane 20 --> WATER finished supplying water in 18.0 minutes.
-Plane 20 --> CLEAN done at 473.7 mins.
-Plane 20 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 22 is landing at 477.5 minutes.
-Plane 20 --> CATER done at 477.7 minutes.
-Plane 20 --> CATER finished catering in 22.0 minutes.
-Plane 21 --> FUEL working on at 479.4 minutes.
-Plane 21 --> WATER working on at 479.4 minutes.
-Plane 21 --> CLEAN working on at 479.4 minutes.
-Plane 21 --> CATER working on at 479.4 minutes.
-Plane 20 --> FUEL done at 479.7 minutes.
-Plane 20 --> FUEL finished refueling in 24.0 minutes.
-Plane 23 requesting a gate at 481.9 minutes
-Plane 22 --> FUEL request a resource at 484.5 minutes.
-Plane 22 --> WATER request a resource at 484.5 minutes.
-Plane 22 --> CLEAN request a resource at 484.5 minutes.
-Plane 22 --> CATER request a resource at 484.5 minutes.
-Plane 22 --> POWER request a resource at 484.5 minutes.
-Plane 22 --> BAGGAGE request a resource at 484.5 minutes.
-Plane 22 --> POWER working on at 484.5 minutes.
-Plane 22 --> BAGGAGE working on at 484.5 minutes.
-Plane 23 is landing at 486.9 minutes.
-Plane 21 --> BAGGAGE done at 488.4 minutes.
-Plane 21 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 21 --> WATER done at 490.4 mins.
-Plane 21 --> WATER finished supplying water in 18.0 minutes.
-Plane 21 --> CLEAN done at 490.4 mins.
-Plane 21 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 22 --> FUEL working on at 491.5 minutes.
-Plane 22 --> WATER working on at 491.5 minutes.
-Plane 22 --> CLEAN working on at 491.5 minutes.
-Plane 22 --> CATER working on at 491.5 minutes.
-Plane 23 --> FUEL request a resource at 493.9 minutes.
-Plane 23 --> WATER request a resource at 493.9 minutes.
-Plane 23 --> CLEAN request a resource at 493.9 minutes.
-Plane 23 --> CATER request a resource at 493.9 minutes.
-Plane 23 --> POWER request a resource at 493.9 minutes.
-Plane 23 --> BAGGAGE request a resource at 493.9 minutes.
-Plane 23 --> BAGGAGE working on at 493.9 minutes.
-Plane 21 --> CATER done at 494.4 minutes.
-Plane 21 --> CATER finished catering in 22.0 minutes.
-Plane 21 --> FUEL done at 496.4 minutes.
-Plane 21 --> FUEL finished refueling in 24.0 minutes.
-Plane 20 --> POWER done at 499.7 minutes.
-Plane 20 --> POWER finished charging in 44.0 minutes.
-Plane 23 --> POWER working on at 499.7 minutes.
-Plane 22 --> BAGGAGE done at 500.5 minutes.
-Plane 22 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 23 --> FUEL working on at 500.9 minutes.
-Plane 23 --> WATER working on at 500.9 minutes.
-Plane 23 --> CLEAN working on at 500.9 minutes.
-Plane 23 --> CATER working on at 500.9 minutes.
-Plane 22 --> WATER done at 502.5 mins.
-Plane 22 --> WATER finished supplying water in 18.0 minutes.
-Plane 22 --> CLEAN done at 502.5 mins.
-Plane 22 --> CLEAN finished cleaning in 18.0 minutes.
+Plane 18 --> POWER done at 805.2 minutes.
+Plane 18 --> POWER finished catering in 54.0 minutes.
+Plane 20 --> WATER done at 806.4 mins.
+Plane 20 --> WATER finished supplying water in 11.0 minutes.
+Plane 20 --> CLEAN done at 806.4 mins.
+Plane 20 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 20 --> CATER done at 810.4 minutes.
+Plane 20 --> CATER finished catering in 15.0 minutes.
 Plane 19 is early
-All process are done. 
-Plane 19 is departing at 502.8 minutes
-Plane 22 --> CATER done at 506.5 minutes.
-Plane 22 --> CATER finished catering in 22.0 minutes.
-Plane 22 --> FUEL done at 508.5 minutes.
-Plane 22 --> FUEL finished refueling in 24.0 minutes.
+All process are done.
+Plane 19 is departing at 811.2 minutes
+Plane 20 --> FUEL done at 812.4 minutes.
+Plane 20 --> FUEL finished refueling in 17.0 minutes.
+Plane 17 is early
+All process are done.
+Plane 17 is departing at 825.6 minutes
+Plane 20 --> POWER done at 832.4 minutes.
+Plane 20 --> POWER finished catering in 44.0 minutes.
+Plane 18 is early
+All process are done.
+Plane 18 is departing at 847.2 minutes
 Plane 20 is early
-All process are done. 
-Plane 20 is departing at 509.7 minutes
-Plane 23 --> BAGGAGE done at 509.9 minutes.
+All process are done.
+Plane 20 is departing at 873.4 minutes
+Plane 21 requesting a gate at 881.4 minutes
+Plane 21 is landing at 886.4 minutes.
+Plane 21 --> FUEL request a resource at 893.4 minutes.
+Plane 21 --> WATER request a resource at 893.4 minutes.
+Plane 21 --> CLEAN request a resource at 893.4 minutes.
+Plane 21 --> CATER request a resource at 893.4 minutes.
+Plane 21 --> POWER request a resource at 893.4 minutes.
+Plane 21 --> BAGGAGE request a resource at 893.4 minutes.
+Plane 21 --> POWER working on at 893.4 minutes.
+Plane 21 --> BAGGAGE working on at 893.4 minutes.
+Plane 22 requesting a gate at 897.0 minutes
+Plane 21 --> FUEL working on at 900.4 minutes.
+Plane 21 --> WATER working on at 900.4 minutes.
+Plane 21 --> CLEAN working on at 900.4 minutes.
+Plane 21 --> CATER working on at 900.4 minutes.
+Plane 22 is landing at 902.0 minutes.
+Plane 22 --> FUEL request a resource at 909.0 minutes.
+Plane 22 --> WATER request a resource at 909.0 minutes.
+Plane 22 --> CLEAN request a resource at 909.0 minutes.
+Plane 22 --> CATER request a resource at 909.0 minutes.
+Plane 22 --> POWER request a resource at 909.0 minutes.
+Plane 22 --> BAGGAGE request a resource at 909.0 minutes.
+Plane 22 --> POWER working on at 909.0 minutes.
+Plane 22 --> BAGGAGE working on at 909.0 minutes.
+Plane 21 --> BAGGAGE done at 909.4 minutes.
+Plane 21 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 21 --> WATER done at 911.4 mins.
+Plane 21 --> WATER finished supplying water in 11.0 minutes.
+Plane 21 --> CLEAN done at 911.4 mins.
+Plane 21 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 21 --> CATER done at 915.4 minutes.
+Plane 21 --> CATER finished catering in 15.0 minutes.
+Plane 22 --> FUEL working on at 916.0 minutes.
+Plane 22 --> WATER working on at 916.0 minutes.
+Plane 22 --> CLEAN working on at 916.0 minutes.
+Plane 22 --> CATER working on at 916.0 minutes.
+Plane 21 --> FUEL done at 917.4 minutes.
+Plane 21 --> FUEL finished refueling in 17.0 minutes.
+Plane 22 --> BAGGAGE done at 925.0 minutes.
+Plane 22 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 23 requesting a gate at 925.2 minutes
+Plane 22 --> WATER done at 927.0 mins.
+Plane 22 --> WATER finished supplying water in 11.0 minutes.
+Plane 22 --> CLEAN done at 927.0 mins.
+Plane 22 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 23 is landing at 930.2 minutes.
+Plane 22 --> CATER done at 931.0 minutes.
+Plane 22 --> CATER finished catering in 15.0 minutes.
+Plane 22 --> FUEL done at 933.0 minutes.
+Plane 22 --> FUEL finished refueling in 17.0 minutes.
+Plane 23 --> FUEL request a resource at 937.2 minutes.
+Plane 23 --> WATER request a resource at 937.2 minutes.
+Plane 23 --> CLEAN request a resource at 937.2 minutes.
+Plane 23 --> CATER request a resource at 937.2 minutes.
+Plane 23 --> POWER request a resource at 937.2 minutes.
+Plane 23 --> BAGGAGE request a resource at 937.2 minutes.
+Plane 23 --> POWER working on at 937.2 minutes.
+Plane 23 --> BAGGAGE working on at 937.2 minutes.
+Plane 21 --> POWER done at 937.4 minutes.
+Plane 21 --> POWER finished catering in 44.0 minutes.
+Plane 23 --> FUEL working on at 944.2 minutes.
+Plane 23 --> WATER working on at 944.2 minutes.
+Plane 23 --> CLEAN working on at 944.2 minutes.
+Plane 23 --> CATER working on at 944.2 minutes.
+Plane 22 --> POWER done at 953.0 minutes.
+Plane 22 --> POWER finished catering in 44.0 minutes.
+Plane 23 --> BAGGAGE done at 953.2 minutes.
 Plane 23 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 23 --> WATER done at 511.9 mins.
-Plane 23 --> WATER finished supplying water in 18.0 minutes.
-Plane 23 --> CLEAN done at 511.9 mins.
-Plane 23 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 23 --> CATER done at 515.9 minutes.
-Plane 23 --> CATER finished catering in 22.0 minutes.
-Plane 21 --> POWER done at 516.4 minutes.
-Plane 21 --> POWER finished charging in 44.0 minutes.
-Plane 23 --> FUEL done at 517.9 minutes.
-Plane 23 --> FUEL finished refueling in 24.0 minutes.
-Plane 24 requesting a gate at 524.8 minutes
-Plane 22 --> POWER done at 528.5 minutes.
-Plane 22 --> POWER finished charging in 44.0 minutes.
-Plane 24 is landing at 529.8 minutes.
-Plane 21 is early
-All process are done. 
-Plane 21 is departing at 531.4 minutes
-Plane 25 requesting a gate at 533.9 minutes
-Plane 24 --> FUEL request a resource at 536.8 minutes.
-Plane 24 --> WATER request a resource at 536.8 minutes.
-Plane 24 --> CLEAN request a resource at 536.8 minutes.
-Plane 24 --> CATER request a resource at 536.8 minutes.
-Plane 24 --> POWER request a resource at 536.8 minutes.
-Plane 24 --> BAGGAGE request a resource at 536.8 minutes.
-Plane 24 --> POWER working on at 536.8 minutes.
-Plane 24 --> BAGGAGE working on at 536.8 minutes.
-Plane 25 is landing at 538.9 minutes.
-Plane 23 --> POWER done at 543.7 minutes.
-Plane 23 --> POWER finished charging in 44.0 minutes.
-Plane 24 --> FUEL working on at 543.8 minutes.
-Plane 24 --> WATER working on at 543.8 minutes.
-Plane 24 --> CLEAN working on at 543.8 minutes.
-Plane 24 --> CATER working on at 543.8 minutes.
-Plane 25 --> FUEL request a resource at 545.9 minutes.
-Plane 25 --> WATER request a resource at 545.9 minutes.
-Plane 25 --> CLEAN request a resource at 545.9 minutes.
-Plane 25 --> CATER request a resource at 545.9 minutes.
-Plane 25 --> POWER request a resource at 545.9 minutes.
-Plane 25 --> BAGGAGE request a resource at 545.9 minutes.
-Plane 25 --> POWER working on at 545.9 minutes.
-Plane 25 --> BAGGAGE working on at 545.9 minutes.
-Plane 24 --> BAGGAGE done at 552.8 minutes.
-Plane 24 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 25 --> FUEL working on at 552.9 minutes.
-Plane 25 --> WATER working on at 552.9 minutes.
-Plane 25 --> CLEAN working on at 552.9 minutes.
-Plane 25 --> CATER working on at 552.9 minutes.
-Plane 26 requesting a gate at 554.1 minutes
-Plane 24 --> WATER done at 554.8 mins.
-Plane 24 --> WATER finished supplying water in 18.0 minutes.
-Plane 24 --> CLEAN done at 554.8 mins.
-Plane 24 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 24 --> CATER done at 558.8 minutes.
-Plane 24 --> CATER finished catering in 22.0 minutes.
-Plane 26 is landing at 559.1 minutes.
-Plane 24 --> FUEL done at 560.8 minutes.
-Plane 24 --> FUEL finished refueling in 24.0 minutes.
-Plane 25 --> BAGGAGE done at 561.9 minutes.
-Plane 25 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 25 --> WATER done at 563.9 mins.
-Plane 25 --> WATER finished supplying water in 18.0 minutes.
-Plane 25 --> CLEAN done at 563.9 mins.
-Plane 25 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 26 --> FUEL request a resource at 566.1 minutes.
-Plane 26 --> WATER request a resource at 566.1 minutes.
-Plane 26 --> CLEAN request a resource at 566.1 minutes.
-Plane 26 --> CATER request a resource at 566.1 minutes.
-Plane 26 --> POWER request a resource at 566.1 minutes.
-Plane 26 --> BAGGAGE request a resource at 566.1 minutes.
-Plane 26 --> POWER working on at 566.1 minutes.
-Plane 26 --> BAGGAGE working on at 566.1 minutes.
-Plane 25 --> CATER done at 567.9 minutes.
-Plane 25 --> CATER finished catering in 22.0 minutes.
-Plane 25 --> FUEL done at 569.9 minutes.
-Plane 25 --> FUEL finished refueling in 24.0 minutes.
-Plane 27 requesting a gate at 572.5 minutes
-Plane 26 --> FUEL working on at 573.1 minutes.
-Plane 26 --> WATER working on at 573.1 minutes.
-Plane 26 --> CLEAN working on at 573.1 minutes.
-Plane 26 --> CATER working on at 573.1 minutes.
-Plane 27 is landing at 577.5 minutes.
-Plane 24 --> POWER done at 580.8 minutes.
-Plane 24 --> POWER finished charging in 44.0 minutes.
-Plane 26 --> BAGGAGE done at 582.1 minutes.
-Plane 26 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 26 --> WATER done at 584.1 mins.
-Plane 26 --> WATER finished supplying water in 18.0 minutes.
-Plane 26 --> CLEAN done at 584.1 mins.
-Plane 26 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 27 --> FUEL request a resource at 584.5 minutes.
-Plane 27 --> WATER request a resource at 584.5 minutes.
-Plane 27 --> CLEAN request a resource at 584.5 minutes.
-Plane 27 --> CATER request a resource at 584.5 minutes.
-Plane 27 --> POWER request a resource at 584.5 minutes.
-Plane 27 --> BAGGAGE request a resource at 584.5 minutes.
-Plane 27 --> POWER working on at 584.5 minutes.
-Plane 27 --> BAGGAGE working on at 584.5 minutes.
-Plane 26 --> CATER done at 588.1 minutes.
-Plane 26 --> CATER finished catering in 22.0 minutes.
-Plane 25 --> POWER done at 589.9 minutes.
-Plane 25 --> POWER finished charging in 44.0 minutes.
-Plane 23 is early
-All process are done. 
-Plane 23 is departing at 589.9 minutes
-Plane 26 --> FUEL done at 590.1 minutes.
-Plane 26 --> FUEL finished refueling in 24.0 minutes.
-Plane 27 --> FUEL working on at 591.5 minutes.
-Plane 27 --> WATER working on at 591.5 minutes.
-Plane 27 --> CLEAN working on at 591.5 minutes.
-Plane 27 --> CATER working on at 591.5 minutes.
+Plane 23 --> WATER done at 955.2 mins.
+Plane 23 --> WATER finished supplying water in 11.0 minutes.
+Plane 23 --> CLEAN done at 955.2 mins.
+Plane 23 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 23 --> CATER done at 959.2 minutes.
+Plane 23 --> CATER finished catering in 15.0 minutes.
+Plane 23 --> FUEL done at 961.2 minutes.
+Plane 23 --> FUEL finished refueling in 17.0 minutes.
+Plane 24 requesting a gate at 961.8 minutes
+Plane 24 is landing at 966.8 minutes.
+Plane 25 requesting a gate at 967.2 minutes
+Plane 25 is landing at 972.2 minutes.
 Plane 22 is early
-All process are done. 
-Plane 22 is departing at 595.5 minutes
-Plane 27 --> BAGGAGE done at 600.5 minutes.
-Plane 27 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 27 --> WATER done at 602.5 mins.
-Plane 27 --> WATER finished supplying water in 18.0 minutes.
-Plane 27 --> CLEAN done at 602.5 mins.
-Plane 27 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 27 --> CATER done at 606.5 minutes.
-Plane 27 --> CATER finished catering in 22.0 minutes.
-Plane 27 --> FUEL done at 608.5 minutes.
-Plane 27 --> FUEL finished refueling in 24.0 minutes.
-Plane 26 --> POWER done at 610.1 minutes.
-Plane 26 --> POWER finished charging in 44.0 minutes.
+All process are done.
+Plane 22 is departing at 973.0 minutes
+Plane 21 is early
+All process are done.
+Plane 21 is departing at 973.4 minutes
+Plane 24 --> FUEL request a resource at 973.8 minutes.
+Plane 24 --> WATER request a resource at 973.8 minutes.
+Plane 24 --> CLEAN request a resource at 973.8 minutes.
+Plane 24 --> CATER request a resource at 973.8 minutes.
+Plane 24 --> POWER request a resource at 973.8 minutes.
+Plane 24 --> BAGGAGE request a resource at 973.8 minutes.
+Plane 24 --> POWER working on at 973.8 minutes.
+Plane 24 --> BAGGAGE working on at 973.8 minutes.
+Plane 25 --> FUEL request a resource at 979.2 minutes.
+Plane 25 --> WATER request a resource at 979.2 minutes.
+Plane 25 --> CLEAN request a resource at 979.2 minutes.
+Plane 25 --> CATER request a resource at 979.2 minutes.
+Plane 25 --> POWER request a resource at 979.2 minutes.
+Plane 25 --> BAGGAGE request a resource at 979.2 minutes.
+Plane 25 --> POWER working on at 979.2 minutes.
+Plane 25 --> BAGGAGE working on at 979.2 minutes.
+Plane 24 --> FUEL working on at 980.8 minutes.
+Plane 24 --> WATER working on at 980.8 minutes.
+Plane 24 --> CLEAN working on at 980.8 minutes.
+Plane 24 --> CATER working on at 980.8 minutes.
+Plane 23 --> POWER done at 981.2 minutes.
+Plane 23 --> POWER finished catering in 44.0 minutes.
+Plane 25 --> FUEL working on at 986.2 minutes.
+Plane 25 --> WATER working on at 986.2 minutes.
+Plane 25 --> CLEAN working on at 986.2 minutes.
+Plane 25 --> CATER working on at 986.2 minutes.
+Plane 23 is early
+All process are done.
+Plane 23 is departing at 988.2 minutes
+Plane 24 --> BAGGAGE done at 989.8 minutes.
+Plane 24 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 24 --> WATER done at 991.8 mins.
+Plane 24 --> WATER finished supplying water in 11.0 minutes.
+Plane 24 --> CLEAN done at 991.8 mins.
+Plane 24 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 25 --> BAGGAGE done at 995.2 minutes.
+Plane 25 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 24 --> CATER done at 995.8 minutes.
+Plane 24 --> CATER finished catering in 15.0 minutes.
+Plane 25 --> WATER done at 997.2 mins.
+Plane 25 --> WATER finished supplying water in 11.0 minutes.
+Plane 25 --> CLEAN done at 997.2 mins.
+Plane 25 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 24 --> FUEL done at 997.8 minutes.
+Plane 24 --> FUEL finished refueling in 17.0 minutes.
+Plane 25 --> CATER done at 1001.2 minutes.
+Plane 25 --> CATER finished catering in 15.0 minutes.
+Plane 25 --> FUEL done at 1003.2 minutes.
+Plane 25 --> FUEL finished refueling in 17.0 minutes.
+Plane 26 requesting a gate at 1014.0 minutes
+Plane 24 --> POWER done at 1017.8 minutes.
+Plane 24 --> POWER finished catering in 44.0 minutes.
+Plane 26 is landing at 1019.0 minutes.
+Plane 25 --> POWER done at 1023.2 minutes.
+Plane 25 --> POWER finished catering in 44.0 minutes.
+Plane 26 --> FUEL request a resource at 1026.0 minutes.
+Plane 26 --> WATER request a resource at 1026.0 minutes.
+Plane 26 --> CLEAN request a resource at 1026.0 minutes.
+Plane 26 --> CATER request a resource at 1026.0 minutes.
+Plane 26 --> POWER request a resource at 1026.0 minutes.
+Plane 26 --> BAGGAGE request a resource at 1026.0 minutes.
+Plane 26 --> POWER working on at 1026.0 minutes.
+Plane 26 --> BAGGAGE working on at 1026.0 minutes.
 Plane 25 is early
-All process are done. 
-Plane 25 is departing at 620.9 minutes
+All process are done.
+Plane 25 is departing at 1029.2 minutes
+Plane 26 --> FUEL working on at 1033.0 minutes.
+Plane 26 --> WATER working on at 1033.0 minutes.
+Plane 26 --> CLEAN working on at 1033.0 minutes.
+Plane 26 --> CATER working on at 1033.0 minutes.
+Plane 26 --> BAGGAGE done at 1042.0 minutes.
+Plane 26 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 26 --> WATER done at 1044.0 mins.
+Plane 26 --> WATER finished supplying water in 11.0 minutes.
+Plane 26 --> CLEAN done at 1044.0 mins.
+Plane 26 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 26 --> CATER done at 1048.0 minutes.
+Plane 26 --> CATER finished catering in 15.0 minutes.
+Plane 26 --> FUEL done at 1050.0 minutes.
+Plane 26 --> FUEL finished refueling in 17.0 minutes.
 Plane 24 is early
-All process are done. 
-Plane 24 is departing at 626.8 minutes
-Plane 27 --> POWER done at 628.5 minutes.
-Plane 27 --> POWER finished charging in 44.0 minutes.
-Plane 28 requesting a gate at 638.5 minutes
-Plane 29 requesting a gate at 642.2 minutes
-Plane 28 is landing at 643.5 minutes.
-Plane 29 is landing at 647.2 minutes.
-Plane 28 --> FUEL request a resource at 650.5 minutes.
-Plane 28 --> WATER request a resource at 650.5 minutes.
-Plane 28 --> CLEAN request a resource at 650.5 minutes.
-Plane 28 --> CATER request a resource at 650.5 minutes.
-Plane 28 --> POWER request a resource at 650.5 minutes.
-Plane 28 --> BAGGAGE request a resource at 650.5 minutes.
-Plane 28 --> POWER working on at 650.5 minutes.
-Plane 28 --> BAGGAGE working on at 650.5 minutes.
-Plane 29 --> FUEL request a resource at 654.2 minutes.
-Plane 29 --> WATER request a resource at 654.2 minutes.
-Plane 29 --> CLEAN request a resource at 654.2 minutes.
-Plane 29 --> CATER request a resource at 654.2 minutes.
-Plane 29 --> POWER request a resource at 654.2 minutes.
-Plane 29 --> BAGGAGE request a resource at 654.2 minutes.
-Plane 29 --> POWER working on at 654.2 minutes.
-Plane 29 --> BAGGAGE working on at 654.2 minutes.
-Plane 28 --> FUEL working on at 657.5 minutes.
-Plane 28 --> WATER working on at 657.5 minutes.
-Plane 28 --> CLEAN working on at 657.5 minutes.
-Plane 28 --> CATER working on at 657.5 minutes.
-Plane 29 --> FUEL working on at 661.2 minutes.
-Plane 29 --> WATER working on at 661.2 minutes.
-Plane 29 --> CLEAN working on at 661.2 minutes.
-Plane 29 --> CATER working on at 661.2 minutes.
-Plane 28 --> BAGGAGE done at 666.5 minutes.
-Plane 28 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 28 --> WATER done at 668.5 mins.
-Plane 28 --> WATER finished supplying water in 18.0 minutes.
-Plane 28 --> CLEAN done at 668.5 mins.
-Plane 28 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 29 --> BAGGAGE done at 670.2 minutes.
-Plane 29 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 29 --> WATER done at 672.2 mins.
-Plane 29 --> WATER finished supplying water in 18.0 minutes.
-Plane 29 --> CLEAN done at 672.2 mins.
-Plane 29 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 28 --> CATER done at 672.5 minutes.
-Plane 28 --> CATER finished catering in 22.0 minutes.
-Plane 28 --> FUEL done at 674.5 minutes.
-Plane 28 --> FUEL finished refueling in 24.0 minutes.
+All process are done.
+Plane 24 is departing at 1052.8 minutes
+Plane 27 requesting a gate at 1068.0 minutes
+Plane 26 --> POWER done at 1070.0 minutes.
+Plane 26 --> POWER finished catering in 44.0 minutes.
+Plane 28 requesting a gate at 1070.4 minutes
+Plane 27 is landing at 1073.0 minutes.
+Plane 28 is landing at 1075.4 minutes.
+Plane 27 --> FUEL request a resource at 1080.0 minutes.
+Plane 27 --> WATER request a resource at 1080.0 minutes.
+Plane 27 --> CLEAN request a resource at 1080.0 minutes.
+Plane 27 --> CATER request a resource at 1080.0 minutes.
+Plane 27 --> POWER request a resource at 1080.0 minutes.
+Plane 27 --> BAGGAGE request a resource at 1080.0 minutes.
+Plane 27 --> POWER working on at 1080.0 minutes.
+Plane 27 --> BAGGAGE working on at 1080.0 minutes.
+Plane 28 --> FUEL request a resource at 1082.4 minutes.
+Plane 28 --> WATER request a resource at 1082.4 minutes.
+Plane 28 --> CLEAN request a resource at 1082.4 minutes.
+Plane 28 --> CATER request a resource at 1082.4 minutes.
+Plane 28 --> POWER request a resource at 1082.4 minutes.
+Plane 28 --> BAGGAGE request a resource at 1082.4 minutes.
+Plane 28 --> POWER working on at 1082.4 minutes.
+Plane 28 --> BAGGAGE working on at 1082.4 minutes.
+Plane 27 --> FUEL working on at 1087.0 minutes.
+Plane 27 --> WATER working on at 1087.0 minutes.
+Plane 27 --> CLEAN working on at 1087.0 minutes.
+Plane 27 --> CATER working on at 1087.0 minutes.
+Plane 28 --> FUEL working on at 1089.4 minutes.
+Plane 28 --> WATER working on at 1089.4 minutes.
+Plane 28 --> CLEAN working on at 1089.4 minutes.
+Plane 28 --> CATER working on at 1089.4 minutes.
 Plane 26 is early
-All process are done. 
-Plane 26 is departing at 676.1 minutes
-Plane 29 --> CATER done at 676.2 minutes.
-Plane 29 --> CATER finished catering in 22.0 minutes.
-Plane 29 --> FUEL done at 678.2 minutes.
-Plane 29 --> FUEL finished refueling in 24.0 minutes.
+All process are done.
+Plane 26 is departing at 1096.0 minutes
+Plane 27 --> BAGGAGE done at 1096.0 minutes.
+Plane 27 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 27 --> WATER done at 1098.0 mins.
+Plane 27 --> WATER finished supplying water in 11.0 minutes.
+Plane 27 --> CLEAN done at 1098.0 mins.
+Plane 27 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 28 --> BAGGAGE done at 1098.4 minutes.
+Plane 28 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 28 --> WATER done at 1100.4 mins.
+Plane 28 --> WATER finished supplying water in 11.0 minutes.
+Plane 28 --> CLEAN done at 1100.4 mins.
+Plane 28 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 27 --> CATER done at 1102.0 minutes.
+Plane 27 --> CATER finished catering in 15.0 minutes.
+Plane 29 requesting a gate at 1102.8 minutes
+Plane 27 --> FUEL done at 1104.0 minutes.
+Plane 27 --> FUEL finished refueling in 17.0 minutes.
+Plane 28 --> CATER done at 1104.4 minutes.
+Plane 28 --> CATER finished catering in 15.0 minutes.
+Plane 28 --> FUEL done at 1106.4 minutes.
+Plane 28 --> FUEL finished refueling in 17.0 minutes.
+Plane 29 is landing at 1107.8 minutes.
+Plane 30 requesting a gate at 1109.4 minutes
+Plane 30 is landing at 1114.4 minutes.
+Plane 29 --> FUEL request a resource at 1114.8 minutes.
+Plane 29 --> WATER request a resource at 1114.8 minutes.
+Plane 29 --> CLEAN request a resource at 1114.8 minutes.
+Plane 29 --> CATER request a resource at 1114.8 minutes.
+Plane 29 --> POWER request a resource at 1114.8 minutes.
+Plane 29 --> BAGGAGE request a resource at 1114.8 minutes.
+Plane 29 --> POWER working on at 1114.8 minutes.
+Plane 29 --> BAGGAGE working on at 1114.8 minutes.
+Plane 31 requesting a gate at 1120.8 minutes
+Plane 30 --> FUEL request a resource at 1121.4 minutes.
+Plane 30 --> WATER request a resource at 1121.4 minutes.
+Plane 30 --> CLEAN request a resource at 1121.4 minutes.
+Plane 30 --> CATER request a resource at 1121.4 minutes.
+Plane 30 --> POWER request a resource at 1121.4 minutes.
+Plane 30 --> BAGGAGE request a resource at 1121.4 minutes.
+Plane 30 --> BAGGAGE working on at 1121.4 minutes.
+Plane 29 --> FUEL working on at 1121.8 minutes.
+Plane 29 --> WATER working on at 1121.8 minutes.
+Plane 29 --> CLEAN working on at 1121.8 minutes.
+Plane 29 --> CATER working on at 1121.8 minutes.
+Plane 32 requesting a gate at 1123.2 minutes
+Plane 27 --> POWER done at 1124.0 minutes.
+Plane 27 --> POWER finished catering in 44.0 minutes.
+Plane 30 --> POWER working on at 1124.0 minutes.
+Plane 33 requesting a gate at 1124.4 minutes
+Plane 31 is landing at 1125.8 minutes.
+Plane 29 --> BAGGAGE done at 1126.0 minutes.
+Plane 29 --> BAGGAGE finished loading in 11.2 minutes.
+Plane 28 --> POWER done at 1126.4 minutes.
+Plane 28 --> POWER finished catering in 44.0 minutes.
+Plane 34 requesting a gate at 1127.4 minutes
+Plane 32 is landing at 1128.2 minutes.
+Plane 30 --> FUEL working on at 1128.4 minutes.
+Plane 30 --> WATER working on at 1128.4 minutes.
+Plane 30 --> CLEAN working on at 1128.4 minutes.
+Plane 30 --> CATER working on at 1128.4 minutes.
+Plane 33 is landing at 1129.4 minutes.
+Plane 29 --> WATER done at 1129.5 mins.
+Plane 29 --> WATER finished supplying water in 7.7 minutes.
+Plane 29 --> CLEAN done at 1129.5 mins.
+Plane 29 --> CLEAN finished cleaning in 7.7 minutes.
+Plane 35 requesting a gate at 1130.4 minutes
+Plane 29 --> CATER done at 1132.3 minutes.
+Plane 29 --> CATER finished catering in 10.5 minutes.
+Plane 34 is landing at 1132.4 minutes.
+Plane 31 --> FUEL request a resource at 1132.8 minutes.
+Plane 31 --> WATER request a resource at 1132.8 minutes.
+Plane 31 --> CLEAN request a resource at 1132.8 minutes.
+Plane 31 --> CATER request a resource at 1132.8 minutes.
+Plane 31 --> POWER request a resource at 1132.8 minutes.
+Plane 31 --> BAGGAGE request a resource at 1132.8 minutes.
+Plane 31 --> POWER working on at 1132.8 minutes.
+Plane 31 --> BAGGAGE working on at 1132.8 minutes.
 Plane 27 is early
-All process are done. 
-Plane 27 is departing at 684.5 minutes
-Plane 28 --> POWER done at 694.5 minutes.
-Plane 28 --> POWER finished charging in 44.0 minutes.
-Plane 29 --> POWER done at 698.2 minutes.
-Plane 29 --> POWER finished charging in 44.0 minutes.
-Plane 29 is early
-All process are done. 
-Plane 29 is departing at 715.2 minutes
-Plane 30 requesting a gate at 728.1 minutes
-Plane 30 is landing at 733.1 minutes.
-Plane 30 --> FUEL request a resource at 740.1 minutes.
-Plane 30 --> WATER request a resource at 740.1 minutes.
-Plane 30 --> CLEAN request a resource at 740.1 minutes.
-Plane 30 --> CATER request a resource at 740.1 minutes.
-Plane 30 --> POWER request a resource at 740.1 minutes.
-Plane 30 --> BAGGAGE request a resource at 740.1 minutes.
-Plane 30 --> POWER working on at 740.1 minutes.
-Plane 30 --> BAGGAGE working on at 740.1 minutes.
-Plane 28 is early
-All process are done. 
-Plane 28 is departing at 742.5 minutes
-Plane 30 --> FUEL working on at 747.1 minutes.
-Plane 30 --> WATER working on at 747.1 minutes.
-Plane 30 --> CLEAN working on at 747.1 minutes.
-Plane 30 --> CATER working on at 747.1 minutes.
-Plane 31 requesting a gate at 752.5 minutes
-Plane 30 --> BAGGAGE done at 756.1 minutes.
-Plane 30 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 31 is landing at 757.5 minutes.
-Plane 30 --> WATER done at 758.1 mins.
-Plane 30 --> WATER finished supplying water in 18.0 minutes.
-Plane 30 --> CLEAN done at 758.1 mins.
-Plane 30 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 30 --> CATER done at 762.1 minutes.
-Plane 30 --> CATER finished catering in 22.0 minutes.
-Plane 30 --> FUEL done at 764.1 minutes.
-Plane 30 --> FUEL finished refueling in 24.0 minutes.
-Plane 31 --> FUEL request a resource at 764.5 minutes.
-Plane 31 --> WATER request a resource at 764.5 minutes.
-Plane 31 --> CLEAN request a resource at 764.5 minutes.
-Plane 31 --> CATER request a resource at 764.5 minutes.
-Plane 31 --> POWER request a resource at 764.5 minutes.
-Plane 31 --> BAGGAGE request a resource at 764.5 minutes.
-Plane 31 --> POWER working on at 764.5 minutes.
-Plane 31 --> BAGGAGE working on at 764.5 minutes.
-Plane 31 --> FUEL working on at 771.5 minutes.
-Plane 31 --> WATER working on at 771.5 minutes.
-Plane 31 --> CLEAN working on at 771.5 minutes.
-Plane 31 --> CATER working on at 771.5 minutes.
-Plane 31 --> BAGGAGE done at 780.5 minutes.
+All process are done.
+Plane 27 is departing at 1133.0 minutes
+Plane 29 --> FUEL done at 1133.7 minutes.
+Plane 29 --> FUEL finished refueling in 11.9 minutes.
+Plane 32 --> FUEL request a resource at 1135.2 minutes.
+Plane 32 --> WATER request a resource at 1135.2 minutes.
+Plane 32 --> CLEAN request a resource at 1135.2 minutes.
+Plane 32 --> CATER request a resource at 1135.2 minutes.
+Plane 32 --> POWER request a resource at 1135.2 minutes.
+Plane 32 --> BAGGAGE request a resource at 1135.2 minutes.
+Plane 32 --> BAGGAGE working on at 1135.2 minutes.
+Plane 35 is landing at 1135.4 minutes.
+Plane 33 --> FUEL request a resource at 1136.4 minutes.
+Plane 33 --> WATER request a resource at 1136.4 minutes.
+Plane 33 --> CLEAN request a resource at 1136.4 minutes.
+Plane 33 --> CATER request a resource at 1136.4 minutes.
+Plane 33 --> POWER request a resource at 1136.4 minutes.
+Plane 33 --> BAGGAGE request a resource at 1136.4 minutes.
+Plane 34 --> FUEL request a resource at 1139.4 minutes.
+Plane 34 --> WATER request a resource at 1139.4 minutes.
+Plane 34 --> CLEAN request a resource at 1139.4 minutes.
+Plane 34 --> CATER request a resource at 1139.4 minutes.
+Plane 34 --> POWER request a resource at 1139.4 minutes.
+Plane 34 --> BAGGAGE request a resource at 1139.4 minutes.
+Plane 31 --> FUEL working on at 1139.8 minutes.
+Plane 31 --> WATER working on at 1139.8 minutes.
+Plane 31 --> CLEAN working on at 1139.8 minutes.
+Plane 31 --> CATER working on at 1139.8 minutes.
+Plane 32 --> FUEL working on at 1142.2 minutes.
+Plane 32 --> WATER working on at 1142.2 minutes.
+Plane 32 --> CLEAN working on at 1142.2 minutes.
+Plane 32 --> CATER working on at 1142.2 minutes.
+Plane 35 --> FUEL request a resource at 1142.4 minutes.
+Plane 35 --> WATER request a resource at 1142.4 minutes.
+Plane 35 --> CLEAN request a resource at 1142.4 minutes.
+Plane 35 --> CATER request a resource at 1142.4 minutes.
+Plane 35 --> POWER request a resource at 1142.4 minutes.
+Plane 35 --> BAGGAGE request a resource at 1142.4 minutes.
+Plane 30 --> WATER done at 1142.9 mins.
+Plane 30 --> WATER finished supplying water in 14.5 minutes.
+Plane 33 --> CLEAN working on at 1143.4 minutes.
+Plane 34 --> CLEAN working on at 1146.8 minutes.
+Plane 31 --> BAGGAGE done at 1148.8 minutes.
 Plane 31 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 31 --> WATER done at 782.5 mins.
-Plane 31 --> WATER finished supplying water in 18.0 minutes.
-Plane 31 --> CLEAN done at 782.5 mins.
-Plane 31 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 30 --> POWER done at 784.1 minutes.
-Plane 30 --> POWER finished charging in 44.0 minutes.
-Plane 31 --> CATER done at 786.5 minutes.
-Plane 31 --> CATER finished catering in 22.0 minutes.
-Plane 31 --> FUEL done at 788.5 minutes.
-Plane 31 --> FUEL finished refueling in 24.0 minutes.
-Plane 30 is early
-All process are done. 
-Plane 30 is departing at 798.1 minutes
-Plane 31 --> POWER done at 808.5 minutes.
-Plane 31 --> POWER finished charging in 44.0 minutes.
-Plane 32 requesting a gate at 809.9 minutes
-Plane 32 is landing at 814.9 minutes.
-Plane 31 is early
-All process are done. 
-Plane 31 is departing at 817.5 minutes
-Plane 32 --> FUEL request a resource at 821.9 minutes.
-Plane 32 --> WATER request a resource at 821.9 minutes.
-Plane 32 --> CLEAN request a resource at 821.9 minutes.
-Plane 32 --> CATER request a resource at 821.9 minutes.
-Plane 32 --> POWER request a resource at 821.9 minutes.
-Plane 32 --> BAGGAGE request a resource at 821.9 minutes.
-Plane 32 --> POWER working on at 821.9 minutes.
-Plane 32 --> BAGGAGE working on at 821.9 minutes.
-Plane 32 --> FUEL working on at 828.9 minutes.
-Plane 32 --> WATER working on at 828.9 minutes.
-Plane 32 --> CLEAN working on at 828.9 minutes.
-Plane 32 --> CATER working on at 828.9 minutes.
-Plane 32 --> BAGGAGE done at 837.9 minutes.
+Plane 34 --> BAGGAGE working on at 1148.8 minutes.
+Plane 30 --> BAGGAGE done at 1149.4 minutes.
+Plane 30 --> BAGGAGE finished loading in 28.0 minutes.
+Plane 35 --> CLEAN working on at 1149.4 minutes.
+Plane 35 --> BAGGAGE working on at 1149.4 minutes.
+Plane 34 --> WATER working on at 1149.9 minutes.
+Plane 31 --> WATER done at 1150.8 mins.
+Plane 31 --> WATER finished supplying water in 11.0 minutes.
+Plane 31 --> CLEAN done at 1150.8 mins.
+Plane 31 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 32 --> BAGGAGE done at 1151.2 minutes.
 Plane 32 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 32 --> WATER done at 839.9 mins.
-Plane 32 --> WATER finished supplying water in 18.0 minutes.
-Plane 32 --> CLEAN done at 839.9 mins.
-Plane 32 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 33 requesting a gate at 840.7 minutes
-Plane 32 --> CATER done at 843.9 minutes.
-Plane 32 --> CATER finished catering in 22.0 minutes.
-Plane 33 is landing at 845.7 minutes.
-Plane 32 --> FUEL done at 845.9 minutes.
-Plane 32 --> FUEL finished refueling in 24.0 minutes.
-Plane 33 --> FUEL request a resource at 852.7 minutes.
-Plane 33 --> WATER request a resource at 852.7 minutes.
-Plane 33 --> CLEAN request a resource at 852.7 minutes.
-Plane 33 --> CATER request a resource at 852.7 minutes.
-Plane 33 --> POWER request a resource at 852.7 minutes.
-Plane 33 --> BAGGAGE request a resource at 852.7 minutes.
-Plane 33 --> POWER working on at 852.7 minutes.
-Plane 33 --> BAGGAGE working on at 852.7 minutes.
-Plane 33 --> FUEL working on at 859.7 minutes.
-Plane 33 --> WATER working on at 859.7 minutes.
-Plane 33 --> CLEAN working on at 859.7 minutes.
-Plane 33 --> CATER working on at 859.7 minutes.
-Plane 32 --> POWER done at 865.9 minutes.
-Plane 32 --> POWER finished charging in 44.0 minutes.
-Plane 33 --> BAGGAGE done at 868.7 minutes.
-Plane 33 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 33 --> WATER done at 870.7 mins.
-Plane 33 --> WATER finished supplying water in 18.0 minutes.
-Plane 33 --> CLEAN done at 870.7 mins.
-Plane 33 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 33 --> CATER done at 874.7 minutes.
-Plane 33 --> CATER finished catering in 22.0 minutes.
-Plane 33 --> FUEL done at 876.7 minutes.
-Plane 33 --> FUEL finished refueling in 24.0 minutes.
-Plane 32 is early
-All process are done. 
-Plane 32 is departing at 888.9 minutes
-Plane 34 requesting a gate at 888.9 minutes
-Plane 35 requesting a gate at 890.4 minutes
-Plane 34 is landing at 893.9 minutes.
-Plane 35 is landing at 895.4 minutes.
-Plane 33 --> POWER done at 896.7 minutes.
-Plane 33 --> POWER finished charging in 44.0 minutes.
-Plane 34 --> FUEL request a resource at 900.9 minutes.
-Plane 34 --> WATER request a resource at 900.9 minutes.
-Plane 34 --> CLEAN request a resource at 900.9 minutes.
-Plane 34 --> CATER request a resource at 900.9 minutes.
-Plane 34 --> POWER request a resource at 900.9 minutes.
-Plane 34 --> BAGGAGE request a resource at 900.9 minutes.
-Plane 34 --> POWER working on at 900.9 minutes.
-Plane 34 --> BAGGAGE working on at 900.9 minutes.
-Plane 35 --> FUEL request a resource at 902.4 minutes.
-Plane 35 --> WATER request a resource at 902.4 minutes.
-Plane 35 --> CLEAN request a resource at 902.4 minutes.
-Plane 35 --> CATER request a resource at 902.4 minutes.
-Plane 35 --> POWER request a resource at 902.4 minutes.
-Plane 35 --> BAGGAGE request a resource at 902.4 minutes.
-Plane 35 --> POWER working on at 902.4 minutes.
-Plane 35 --> BAGGAGE working on at 902.4 minutes.
-Plane 34 --> FUEL working on at 907.9 minutes.
-Plane 34 --> WATER working on at 907.9 minutes.
-Plane 34 --> CLEAN working on at 907.9 minutes.
-Plane 34 --> CATER working on at 907.9 minutes.
-Plane 35 --> FUEL working on at 909.4 minutes.
-Plane 35 --> WATER working on at 909.4 minutes.
-Plane 35 --> CLEAN working on at 909.4 minutes.
-Plane 35 --> CATER working on at 909.4 minutes.
-Plane 34 --> BAGGAGE done at 916.9 minutes.
+Plane 33 --> BAGGAGE working on at 1151.2 minutes.
+Plane 32 --> WATER done at 1153.2 mins.
+Plane 32 --> WATER finished supplying water in 11.0 minutes.
+Plane 32 --> CLEAN done at 1153.2 mins.
+Plane 32 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 29 --> POWER done at 1154.4 minutes.
+Plane 29 --> POWER finished catering in 39.6 minutes.
+Plane 34 --> POWER working on at 1154.4 minutes.
+Plane 33 --> CLEAN done at 1154.4 mins.
+Plane 33 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 31 --> CATER done at 1154.8 minutes.
+Plane 31 --> CATER finished catering in 15.0 minutes.
+Plane 30 --> FUEL done at 1156.4 minutes.
+Plane 30 --> FUEL finished refueling in 28.0 minutes.
+Plane 31 --> FUEL done at 1156.8 minutes.
+Plane 31 --> FUEL finished refueling in 17.0 minutes.
+Plane 32 --> CATER done at 1157.2 minutes.
+Plane 32 --> CATER finished catering in 15.0 minutes.
+Plane 30 --> CLEAN done at 1157.4 mins.
+Plane 30 --> CLEAN finished cleaning in 29.0 minutes.
+Plane 34 --> CLEAN done at 1157.8 mins.
+Plane 34 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 35 --> WATER working on at 1157.8 minutes.
+Plane 30 --> CATER done at 1158.4 minutes.
+Plane 30 --> CATER finished catering in 30.0 minutes.
+Plane 32 --> FUEL done at 1159.2 minutes.
+Plane 32 --> FUEL finished refueling in 17.0 minutes.
+Plane 33 --> WATER working on at 1160.2 minutes.
+Plane 35 --> CLEAN done at 1160.4 mins.
+Plane 35 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 34 --> WATER done at 1160.9 mins.
+Plane 34 --> WATER finished supplying water in 11.0 minutes.
+Plane 34 --> CATER working on at 1161.8 minutes.
+Plane 34 --> FUEL working on at 1163.4 minutes.
+Plane 35 --> FUEL working on at 1163.8 minutes.
+Plane 35 --> CATER working on at 1164.2 minutes.
+Plane 34 --> BAGGAGE done at 1164.8 minutes.
 Plane 34 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 35 --> BAGGAGE done at 918.4 minutes.
+Plane 35 --> BAGGAGE done at 1165.4 minutes.
 Plane 35 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 34 --> WATER done at 918.9 mins.
-Plane 34 --> WATER finished supplying water in 18.0 minutes.
-Plane 34 --> CLEAN done at 918.9 mins.
-Plane 34 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 35 --> WATER done at 920.4 mins.
-Plane 35 --> WATER finished supplying water in 18.0 minutes.
-Plane 35 --> CLEAN done at 920.4 mins.
-Plane 35 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 34 --> CATER done at 922.9 minutes.
-Plane 34 --> CATER finished catering in 22.0 minutes.
-Plane 35 --> CATER done at 924.4 minutes.
-Plane 35 --> CATER finished catering in 22.0 minutes.
-Plane 34 --> FUEL done at 924.9 minutes.
-Plane 34 --> FUEL finished refueling in 24.0 minutes.
-Plane 36 requesting a gate at 925.7 minutes
-Plane 35 --> FUEL done at 926.4 minutes.
-Plane 35 --> FUEL finished refueling in 24.0 minutes.
-Plane 36 is landing at 930.7 minutes.
-Plane 36 --> FUEL request a resource at 937.7 minutes.
-Plane 36 --> WATER request a resource at 937.7 minutes.
-Plane 36 --> CLEAN request a resource at 937.7 minutes.
-Plane 36 --> CATER request a resource at 937.7 minutes.
-Plane 36 --> POWER request a resource at 937.7 minutes.
-Plane 36 --> BAGGAGE request a resource at 937.7 minutes.
-Plane 36 --> POWER working on at 937.7 minutes.
-Plane 36 --> BAGGAGE working on at 937.7 minutes.
-Plane 33 is early
-All process are done. 
-Plane 33 is departing at 944.7 minutes
-Plane 36 --> FUEL working on at 944.7 minutes.
-Plane 36 --> WATER working on at 944.7 minutes.
-Plane 36 --> CLEAN working on at 944.7 minutes.
-Plane 36 --> CATER working on at 944.7 minutes.
-Plane 34 --> POWER done at 944.9 minutes.
-Plane 34 --> POWER finished charging in 44.0 minutes.
-Plane 35 --> POWER done at 946.4 minutes.
-Plane 35 --> POWER finished charging in 44.0 minutes.
-Plane 36 --> BAGGAGE done at 953.7 minutes.
+Plane 33 --> CATER working on at 1165.4 minutes.
+Plane 33 --> FUEL working on at 1166.2 minutes.
+Plane 33 --> BAGGAGE done at 1167.2 minutes.
+Plane 33 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 35 --> WATER done at 1168.8 mins.
+Plane 35 --> WATER finished supplying water in 11.0 minutes.
+Plane 33 --> WATER done at 1171.2 mins.
+Plane 33 --> WATER finished supplying water in 11.0 minutes.
+Plane 31 --> POWER done at 1176.8 minutes.
+Plane 31 --> POWER finished catering in 44.0 minutes.
+Plane 34 --> CATER done at 1176.8 minutes.
+Plane 34 --> CATER finished catering in 15.0 minutes.
+Plane 35 --> POWER working on at 1176.8 minutes.
+Plane 30 --> POWER done at 1178.0 minutes.
+Plane 30 --> POWER finished catering in 54.0 minutes.
+Plane 33 --> POWER working on at 1178.0 minutes.
+Plane 35 --> CATER done at 1179.2 minutes.
+Plane 35 --> CATER finished catering in 15.0 minutes.
+Plane 34 --> FUEL done at 1180.4 minutes.
+Plane 34 --> FUEL finished refueling in 17.0 minutes.
+Plane 33 --> CATER done at 1180.4 minutes.
+Plane 33 --> CATER finished catering in 15.0 minutes.
+Plane 35 --> FUEL done at 1180.8 minutes.
+Plane 35 --> FUEL finished refueling in 17.0 minutes.
+Plane 33 --> FUEL done at 1183.2 minutes.
+Plane 33 --> FUEL finished refueling in 17.0 minutes.
+Plane 30 is early
+All process are done.
+Plane 30 is departing at 1186.4 minutes
+Plane 28 is early
+All process are done.
+Plane 28 is departing at 1187.4 minutes
+Plane 36 requesting a gate at 1191.0 minutes
+Plane 29 is early
+All process are done.
+Plane 29 is departing at 1195.8 minutes
+Plane 36 is landing at 1196.0 minutes.
+Plane 34 --> POWER done at 1198.4 minutes.
+Plane 34 --> POWER finished catering in 44.0 minutes.
+Plane 32 --> POWER working on at 1198.4 minutes.
+Plane 34 is on time
+All process are done.
+Plane 34 is departing at 1198.4 minutes
+Plane 36 --> FUEL request a resource at 1203.0 minutes.
+Plane 36 --> WATER request a resource at 1203.0 minutes.
+Plane 36 --> CLEAN request a resource at 1203.0 minutes.
+Plane 36 --> CATER request a resource at 1203.0 minutes.
+Plane 36 --> POWER request a resource at 1203.0 minutes.
+Plane 36 --> BAGGAGE request a resource at 1203.0 minutes.
+Plane 36 --> BAGGAGE working on at 1203.0 minutes.
+Plane 37 requesting a gate at 1204.8 minutes
+Plane 37 is landing at 1209.8 minutes.
+Plane 36 --> FUEL working on at 1210.0 minutes.
+Plane 36 --> WATER working on at 1210.0 minutes.
+Plane 36 --> CLEAN working on at 1210.0 minutes.
+Plane 36 --> CATER working on at 1210.0 minutes.
+Plane 31 is early
+All process are done.
+Plane 31 is departing at 1215.8 minutes
+Plane 37 --> FUEL request a resource at 1216.8 minutes.
+Plane 37 --> WATER request a resource at 1216.8 minutes.
+Plane 37 --> CLEAN request a resource at 1216.8 minutes.
+Plane 37 --> CATER request a resource at 1216.8 minutes.
+Plane 37 --> POWER request a resource at 1216.8 minutes.
+Plane 37 --> BAGGAGE request a resource at 1216.8 minutes.
+Plane 37 --> BAGGAGE working on at 1216.8 minutes.
+Plane 36 --> BAGGAGE done at 1219.0 minutes.
 Plane 36 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 37 requesting a gate at 954.1 minutes
-Plane 36 --> WATER done at 955.7 mins.
-Plane 36 --> WATER finished supplying water in 18.0 minutes.
-Plane 36 --> CLEAN done at 955.7 mins.
-Plane 36 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 37 is landing at 959.1 minutes.
-Plane 36 --> CATER done at 959.7 minutes.
-Plane 36 --> CATER finished catering in 22.0 minutes.
-Plane 36 --> FUEL done at 961.7 minutes.
-Plane 36 --> FUEL finished refueling in 24.0 minutes.
-Plane 37 --> FUEL request a resource at 966.1 minutes.
-Plane 37 --> WATER request a resource at 966.1 minutes.
-Plane 37 --> CLEAN request a resource at 966.1 minutes.
-Plane 37 --> CATER request a resource at 966.1 minutes.
-Plane 37 --> POWER request a resource at 966.1 minutes.
-Plane 37 --> BAGGAGE request a resource at 966.1 minutes.
-Plane 37 --> POWER working on at 966.1 minutes.
-Plane 37 --> BAGGAGE working on at 966.1 minutes.
-Plane 35 is early
-All process are done. 
-Plane 35 is departing at 968.4 minutes
-Plane 37 --> FUEL working on at 973.1 minutes.
-Plane 37 --> WATER working on at 973.1 minutes.
-Plane 37 --> CLEAN working on at 973.1 minutes.
-Plane 37 --> CATER working on at 973.1 minutes.
-Plane 36 --> POWER done at 981.7 minutes.
-Plane 36 --> POWER finished charging in 44.0 minutes.
-Plane 37 --> BAGGAGE done at 982.1 minutes.
+Plane 35 --> POWER done at 1220.8 minutes.
+Plane 35 --> POWER finished catering in 44.0 minutes.
+Plane 37 --> POWER working on at 1220.8 minutes.
+Plane 35 is late by 29.4 minutes
+All process are done.
+Plane 35 is departing at 1220.8 minutes
+Plane 36 --> WATER done at 1221.0 mins.
+Plane 36 --> WATER finished supplying water in 11.0 minutes.
+Plane 36 --> CLEAN done at 1221.0 mins.
+Plane 36 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 33 --> POWER done at 1222.0 minutes.
+Plane 33 --> POWER finished catering in 44.0 minutes.
+Plane 36 --> POWER working on at 1222.0 minutes.
+Plane 37 --> FUEL working on at 1223.8 minutes.
+Plane 37 --> WATER working on at 1223.8 minutes.
+Plane 37 --> CLEAN working on at 1223.8 minutes.
+Plane 37 --> CATER working on at 1223.8 minutes.
+Plane 36 --> CATER done at 1225.0 minutes.
+Plane 36 --> CATER finished catering in 15.0 minutes.
+Plane 36 --> FUEL done at 1227.0 minutes.
+Plane 36 --> FUEL finished refueling in 17.0 minutes.
+Plane 33 is early
+All process are done.
+Plane 33 is departing at 1228.4 minutes
+Plane 37 --> BAGGAGE done at 1232.8 minutes.
 Plane 37 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 37 --> WATER done at 984.1 mins.
-Plane 37 --> WATER finished supplying water in 18.0 minutes.
-Plane 37 --> CLEAN done at 984.1 mins.
-Plane 37 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 38 requesting a gate at 985.4 minutes
-Plane 37 --> CATER done at 988.1 minutes.
-Plane 37 --> CATER finished catering in 22.0 minutes.
-Plane 37 --> FUEL done at 990.1 minutes.
-Plane 37 --> FUEL finished refueling in 24.0 minutes.
-Plane 38 is landing at 990.4 minutes.
-Plane 38 --> FUEL request a resource at 997.4 minutes.
-Plane 38 --> WATER request a resource at 997.4 minutes.
-Plane 38 --> CLEAN request a resource at 997.4 minutes.
-Plane 38 --> CATER request a resource at 997.4 minutes.
-Plane 38 --> POWER request a resource at 997.4 minutes.
-Plane 38 --> BAGGAGE request a resource at 997.4 minutes.
-Plane 38 --> POWER working on at 997.4 minutes.
-Plane 38 --> BAGGAGE working on at 997.4 minutes.
-Plane 38 --> FUEL working on at 1004.4 minutes.
-Plane 38 --> WATER working on at 1004.4 minutes.
-Plane 38 --> CLEAN working on at 1004.4 minutes.
-Plane 38 --> CATER working on at 1004.4 minutes.
-Plane 37 --> POWER done at 1010.1 minutes.
-Plane 37 --> POWER finished charging in 44.0 minutes.
-Plane 34 is early
-All process are done. 
-Plane 34 is departing at 1013.9 minutes
-Plane 38 --> WATER done at 1018.9 mins.
-Plane 38 --> WATER finished supplying water in 21.5 minutes.
-Plane 38 --> BAGGAGE done at 1025.4 minutes.
-Plane 38 --> BAGGAGE finished loading in 28.0 minutes.
-Plane 38 --> FUEL done at 1032.4 minutes.
-Plane 38 --> FUEL finished refueling in 35.0 minutes.
-Plane 38 --> CLEAN done at 1033.4 mins.
-Plane 38 --> CLEAN finished cleaning in 36.0 minutes.
-Plane 38 --> CATER done at 1034.4 minutes.
-Plane 38 --> CATER finished catering in 37.0 minutes.
-Plane 36 is early
-All process are done. 
-Plane 36 is departing at 1036.7 minutes
+Plane 37 --> WATER done at 1234.8 mins.
+Plane 37 --> WATER finished supplying water in 11.0 minutes.
+Plane 37 --> CLEAN done at 1234.8 mins.
+Plane 37 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 38 requesting a gate at 1237.8 minutes
+Plane 37 --> CATER done at 1238.8 minutes.
+Plane 37 --> CATER finished catering in 15.0 minutes.
+Plane 37 --> FUEL done at 1240.8 minutes.
+Plane 37 --> FUEL finished refueling in 17.0 minutes.
+Plane 32 --> POWER done at 1242.4 minutes.
+Plane 32 --> POWER finished catering in 44.0 minutes.
+Plane 32 is on time
+All process are done.
+Plane 32 is departing at 1242.4 minutes
+Plane 38 is landing at 1242.8 minutes.
+Plane 38 --> FUEL request a resource at 1249.8 minutes.
+Plane 38 --> WATER request a resource at 1249.8 minutes.
+Plane 38 --> CLEAN request a resource at 1249.8 minutes.
+Plane 38 --> CATER request a resource at 1249.8 minutes.
+Plane 38 --> POWER request a resource at 1249.8 minutes.
+Plane 38 --> BAGGAGE request a resource at 1249.8 minutes.
+Plane 38 --> POWER working on at 1249.8 minutes.
+Plane 38 --> BAGGAGE working on at 1249.8 minutes.
+Plane 38 --> FUEL working on at 1256.8 minutes.
+Plane 38 --> WATER working on at 1256.8 minutes.
+Plane 38 --> CLEAN working on at 1256.8 minutes.
+Plane 38 --> CATER working on at 1256.8 minutes.
+Plane 37 --> POWER done at 1264.8 minutes.
+Plane 37 --> POWER finished catering in 44.0 minutes.
+Plane 38 --> BAGGAGE done at 1265.8 minutes.
+Plane 38 --> BAGGAGE finished loading in 16.0 minutes.
+Plane 36 --> POWER done at 1266.0 minutes.
+Plane 36 --> POWER finished catering in 44.0 minutes.
+Plane 38 --> WATER done at 1267.8 mins.
+Plane 38 --> WATER finished supplying water in 11.0 minutes.
+Plane 38 --> CLEAN done at 1267.8 mins.
+Plane 38 --> CLEAN finished cleaning in 11.0 minutes.
 Plane 37 is early
-All process are done. 
-Plane 37 is departing at 1038.1 minutes
-Plane 38 --> POWER done at 1051.4 minutes.
-Plane 38 --> POWER finished charging in 54.0 minutes.
-Plane 39 requesting a gate at 1060.1 minutes
-Plane 38 is early
-All process are done. 
-Plane 38 is departing at 1060.4 minutes
-Plane 39 is landing at 1065.1 minutes.
-Plane 39 --> FUEL request a resource at 1072.1 minutes.
-Plane 39 --> WATER request a resource at 1072.1 minutes.
-Plane 39 --> CLEAN request a resource at 1072.1 minutes.
-Plane 39 --> CATER request a resource at 1072.1 minutes.
-Plane 39 --> POWER request a resource at 1072.1 minutes.
-Plane 39 --> BAGGAGE request a resource at 1072.1 minutes.
-Plane 39 --> POWER working on at 1072.1 minutes.
-Plane 39 --> BAGGAGE working on at 1072.1 minutes.
-Plane 40 requesting a gate at 1076.4 minutes
-Plane 39 --> FUEL working on at 1079.1 minutes.
-Plane 39 --> WATER working on at 1079.1 minutes.
-Plane 39 --> CLEAN working on at 1079.1 minutes.
-Plane 39 --> CATER working on at 1079.1 minutes.
-Plane 40 is landing at 1081.4 minutes.
-Plane 39 --> BAGGAGE done at 1088.1 minutes.
+All process are done.
+Plane 37 is departing at 1267.8 minutes
+Plane 38 --> CATER done at 1271.8 minutes.
+Plane 38 --> CATER finished catering in 15.0 minutes.
+Plane 38 --> FUEL done at 1273.8 minutes.
+Plane 38 --> FUEL finished refueling in 17.0 minutes.
+Plane 38 --> POWER done at 1293.8 minutes.
+Plane 38 --> POWER finished catering in 44.0 minutes.
+Plane 39 requesting a gate at 1301.4 minutes
+Plane 39 is landing at 1306.4 minutes.
+Plane 36 is early
+All process are done.
+Plane 36 is departing at 1309.0 minutes
+Plane 39 --> FUEL request a resource at 1313.4 minutes.
+Plane 39 --> WATER request a resource at 1313.4 minutes.
+Plane 39 --> CLEAN request a resource at 1313.4 minutes.
+Plane 39 --> CATER request a resource at 1313.4 minutes.
+Plane 39 --> POWER request a resource at 1313.4 minutes.
+Plane 39 --> BAGGAGE request a resource at 1313.4 minutes.
+Plane 39 --> POWER working on at 1313.4 minutes.
+Plane 39 --> BAGGAGE working on at 1313.4 minutes.
+Plane 40 requesting a gate at 1317.6 minutes
+Plane 39 --> FUEL working on at 1320.4 minutes.
+Plane 39 --> WATER working on at 1320.4 minutes.
+Plane 39 --> CLEAN working on at 1320.4 minutes.
+Plane 39 --> CATER working on at 1320.4 minutes.
+Plane 40 is landing at 1322.6 minutes.
+Plane 39 --> BAGGAGE done at 1329.4 minutes.
 Plane 39 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 40 --> FUEL request a resource at 1088.4 minutes.
-Plane 40 --> WATER request a resource at 1088.4 minutes.
-Plane 40 --> CLEAN request a resource at 1088.4 minutes.
-Plane 40 --> CATER request a resource at 1088.4 minutes.
-Plane 40 --> POWER request a resource at 1088.4 minutes.
-Plane 40 --> BAGGAGE request a resource at 1088.4 minutes.
-Plane 40 --> POWER working on at 1088.4 minutes.
-Plane 40 --> BAGGAGE working on at 1088.4 minutes.
-Plane 39 --> WATER done at 1090.1 mins.
-Plane 39 --> WATER finished supplying water in 18.0 minutes.
-Plane 39 --> CLEAN done at 1090.1 mins.
-Plane 39 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 39 --> CATER done at 1094.1 minutes.
-Plane 39 --> CATER finished catering in 22.0 minutes.
-Plane 40 --> FUEL working on at 1095.4 minutes.
-Plane 40 --> WATER working on at 1095.4 minutes.
-Plane 40 --> CLEAN working on at 1095.4 minutes.
-Plane 40 --> CATER working on at 1095.4 minutes.
-Plane 39 --> FUEL done at 1096.1 minutes.
-Plane 39 --> FUEL finished refueling in 24.0 minutes.
-Plane 40 --> BAGGAGE done at 1104.4 minutes.
+Plane 40 --> FUEL request a resource at 1329.6 minutes.
+Plane 40 --> WATER request a resource at 1329.6 minutes.
+Plane 40 --> CLEAN request a resource at 1329.6 minutes.
+Plane 40 --> CATER request a resource at 1329.6 minutes.
+Plane 40 --> POWER request a resource at 1329.6 minutes.
+Plane 40 --> BAGGAGE request a resource at 1329.6 minutes.
+Plane 40 --> POWER working on at 1329.6 minutes.
+Plane 40 --> BAGGAGE working on at 1329.6 minutes.
+Plane 38 is early
+All process are done.
+Plane 38 is departing at 1330.8 minutes
+Plane 39 --> WATER done at 1331.4 mins.
+Plane 39 --> WATER finished supplying water in 11.0 minutes.
+Plane 39 --> CLEAN done at 1331.4 mins.
+Plane 39 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 39 --> CATER done at 1335.4 minutes.
+Plane 39 --> CATER finished catering in 15.0 minutes.
+Plane 40 --> FUEL working on at 1336.6 minutes.
+Plane 40 --> WATER working on at 1336.6 minutes.
+Plane 40 --> CLEAN working on at 1336.6 minutes.
+Plane 40 --> CATER working on at 1336.6 minutes.
+Plane 39 --> FUEL done at 1337.4 minutes.
+Plane 39 --> FUEL finished refueling in 17.0 minutes.
+Plane 40 --> BAGGAGE done at 1345.6 minutes.
 Plane 40 --> BAGGAGE finished loading in 16.0 minutes.
-Plane 40 --> WATER done at 1106.4 mins.
-Plane 40 --> WATER finished supplying water in 18.0 minutes.
-Plane 40 --> CLEAN done at 1106.4 mins.
-Plane 40 --> CLEAN finished cleaning in 18.0 minutes.
-Plane 40 --> CATER done at 1110.4 minutes.
-Plane 40 --> CATER finished catering in 22.0 minutes.
-Plane 40 --> FUEL done at 1112.4 minutes.
-Plane 40 --> FUEL finished refueling in 24.0 minutes.
-Plane 39 --> POWER done at 1116.1 minutes.
-Plane 39 --> POWER finished charging in 44.0 minutes.
-Plane 40 --> POWER done at 1132.4 minutes.
-Plane 40 --> POWER finished charging in 44.0 minutes.
+Plane 40 --> WATER done at 1347.6 mins.
+Plane 40 --> WATER finished supplying water in 11.0 minutes.
+Plane 40 --> CLEAN done at 1347.6 mins.
+Plane 40 --> CLEAN finished cleaning in 11.0 minutes.
+Plane 40 --> CATER done at 1351.6 minutes.
+Plane 40 --> CATER finished catering in 15.0 minutes.
+Plane 40 --> FUEL done at 1353.6 minutes.
+Plane 40 --> FUEL finished refueling in 17.0 minutes.
+Plane 39 --> POWER done at 1357.4 minutes.
+Plane 39 --> POWER finished catering in 44.0 minutes.
+Plane 40 --> POWER done at 1373.6 minutes.
+Plane 40 --> POWER finished catering in 44.0 minutes.
 Plane 39 is early
-All process are done. 
-Plane 39 is departing at 1172.1 minutes
+All process are done.
+Plane 39 is departing at 1401.4 minutes
 Plane 40 is early
-All process are done. 
-Plane 40 is departing at 1196.4 minutes
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 
+All process are done.
+Plane 40 is departing at 1425.6 minutes
+Alicias-MacBook-Pro:Mod-Sim_Proj2 awhite40$ 

@@ -1,47 +1,47 @@
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
-Heavy -  2 Small -  0
+Alicias-MacBook-Pro:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
+Heavy -  3 Small -  1
 Number of trucks 3
 Run number 1
-Average time 94.4425
-Average delay 24.4
-Late_planes 1
-Bag idle time 2216.0
-Power idle time 1100.0
+Average time 89.545
+Average delay 0
+Late_planes 0
+Bag idle time 2208.8
+Power idle time 1094.4
  
-Heavy -  4 Small -  2
+Heavy -  3 Small -  2
 Number of trucks 3
 Run number 2
-Average time 92.6
-Average delay 0
-Late_planes 0
-Bag idle time 2201.6
-Power idle time 1088.8
+Average time 90.585
+Average delay 29.4
+Late_planes 1
+Bag idle time 2213.6
+Power idle time 1098.8
  
-Heavy -  3 Small -  4
+Heavy -  5 Small -  2
 Number of trucks 3
 Run number 3
-Average time 97.44
-Average delay 0
-Late_planes 0
-Bag idle time 2223.2
-Power idle time 1107.6
+Average time 89.625
+Average delay 16.2
+Late_planes 3
+Bag idle time 2189.6
+Power idle time 1078.8
  
-Heavy -  1 Small -  4
+Heavy -  1 Small -  0
 Number of trucks 3
 Run number 4
-Average time 90.8525
-Average delay 0
-Late_planes 0
-Bag idle time 2247.2
-Power idle time 1127.6
+Average time 91.24
+Average delay 20.0
+Late_planes 1
+Bag idle time 2228.0
+Power idle time 1110.0
  
-Heavy -  3 Small -  5
+Heavy -  4 Small -  1
 Number of trucks 3
 Run number 5
-Average time 96.39
+Average time 90.47
 Average delay 0
 Late_planes 0
-Bag idle time 2228.0
-Power idle time 1112.0
+Bag idle time 2196.8
+Power idle time 1084.4
  
-lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 
+Alicias-MacBook-Pro:Mod-Sim_Proj2 awhite40$ 

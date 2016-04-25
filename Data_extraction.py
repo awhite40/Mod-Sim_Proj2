@@ -3,7 +3,7 @@ import cPickle as pickle
 #for x in rang
 Num_planes = 40
 num_runs = 5
-num_trucks = 5
+num_trucks = 4
 for num in range(num_runs):
     Planes = [dict() for x in range(Num_planes)]
     #print Planes2
@@ -11,7 +11,7 @@ for num in range(num_runs):
     for line in open('New Data/' + str(num_trucks) + 'Trucks_Run' + str(num+1)):
         words = line.split()
         if words[0] == 'Heavy':
-            print 'Heavy - ', words[2], 'Small - ', words[5]
+            print 'Heavy - ', words[1], 'Small - ', words[3]
         for x in range(Num_planes):
             if (words[0] == 'Plane' and words[1] == str(x+1)):
                 #print words
