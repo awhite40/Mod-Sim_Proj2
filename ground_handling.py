@@ -195,6 +195,7 @@ class aircraft(object):
         yield env.timeout(working_duration)          # Do something
         print(name + " --> POWER done at %.1f minutes." % env.now)
         resource.release(request)
+        print(name + " --> POWER finished charging in %.1f minutes." % (env.now - start))
         
     # PROCESS Baggage involves loading the baggage of future passengers (departure) only    
     def baggage_aircraft(self, env, resource, name, size, arrival_time, departure_time):
@@ -233,12 +234,12 @@ env = simpy.Environment()
 
 
 gate = simpy.Resource(env, capacity=11)
-res1 = simpy.PriorityResource(env, capacity=2)
-res2 = simpy.PriorityResource(env, capacity=2)
-res3 = simpy.PriorityResource(env, capacity=2)
-res4 = simpy.PriorityResource(env, capacity=2)
-res5 = simpy.PriorityResource(env, capacity=2)
-res6 = simpy.PriorityResource(env, capacity=2)
+res1 = simpy.PriorityResource(env, capacity=3)
+res2 = simpy.PriorityResource(env, capacity=3)
+res3 = simpy.PriorityResource(env, capacity=3)
+res4 = simpy.PriorityResource(env, capacity=3)
+res5 = simpy.PriorityResource(env, capacity=3)
+res6 = simpy.PriorityResource(env, capacity=3)
 #A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
 #A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
 #A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)

@@ -3,18 +3,22 @@ import cPickle as pickle
 #for x in rang
 Num_planes = 40
 num_runs = 5
-
+num_trucks = 2
 for num in range(num_runs):
     Planes = [dict() for x in range(Num_planes)]
     #print Planes2
     #Plane1 = dict([('Arrival', 0)])
-    for line in open('Data Outputs/All1_Run' + str(num+1)):
+    for line in open('New Data/' + str(num_trucks) + 'Trucks_Run' + str(num+1)):
         words = line.split()
+        if words[0] == 'Heavy':
+            print 'Heavy - ', words[2], 'Small - ', words[5]
         for x in range(Num_planes):
             if (words[0] == 'Plane' and words[1] == str(x+1)):
                 #print words
                 if (words[3] == 'POWER' and words[4] == 'done'):
                     Planes[x]['POWER'] = words[6]
+                if (words[3] == 'POWER' and words[4] == 'finished'):
+                    Planes[x]['Power_time'] = words[7]
                 if (words[3] == 'BAGGAGE' and words[4] == 'done'):
                     Planes[x]['BAGGAGE'] = words[6]
                 if (words[3] == 'BAGGAGE' and words[4] == 'finished'):
@@ -45,6 +49,7 @@ for num in range(num_runs):
     Difference = [0]*Num_planes
     Late = [0]*Num_planes
     Bag_times = [0]*Num_planes
+    Power_times = [0]*Num_planes
 #print Planes[1]
     for x in range(Num_planes):
         #print x
@@ -53,8 +58,10 @@ for num in range(num_runs):
         Difference[x] = Depart[x] - Arrival[x]
         Late[x] = float(Planes[x]['Late'])
         Bag_times[x] = float(Planes[x]['Bag_time'])
+        Power_times[x] = float(Planes[x]['Power_time'])
     avg_time = sum(Difference)/Num_planes
     total_bag_time = sum(Bag_times)
+    total_power_time = sum(Power_times)
     Late = [x for x in Late if x != 0]
 #print 'Late', Late
     if len(Late) == 0:
@@ -62,12 +69,14 @@ for num in range(num_runs):
     else:
         avg_delay = sum(Late)/len(Late)
     num_late = len(Late)
+    print 'Number of trucks', num_trucks
     print 'Run number', (num +1)
-#print 'Average time', avg_time
-#print 'Average delay', avg_delay
-#print 'Late_planes', num_late
-    print 'Total Baggage usage time', total_bag_time, Bag_times
-#print ' '
+    print 'Average time', avg_time
+    print 'Average delay', avg_delay
+    print 'Late_planes', num_late
+    print 'Bag idle time', num_trucks*16*60 - total_bag_time
+    print 'Total Power idle time', num_trucks*16*60 - total_power_time
+    print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
     pickle.dump((Planes,avg_time,avg_delay,num_late), open('Data Outputs/Run'+str(num+1) + '.pkl', 'wb'))
