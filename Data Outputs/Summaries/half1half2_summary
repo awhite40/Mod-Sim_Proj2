@@ -1,0 +1,58 @@
+lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ python Data_extraction.py
+Run number 1
+Average time 458.665
+Average delay 403.713513514
+Late_planes 37
+Run number 2
+Average time 499.135
+Average delay 419.605128205
+Late_planes 39
+Run number 3
+Average time 462.575
+Average delay 403.524324324
+Late_planes 37
+Run number 4
+Average time 388.945
+Average delay 307.064102564
+Late_planes 39
+Run number 5
+Average time 343.635
+Average delay 315.184375
+Late_planes 32
+Run number 6
+Average time 378.7775
+Average delay 328.031428571
+Late_planes 35
+Run number 7
+Average time 509.01
+Average delay 430.179487179
+Late_planes 39
+Run number 8
+Average time 344.1775
+Average delay 309.657575758
+Late_planes 33
+Run number 9
+Average time 335.645
+Average delay 261.544736842
+Late_planes 38
+Run number 10
+Average time 484.925
+Average delay 423.818918919
+Late_planes 37
+Run number 11
+Average time 415.9975
+Average delay 334.735897436
+Late_planes 39
+Run number 12
+Average time 403.0275
+Average delay 353.937142857
+Late_planes 35
+Run number 13
+Average time 598.5225
+Average delay 534.960526316
+Late_planes 38
+Run number 14
+Average time 449.2325
+Average delay 377.426315789
+Late_planes 38
+lawn-128-61-39-176:Mod-Sim_Proj2 awhite40$ 

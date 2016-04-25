@@ -8,7 +8,7 @@ for num in range(num_runs):
     Planes = [dict() for x in range(Num_planes)]
     #print Planes2
     #Plane1 = dict([('Arrival', 0)])
-    for line in open('Data Outputs/Run' + str(num+1)):
+    for line in open('Data Outputs/3each_Run' + str(num+1)):
         words = line.split()
         for x in range(Num_planes):
             if (words[0] == 'Plane' and words[1] == str(x+1)):
@@ -52,9 +52,15 @@ for num in range(num_runs):
     avg_time = sum(Difference)/Num_planes
     Late = [x for x in Late if x != 0]
 #print 'Late', Late
-    avg_delay = sum(Late)/len(Late)
+    if len(Late) == 0:
+        avg_delay = 0
+    else:
+        avg_delay = sum(Late)/len(Late)
     num_late = len(Late)
-#print avg_time, avg_delay
+    print 'Run number', (num +1)
+    print 'Average time', avg_time
+    print 'Average delay', avg_delay
+    print 'Late_planes', num_late
 #print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
