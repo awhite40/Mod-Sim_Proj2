@@ -8,7 +8,7 @@ LARGE_SIZE=1.5
 HEAVY_SIZE=2.5
 SMALL_SIZE_constant = 0.7
 SMALL_SIZE_Power_constant = 0.9
-
+num_trucks = 2
 class aircraft(object):
     def __init__(self, env, name, size, gate, res1, res2, res3, res4, res5, res6, arrival_air_time, departure_time):
         self.env = env
@@ -59,13 +59,13 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> FUEL request a resource at %.1f minutes." % start)
+        
+        print(name + " --> FUEL request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
-
+        start = env.now
         # Working
         print(name + " --> FUEL working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -88,13 +88,13 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> WATER request a resource at %.1f minutes." % start)
+        
+        print(name + " --> WATER request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for supplying water process
         yield env.timeout(disembark_time)
-
+        start = env.now
         # Working
         print(name + " --> WATER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -117,14 +117,14 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> CLEAN request a resource at %.1f minutes." % start)
+        
+        print(name + " --> CLEAN request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #Introduce a prcess specific wait to account for disembarking for clening process
         yield env.timeout(disembark_time)
         resource.release(request)
-
+        start = env.now
         # Working
         print(name + " --> CLEAN working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -147,13 +147,13 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> CATER request a resource at %.1f minutes." % start)
+        
+        print(name + " --> CATER request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #Introduce a process specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
-
+        start = env.now
         # Working
         print(name + " --> CATER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -176,13 +176,13 @@ class aircraft(object):
         # do not use the disembark time since process can start earlier
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> POWER request a resource at %.1f minutes." % start)
+        
+        print(name + " --> POWER request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
-
+        start = env.now
         # Working
         print(name + " --> POWER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -206,13 +206,13 @@ class aircraft(object):
         # do not use the disembark time since process can start earlier
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        start = env.now
-        print(name + " --> BAGGAGE request a resource at %.1f minutes." % start)
+        
+        print(name + " --> BAGGAGE request a resource at %.1f minutes." % env.now)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
-
+        start = env.now
         # Working
         print(name + " --> BAGGAGE working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -236,12 +236,12 @@ env = simpy.Environment()
 # Regard gate as resource
 # Regard trucks as priority resource
 gate = simpy.Resource(env, capacity=11)
-res1 = simpy.PriorityResource(env, capacity=2) # Refueling truck
-res2 = simpy.PriorityResource(env, capacity=2) # Watering truck
-res3 = simpy.PriorityResource(env, capacity=2) # Cleaning truck
-res4 = simpy.PriorityResource(env, capacity=2) # Catering truck
-res5 = simpy.PriorityResource(env, capacity=2) # Powering truck
-res6 = simpy.PriorityResource(env, capacity=2) # Baggage truck
+res1 = simpy.PriorityResource(env, capacity=num_trucks) # Refueling truck
+res2 = simpy.PriorityResource(env, capacity=num_trucks) # Watering truck
+res3 = simpy.PriorityResource(env, capacity=num_trucks) # Cleaning truck
+res4 = simpy.PriorityResource(env, capacity=num_trucks) # Catering truck
+res5 = simpy.PriorityResource(env, capacity=num_trucks) # Powering truck
+res6 = simpy.PriorityResource(env, capacity=num_trucks) # Baggage truck
 
 
 # ====================Generate Arrival Schedule Based on Long Beach Airport Data====================
