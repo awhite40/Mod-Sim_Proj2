@@ -124,7 +124,6 @@ class aircraft(object):
 
         #Introduce a prcess specific wait to account for disembarking for clening process
         yield env.timeout(disembark_time)
-        resource.release(request)
 
         # Working
         print(name + " --> CLEAN working on at %.1f minutes." % env.now)
