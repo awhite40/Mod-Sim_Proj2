@@ -156,11 +156,11 @@ class aircraft(object):
         # Working
         print(name + " --> CATER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE_constant* 11 #min
+            working_duration = SMALL_SIZE_constant* 15 #min
         elif size == LARGE_SIZE:
-            working_duration = 11 #min
-        else:
             working_duration = 15 #min
+        else:
+            working_duration = 30 #min
         yield env.timeout(working_duration)          # Do something
         print(name + " --> CATER done at %.1f minutes." % env.now)
         end = env.now
@@ -184,13 +184,12 @@ class aircraft(object):
 
         # Working
         print(name + " --> POWER working on at %.1f minutes." % env.now)
-        unit_time_consuming = 44
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE_Power_constant * (unit_time_consuming)
+            working_duration = SMALL_SIZE_Power_constant* 44 #min
         elif size == LARGE_SIZE:
-            working_duration = LARGE_SIZE * (unit_time_consuming)
+            working_duration = 44 #min
         else:
-            working_duration = HEAVY_SIZE * (unit_time_consuming)
+            working_duration = 54 #min
         yield env.timeout(working_duration)          # Do something
         print(name + " --> POWER done at %.1f minutes." % env.now)
         resource.release(request)
@@ -210,13 +209,12 @@ class aircraft(object):
 
         # Working
         print(name + " --> BAGGAGE working on at %.1f minutes." % env.now)
-        unit_time_consuming = 16
         if size == SMALL_SIZE:
-            working_duration = SMALL_SIZE_constant * (unit_time_consuming)
+            working_duration = SMALL_SIZE_constant*16 #min
         elif size == LARGE_SIZE:
-            working_duration = LARGE_SIZE * (unit_time_consuming)
+            working_duration = 16 #min
         else:
-            working_duration = HEAVY_SIZE * (unit_time_consuming)
+            working_duration = 28 #min
         yield env.timeout(working_duration)          # Do something
         print(name + " --> BAGGAGE done at %.1f minutes." % env.now)
  
