@@ -32,11 +32,9 @@ class aircraft(object):
         # Request one of the 11 gates
         yield request
         landing_time = 5
-        
         yield env.timeout(landing_time)
         # Generate new aircrafts that arrive at the service hub. #
         arrival_time = env.now
-        departure_time = env.now + float(randint(60, 120))
         print("%s is landing at %.1f minutes." % (self.name, arrival_time))
 
         wait_time = 7  # wait time of 7 min applies for all aircrafts before processes can start - source Gantt chart in design doc
@@ -64,10 +62,10 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        
-        print(name + " --> FUEL request a resource at %.1f minutes." % env.now)
-        yield request                 # Wait for access
         start = env.now
+        print(name + " --> FUEL request a resource at %.1f minutes." % start)
+        yield request                 # Wait for access
+
         #Introduce a prcess specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
 
@@ -92,10 +90,10 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        
-        print(name + " --> WATER request a resource at %.1f minutes." % env.now)
-        yield request                 # Wait for access
         start = env.now
+        print(name + " --> WATER request a resource at %.1f minutes." % start)
+        yield request                 # Wait for access
+
         #Introduce a prcess specific wait to account for disembarking for supplying water process
         yield env.timeout(disembark_time)
 
@@ -120,13 +118,13 @@ class aircraft(object):
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        
-        print(name + " --> CLEAN request a resource at %.1f minutes." % env.now)
-        yield request                 # Wait for access
         start = env.now
-        #Introduce a specific wait to account for disembarking for cleaning process
-        yield env.timeout(disembark_time)
+        print(name + " --> CLEAN request a resource at %.1f minutes." % start)
+        yield request                 # Wait for access
 
+        #Introduce a prcess specific wait to account for disembarking for clening process
+        yield env.timeout(disembark_time)
+        resource.release(request)
 
         # Working
         print(name + " --> CLEAN working on at %.1f minutes." % env.now)
@@ -142,16 +140,16 @@ class aircraft(object):
         # Releasing
         resource.release(request)     # Release the resource
         print(name + " --> CLEAN finished cleaning in %.1f minutes." % (end - start))
-        
+
     def cater_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
         #Define the disembark time
         disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-       
-        print(name + " --> CATER request a resource at %.1f minutes." % env.now)
-        yield request                 # Wait for access
         start = env.now
+        print(name + " --> CATER request a resource at %.1f minutes." % start)
+        yield request                 # Wait for access
+
         #Introduce a process specific wait to account for disembarking for refuel process
         yield env.timeout(disembark_time)
 
@@ -170,20 +168,20 @@ class aircraft(object):
         resource.release(request)     # Release the resource
         print(name + " --> CATER finished catering in %.1f minutes." % (end - start))
 
-    
+
 
     def power_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
         # do not use the disembark time since process can start earlier
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        
-        print(name + " --> POWER request a resource at %.1f minutes." % env.now)
+        start = env.now
+        print(name + " --> POWER request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
-        start = env.now
+
         # Working
         print(name + " --> POWER working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -195,21 +193,20 @@ class aircraft(object):
         yield env.timeout(working_duration)          # Do something
         print(name + " --> POWER done at %.1f minutes." % env.now)
         resource.release(request)
-        print(name + " --> POWER finished charging in %.1f minutes." % (env.now - start))
-        
-    # PROCESS Baggage involves loading the baggage of future passengers (departure) only    
+
+    # PROCESS Baggage involves loading the baggage of future passengers (departure) only
     def baggage_aircraft(self, env, resource, name, size, arrival_time, departure_time):
         # Requsting
         # do not use the disembark time since process can start earlier
         #disembark_time = 7
         request = resource.request(priority=departure_time)  # Generate a request event
-        
-        print(name + " --> BAGGAGE request a resource at %.1f minutes." % env.now)
+        start = env.now
+        print(name + " --> BAGGAGE request a resource at %.1f minutes." % start)
         yield request                 # Wait for access
 
         #DO NOT use disembarking for power process since it can coexist
         #yield env.timeout(disembark_time)
-        start = env.now
+
         # Working
         print(name + " --> BAGGAGE working on at %.1f minutes." % env.now)
         if size == SMALL_SIZE:
@@ -220,7 +217,7 @@ class aircraft(object):
             working_duration = 28 #min
         yield env.timeout(working_duration)          # Do something
         print(name + " --> BAGGAGE done at %.1f minutes." % env.now)
- 
+
         # Releasing
         resource.release(request)     # Release the resource
         print(name + " --> BAGGAGE finished loading in %.1f minutes." % (env.now - start))
@@ -234,12 +231,12 @@ env = simpy.Environment()
 
 
 gate = simpy.Resource(env, capacity=11)
-res1 = simpy.PriorityResource(env, capacity=5)
-res2 = simpy.PriorityResource(env, capacity=5)
-res3 = simpy.PriorityResource(env, capacity=5)
-res4 = simpy.PriorityResource(env, capacity=5)
-res5 = simpy.PriorityResource(env, capacity=5)
-res6 = simpy.PriorityResource(env, capacity=5)
+res1 = simpy.PriorityResource(env, capacity=2)
+res2 = simpy.PriorityResource(env, capacity=2)
+res3 = simpy.PriorityResource(env, capacity=2)
+res4 = simpy.PriorityResource(env, capacity=2)
+res5 = simpy.PriorityResource(env, capacity=2)
+res6 = simpy.PriorityResource(env, capacity=2)
 #A1 = aircraft(env, '1', SMALL_SIZE, gate, res1, res2)
 #A2 = aircraft(env, '2', LARGE_SIZE, gate, res1, res2)
 #A3 = aircraft(env, '3', HEAVY_SIZE, gate, res1, res2)
@@ -254,31 +251,26 @@ for i in range(40):
     arrive_depart_schedule.append([random_arrival_time, random_departure_time])
 
 arrive_depart_schedule = sorted(arrive_depart_schedule)
-#print(arrive_depart_schedule)
+print(arrive_depart_schedule)
 
 k = 1
-count_small = 0
-count_heavy = 0
 for j in range(len(arrive_depart_schedule)):
     ID = 'Plane ' + str(k)
 
     # size distribution
     s = randint(0,100)
     if s < 90:
-        size = LARGE_SIZE
-    
-    elif s <94:
         size = SMALL_SIZE
-        count_small = count_small +1
+    elif s <94:
+        size = LARGE_SIZE
     else:
         size = HEAVY_SIZE
-        count_heavy = count_heavy +1
     arrival_air_time = arrive_depart_schedule[j][0]
     departure_time = arrive_depart_schedule[j][1]
     #print arrival_air
     craft = aircraft(env, ID, size, gate, res1, res2, res3, res4, res5, res6, arrival_air_time, departure_time)
     k = k + 1
-print 'Heavy Planes', count_heavy, 'Small Planes', count_small
+print(k)
 
 
 # # Gaussian distribution
