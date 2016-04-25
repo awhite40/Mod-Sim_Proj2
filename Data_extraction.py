@@ -66,7 +66,7 @@ for num in range(num_runs):
 #print 'Average time', avg_time
 #print 'Average delay', avg_delay
 #print 'Late_planes', num_late
-    print 'Total Baggage usage time', total_bag_time
+    print 'Total Baggage usage time', total_bag_time, Bag_times
 #print ' '
 
 #print 'Arrival', Arrival#, 'Departure', Depart, 'Time between arrival and departure', Difference
